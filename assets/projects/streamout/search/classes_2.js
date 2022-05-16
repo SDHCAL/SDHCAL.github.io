@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['roottreedest_0',['ROOTtreeDest',['../classROOTtreeDest.html',1,'']]]
+  ['rawdatareader_0',['RawdataReader',['../classRawdataReader.html',1,'']]],
+  ['roottreedest_1',['ROOTtreeDest',['../classROOTtreeDest.html',1,'']]]
 ];
