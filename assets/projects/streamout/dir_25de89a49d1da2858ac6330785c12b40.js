@@ -2,7 +2,7 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
 [
     [ "Bits.h", "Bits_8h.html", "Bits_8h" ],
     [ "Buffer.h", "Buffer_8h.html", [
-      [ "Buffer", "classBuffer.html", null ]
+      [ "Buffer", "classBuffer.html", "classBuffer" ]
     ] ],
     [ "DIFPtr.h", "DIFPtr_8h.html", [
       [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ]
@@ -12,9 +12,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     ] ],
     [ "DIFUnpacker.h", "DIFUnpacker_8h.html", [
       [ "DIFUnpacker", "classDIFUnpacker.html", null ]
-    ] ],
-    [ "SDHCAL_buffer.h", "SDHCAL__buffer_8h.html", [
-      [ "SDHCAL_buffer", "classSDHCAL__buffer.html", "classSDHCAL__buffer" ]
     ] ],
     [ "SDHCAL_buffer_loop.h", "SDHCAL__buffer__loop_8h.html", [
       [ "SDHCAL_buffer_loop< SOURCE, DESTINATION >", "classSDHCAL__buffer__loop.html", "classSDHCAL__buffer__loop" ]
