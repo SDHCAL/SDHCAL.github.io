@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['end_0',['end',['../classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0',1,'Buffer::end()'],['../classtextDump.html#ad786c3026dac9dc823e4dc10dd17b024',1,'textDump::end()'],['../classROOTtreeDest.html#a4d7fb72fc14947ddfd5cc146179942c4',1,'ROOTtreeDest::end()']]]
+  ['difptr_0',['DIFPtr',['../classDIFPtr.html#a654493cbe816286acbaf4581603923da',1,'DIFPtr']]],
+  ['difslowcontrol_1',['DIFSlowControl',['../classDIFSlowControl.html#ae4364b00c3ff8e3b272df5e742d2160c',1,'DIFSlowControl']]],
+  ['dump_2',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]],
+  ['dumpframeold_3',['dumpFrameOld',['../classDIFUnpacker.html#a9a710bc46d7e7aa76f0fb2bc40639cef',1,'DIFUnpacker']]]
 ];

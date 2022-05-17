@@ -89,23 +89,27 @@ $(document).ready(function(){initNavTree('DIFPtr_8cc_source.html',''); initResiz
 <a href="DIFPtr_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="DIFPtr_8h.html">DIFPtr.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">    7</a></span><a class="code hl_function" href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">DIFPtr::DIFPtr</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p, <span class="keyword">const</span> std::uint32_t&amp; max_size) : theDIF_(p), theSize_(max_size)</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  theFrames_.clear();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  theLines_.clear();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    theGetFramePtrReturn_ = <a class="code hl_function" href="classDIFUnpacker.html#a2ff0d20c76c65e68a6056bb65c993e28">DIFUnpacker::getFramePtr</a>(theFrames_, theLines_, theSize_, theDIF_);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordflow">catch</span>(std::string e)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;spdlog/spdlog.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">   11</a></span><a class="code hl_function" href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">DIFPtr::DIFPtr</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p, <span class="keyword">const</span> std::uint32_t&amp; max_size) : theDIF_(p), theSize_(max_size)</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  theFrames_.clear();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  theLines_.clear();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordflow">try</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;DIF &quot;</span> &lt;&lt; <a class="code hl_function" href="classDIFPtr.html#a0372109822d667d4beded4ceb807c7bf">getID</a>() &lt;&lt; <span class="stringliteral">&quot; T ? &quot;</span> &lt;&lt; <a class="code hl_function" href="classDIFPtr.html#ac610d35950f4b116a7ed4ef5655bcddf">hasTemperature</a>() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; e &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    theGetFramePtrReturn_ = <a class="code hl_function" href="classDIFUnpacker.html#a2ff0d20c76c65e68a6056bb65c993e28">DIFUnpacker::getFramePtr</a>(theFrames_, theLines_, theSize_, theDIF_);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::string&amp; e)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    spdlog::get(<span class="stringliteral">&quot;streamout&quot;</span>)-&gt;error(<span class="stringliteral">&quot; DIF {} T ? {} {}&quot;</span>, <a class="code hl_function" href="classDIFPtr.html#a0372109822d667d4beded4ceb807c7bf">getID</a>(), <a class="code hl_function" href="classDIFPtr.html#ac610d35950f4b116a7ed4ef5655bcddf">hasTemperature</a>(), e);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 <div class="ttc" id="aDIFPtr_8h_html"><div class="ttname"><a href="DIFPtr_8h.html">DIFPtr.h</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_a0372109822d667d4beded4ceb807c7bf"><div class="ttname"><a href="classDIFPtr.html#a0372109822d667d4beded4ceb807c7bf">DIFPtr::getID</a></div><div class="ttdeci">std::uint32_t getID()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00019">DIFPtr.h:19</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_a654493cbe816286acbaf4581603923da"><div class="ttname"><a href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">DIFPtr::DIFPtr</a></div><div class="ttdeci">DIFPtr(unsigned char *p, const std::uint32_t &amp;max_size)</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8cc_source.html#l00007">DIFPtr.cc:7</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_ac610d35950f4b116a7ed4ef5655bcddf"><div class="ttname"><a href="classDIFPtr.html#ac610d35950f4b116a7ed4ef5655bcddf">DIFPtr::hasTemperature</a></div><div class="ttdeci">bool hasTemperature()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00032">DIFPtr.h:32</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_a0372109822d667d4beded4ceb807c7bf"><div class="ttname"><a href="classDIFPtr.html#a0372109822d667d4beded4ceb807c7bf">DIFPtr::getID</a></div><div class="ttdeci">std::uint32_t getID()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00018">DIFPtr.h:18</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_a654493cbe816286acbaf4581603923da"><div class="ttname"><a href="classDIFPtr.html#a654493cbe816286acbaf4581603923da">DIFPtr::DIFPtr</a></div><div class="ttdeci">DIFPtr(unsigned char *p, const std::uint32_t &amp;max_size)</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8cc_source.html#l00011">DIFPtr.cc:11</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_ac610d35950f4b116a7ed4ef5655bcddf"><div class="ttname"><a href="classDIFPtr.html#ac610d35950f4b116a7ed4ef5655bcddf">DIFPtr::hasTemperature</a></div><div class="ttdeci">bool hasTemperature()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00031">DIFPtr.h:31</a></div></div>
 <div class="ttc" id="aclassDIFUnpacker_html_a2ff0d20c76c65e68a6056bb65c993e28"><div class="ttname"><a href="classDIFUnpacker.html#a2ff0d20c76c65e68a6056bb65c993e28">DIFUnpacker::getFramePtr</a></div><div class="ttdeci">static std::uint32_t getFramePtr(std::vector&lt; unsigned char * &gt; &amp;vFrame, std::vector&lt; unsigned char * &gt; &amp;vLines, const std::uint32_t &amp;max_size, unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00100">DIFUnpacker.cc:100</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

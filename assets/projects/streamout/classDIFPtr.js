@@ -1,7 +1,6 @@
 var classDIFPtr =
 [
     [ "DIFPtr", "classDIFPtr.html#a654493cbe816286acbaf4581603923da", null ],
-    [ "dumpDIFInfo", "classDIFPtr.html#a949bb0b6ac03ddb99c7ec73bd6699ec9", null ],
     [ "getAbsoluteBCID", "classDIFPtr.html#a960760bedae2bd4722a01877c84c9a95", null ],
     [ "getASICid", "classDIFPtr.html#a561bbc39ae9fe1707c491685726b430c", null ],
     [ "getBCID", "classDIFPtr.html#aacf3dd93d29142d76cc3fadcf93061b9", null ],

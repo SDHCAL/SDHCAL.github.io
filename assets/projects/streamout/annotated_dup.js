@@ -5,6 +5,7 @@ var annotated_dup =
     [ "DIFSlowControl", "classDIFSlowControl.html", "classDIFSlowControl" ],
     [ "DIFUnpacker", "classDIFUnpacker.html", null ],
     [ "DU", "classDU.html", null ],
+    [ "Interface", "classInterface.html", "classInterface" ],
     [ "RawdataReader", "classRawdataReader.html", "classRawdataReader" ],
     [ "ROOTtreeDest", "classROOTtreeDest.html", "classROOTtreeDest" ],
     [ "SDHCAL_buffer_loop", "classSDHCAL__buffer__loop.html", "classSDHCAL__buffer__loop" ],

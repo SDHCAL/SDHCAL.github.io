@@ -10,8 +10,7 @@ var classBuffer =
     [ "capacity", "classBuffer.html#ae253c97c2cb35666ddf02cfd9f3e6780", null ],
     [ "end", "classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0", null ],
     [ "operator[]", "classBuffer.html#a2f5b198a8967b9cc29362e03436b0d12", null ],
-    [ "printBuffer", "classBuffer.html#a18bd160d11caa5c486912c234779439f", null ],
-    [ "printBuffer", "classBuffer.html#ac2a20b5a3a2366a01a2116ebb21558d9", null ],
+    [ "operator[]", "classBuffer.html#aebd158947a4b2c957458b2697c435033", null ],
     [ "set", "classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05", null ],
     [ "setSize", "classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2", null ],
     [ "size", "classBuffer.html#ad72b167940d615e471cc1370b21be117", null ]

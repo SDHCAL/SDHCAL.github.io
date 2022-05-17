@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['openfile_0',['openFile',['../classRawdataReader.html#a1a27683d3ee8fbccefc02c32b0945d65',1,'RawdataReader']]],
-  ['operator_3c_3c_1',['operator&lt;&lt;',['../Bits_8h.html#acc8a778c8023ad8b97952ec2341b00ce',1,'operator&lt;&lt;(std::ostream &amp;os, const bit8_t &amp;c):&#160;Bits.cc'],['../Bits_8cc.html#acc8a778c8023ad8b97952ec2341b00ce',1,'operator&lt;&lt;(std::ostream &amp;os, const bit8_t &amp;c):&#160;Bits.cc']]],
-  ['operator_5b_5d_2',['operator[]',['../classBuffer.html#a2f5b198a8967b9cc29362e03436b0d12',1,'Buffer']]]
+  ['log_0',['log',['../classInterface.html#a8470299defcb984382533823b5b45fcd',1,'Interface::log()'],['../classSDHCAL__buffer__loop.html#af89cf9129bd772e9c13cb06c35c8b016',1,'SDHCAL_buffer_loop::log()']]],
+  ['loop_1',['loop',['../classSDHCAL__buffer__loop.html#a2047d4b76efd4b2c1260262b527a145c',1,'SDHCAL_buffer_loop']]]
 ];

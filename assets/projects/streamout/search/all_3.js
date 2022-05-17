@@ -7,7 +7,7 @@ var searchData=
   ['difptr_2ecc_4',['DIFPtr.cc',['../DIFPtr_8cc.html',1,'']]],
   ['difptr_2eh_5',['DIFPtr.h',['../DIFPtr_8h.html',1,'']]],
   ['difptrvalueatreturnedpos_6',['DIFPtrValueAtReturnedPos',['../structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425',1,'SDHCAL_buffer_LoopCounter']]],
-  ['difslowcontrol_7',['DIFSlowControl',['../classDIFSlowControl.html#ae4364b00c3ff8e3b272df5e742d2160c',1,'DIFSlowControl::DIFSlowControl()'],['../classDIFSlowControl.html',1,'DIFSlowControl']]],
+  ['difslowcontrol_7',['DIFSlowControl',['../classDIFSlowControl.html',1,'DIFSlowControl'],['../classDIFSlowControl.html#ae4364b00c3ff8e3b272df5e742d2160c',1,'DIFSlowControl::DIFSlowControl()']]],
   ['difslowcontrol_2ecc_8',['DIFSlowControl.cc',['../DIFSlowControl_8cc.html',1,'']]],
   ['difslowcontrol_2eh_9',['DIFSlowControl.h',['../DIFSlowControl_8h.html',1,'']]],
   ['difstarter_10',['DIFStarter',['../structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688',1,'SDHCAL_buffer_LoopCounter']]],
@@ -18,6 +18,5 @@ var searchData=
   ['dtc_5fshift_15',['DTC_SHIFT',['../classDU.html#a6679be05b7e9a4d791cca94f010a881c',1,'DU']]],
   ['du_16',['DU',['../classDU.html',1,'']]],
   ['dump_17',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]],
-  ['dumpdifinfo_18',['dumpDIFInfo',['../classDIFPtr.html#a949bb0b6ac03ddb99c7ec73bd6699ec9',1,'DIFPtr']]],
-  ['dumpframeold_19',['dumpFrameOld',['../classDIFUnpacker.html#a9a710bc46d7e7aa76f0fb2bc40639cef',1,'DIFUnpacker']]]
+  ['dumpframeold_18',['dumpFrameOld',['../classDIFUnpacker.html#a9a710bc46d7e7aa76f0fb2bc40639cef',1,'DIFUnpacker']]]
 ];

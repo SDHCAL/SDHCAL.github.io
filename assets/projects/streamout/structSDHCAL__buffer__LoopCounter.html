@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('structSDHCAL__buffer__LoopCounter.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a17c665bbfe81cbddf53152042b4d1084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a> (const std::string &amp;description, const std::map&lt; int, int &gt; &amp;m, std::ostream &amp;out=std::cout)</td></tr>
-<tr class="separator:a17c665bbfe81cbddf53152042b4d1084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c9d70cd15ed1a593b6c97583eafdc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDHCAL__buffer__LoopCounter.html#a98c9d70cd15ed1a593b6c97583eafdc2">printAllCounters</a> (std::ostream &amp;out=std::cout)</td></tr>
-<tr class="separator:a98c9d70cd15ed1a593b6c97583eafdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd13e3e717705671fbc9ce87ad77f5e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a> (const std::string &amp;description, const std::map&lt; int, int &gt; &amp;m, const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</td></tr>
+<tr class="separator:acd13e3e717705671fbc9ce87ad77f5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e415454ca8ec6f1e8bb64c9d5572da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSDHCAL__buffer__LoopCounter.html#a3e415454ca8ec6f1e8bb64c9d5572da8">printAllCounters</a> (const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</td></tr>
+<tr class="separator:a3e415454ca8ec6f1e8bb64c9d5572da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -119,10 +119,10 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00011">11</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00012">12</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98c9d70cd15ed1a593b6c97583eafdc2" name="a98c9d70cd15ed1a593b6c97583eafdc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c9d70cd15ed1a593b6c97583eafdc2">&#9670;&nbsp;</a></span>printAllCounters()</h2>
+<a id="a3e415454ca8ec6f1e8bb64c9d5572da8" name="a3e415454ca8ec6f1e8bb64c9d5572da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e415454ca8ec6f1e8bb64c9d5572da8">&#9670;&nbsp;</a></span>printAllCounters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,36 +130,39 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SDHCAL_buffer_LoopCounter::printAllCounters </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em> = <code>std::cout</code></td><td>)</td>
+          <td class="paramtype">const std::shared_ptr&lt; spdlog::logger &gt; &amp;&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00007">7</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html">SDHCAL_buffer_LoopCounter.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  out &lt;&lt; <span class="stringliteral">&quot;BUFFER LOOP FINAL STATISTICS : &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a>(<span class="stringliteral">&quot;Start of DIF header&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">DIFStarter</a>, out);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a>(<span class="stringliteral">&quot;Value after DIF data are processed&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">DIFPtrValueAtReturnedPos</a>, out);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a>(<span class="stringliteral">&quot;Size remaining in buffer after end of DIF data&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SizeAfterDIFPtr</a>, out);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  out &lt;&lt; <span class="stringliteral">&quot;Number of Slow Control found &quot;</span> &lt;&lt; <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">hasSlowControl</a> &lt;&lt; <span class="stringliteral">&quot; out of which &quot;</span> &lt;&lt; <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">hasBadSlowControl</a> &lt;&lt; <span class="stringliteral">&quot; are bad&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a>(<span class="stringliteral">&quot;Size remaining after all of data have been processed&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SizeAfterAllData</a>, out);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">printCounter</a>(<span class="stringliteral">&quot;Number on non zero values in end of data buffer&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">NonZeroValusAtEndOfData</a>, out);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a17c665bbfe81cbddf53152042b4d1084"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a17c665bbfe81cbddf53152042b4d1084">SDHCAL_buffer_LoopCounter::printCounter</a></div><div class="ttdeci">void printCounter(const std::string &amp;description, const std::map&lt; int, int &gt; &amp;m, std::ostream &amp;out=std::cout)</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00018">SDHCAL_buffer_LoopCounter.cc:18</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a49943df04131663d4c2fafdb489068f5"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SDHCAL_buffer_LoopCounter::SizeAfterAllData</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterAllData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">SDHCAL_buffer_LoopCounter.h:19</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a7c1277a70278a40590bb411d48b06b8d"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">SDHCAL_buffer_LoopCounter::hasBadSlowControl</a></div><div class="ttdeci">int hasBadSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">SDHCAL_buffer_LoopCounter.h:15</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a8154b8ed54a6efb985dc01980c0a3849"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">SDHCAL_buffer_LoopCounter::hasSlowControl</a></div><div class="ttdeci">int hasSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00014">SDHCAL_buffer_LoopCounter.h:14</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a9034358e95f936235585d8f698189547"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SDHCAL_buffer_LoopCounter::SizeAfterDIFPtr</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterDIFPtr</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">SDHCAL_buffer_LoopCounter.h:18</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_aa13b24ffdbad02c0c84353f1644c2688"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">SDHCAL_buffer_LoopCounter::DIFStarter</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFStarter</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">SDHCAL_buffer_LoopCounter.h:16</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af27698ee8108dc8d6ee77d0f136e1425"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">SDHCAL_buffer_LoopCounter::DIFPtrValueAtReturnedPos</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFPtrValueAtReturnedPos</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">SDHCAL_buffer_LoopCounter.h:17</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af34fc9485d7879045a19933bd341eaac"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">SDHCAL_buffer_LoopCounter::NonZeroValusAtEndOfData</a></div><div class="ttdeci">std::map&lt; int, int &gt; NonZeroValusAtEndOfData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">SDHCAL_buffer_LoopCounter.h:20</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00009">9</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html">SDHCAL_buffer_LoopCounter.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  spdlog::level::level_enum level = logger-&gt;level();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  logger-&gt;set_level(spdlog::level::trace);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  logger-&gt;critical(<span class="stringliteral">&quot;BUFFER LOOP FINAL STATISTICS : &quot;</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a>(<span class="stringliteral">&quot;Start of DIF header&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">DIFStarter</a>, logger);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a>(<span class="stringliteral">&quot;Value after DIF data are processed&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">DIFPtrValueAtReturnedPos</a>, logger);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a>(<span class="stringliteral">&quot;Size remaining in buffer after end of DIF data&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SizeAfterDIFPtr</a>, logger);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  logger-&gt;critical(<span class="stringliteral">&quot;Number of Slow Control found {}  out of which {} are bad&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">hasSlowControl</a>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">hasBadSlowControl</a>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a>(<span class="stringliteral">&quot;Size remaining after all of data have been processed&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SizeAfterAllData</a>, logger);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">printCounter</a>(<span class="stringliteral">&quot;Number on non zero values in end of data buffer&quot;</span>, <a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">NonZeroValusAtEndOfData</a>, logger);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  logger-&gt;set_level(level);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a49943df04131663d4c2fafdb489068f5"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SDHCAL_buffer_LoopCounter::SizeAfterAllData</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterAllData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">SDHCAL_buffer_LoopCounter.h:20</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a7c1277a70278a40590bb411d48b06b8d"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">SDHCAL_buffer_LoopCounter::hasBadSlowControl</a></div><div class="ttdeci">int hasBadSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">SDHCAL_buffer_LoopCounter.h:16</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a8154b8ed54a6efb985dc01980c0a3849"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">SDHCAL_buffer_LoopCounter::hasSlowControl</a></div><div class="ttdeci">int hasSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">SDHCAL_buffer_LoopCounter.h:15</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a9034358e95f936235585d8f698189547"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SDHCAL_buffer_LoopCounter::SizeAfterDIFPtr</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterDIFPtr</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">SDHCAL_buffer_LoopCounter.h:19</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_aa13b24ffdbad02c0c84353f1644c2688"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">SDHCAL_buffer_LoopCounter::DIFStarter</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFStarter</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">SDHCAL_buffer_LoopCounter.h:17</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_acd13e3e717705671fbc9ce87ad77f5e6"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6">SDHCAL_buffer_LoopCounter::printCounter</a></div><div class="ttdeci">void printCounter(const std::string &amp;description, const std::map&lt; int, int &gt; &amp;m, const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00023">SDHCAL_buffer_LoopCounter.cc:23</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af27698ee8108dc8d6ee77d0f136e1425"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">SDHCAL_buffer_LoopCounter::DIFPtrValueAtReturnedPos</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFPtrValueAtReturnedPos</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">SDHCAL_buffer_LoopCounter.h:18</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af34fc9485d7879045a19933bd341eaac"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">SDHCAL_buffer_LoopCounter::NonZeroValusAtEndOfData</a></div><div class="ttdeci">std::map&lt; int, int &gt; NonZeroValusAtEndOfData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00021">SDHCAL_buffer_LoopCounter.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a17c665bbfe81cbddf53152042b4d1084" name="a17c665bbfe81cbddf53152042b4d1084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c665bbfe81cbddf53152042b4d1084">&#9670;&nbsp;</a></span>printCounter()</h2>
+<a id="acd13e3e717705671fbc9ce87ad77f5e6" name="acd13e3e717705671fbc9ce87ad77f5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd13e3e717705671fbc9ce87ad77f5e6">&#9670;&nbsp;</a></span>printCounter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,8 +182,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em> = <code>std::cout</code>&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; spdlog::logger &gt; &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,16 +193,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00018">18</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html">SDHCAL_buffer_LoopCounter.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  out &lt;&lt; <span class="stringliteral">&quot; statistics for &quot;</span> &lt;&lt; description &lt;&lt; <span class="stringliteral">&quot; : &quot;</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordflow">for</span>(std::map&lt;int, int&gt;::const_iterator it = m.begin(); it != m.end(); it++)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span>(it != m.begin()) out &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    out &lt;&lt; <span class="stringliteral">&quot; [&quot;</span> &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot;]=&quot;</span> &lt;&lt; it-&gt;second;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  out &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00023">23</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8cc_source.html">SDHCAL_buffer_LoopCounter.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  std::string out{<span class="stringliteral">&quot;statistics for &quot;</span> + description + <span class="stringliteral">&quot; : &quot;</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordflow">for</span>(std::map&lt;int, int&gt;::const_iterator it = m.begin(); it != m.end(); it++)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span>(it != m.begin()) out += <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    out += <span class="stringliteral">&quot; [&quot;</span> + std::to_string(it-&gt;first) + <span class="stringliteral">&quot;]=&quot;</span> + std::to_string(it-&gt;second);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  logger-&gt;critical(out);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,7 +219,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">17</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">18</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -232,7 +235,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">16</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">17</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +251,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">15</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">16</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +267,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00014">14</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">15</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +283,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">20</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00021">21</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +299,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">19</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">20</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>
@@ -312,7 +315,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">18</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">19</a> of file <a class="el" href="SDHCAL__buffer__LoopCounter_8h_source.html">SDHCAL_buffer_LoopCounter.h</a>.</p>
 
 </div>
 </div>

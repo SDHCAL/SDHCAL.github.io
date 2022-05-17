@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['sdhcal_5fbuffer_5floop_0',['SDHCAL_buffer_loop',['../classSDHCAL__buffer__loop.html#a62a45e6cbcba58a0f7d1d6eb0bb74cda',1,'SDHCAL_buffer_loop']]],
-  ['sdhcal_5frawbuffer_5fnavigator_1',['SDHCAL_RawBuffer_Navigator',['../classSDHCAL__RawBuffer__Navigator.html#a67b2387ac818f129eda220952c9b3c74',1,'SDHCAL_RawBuffer_Navigator']]],
-  ['set_2',['set',['../classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05',1,'Buffer']]],
-  ['setdefaultbuffersize_3',['setDefaultBufferSize',['../classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2',1,'RawdataReader']]],
-  ['setsize_4',['setSize',['../classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2',1,'Buffer']]],
-  ['size_5',['size',['../classBuffer.html#ad72b167940d615e471cc1370b21be117',1,'Buffer']]],
-  ['start_6',['start',['../classtextDump.html#ae8bb1a8350b78503a51c681da4fffc77',1,'textDump::start()'],['../classROOTtreeDest.html#ad355908f01ef50d76fffb04180a7a06a',1,'ROOTtreeDest::start()']]],
-  ['startat_7',['StartAt',['../classSDHCAL__RawBuffer__Navigator.html#aaa3b880d4caba8d577e7c726e26b5df8',1,'SDHCAL_RawBuffer_Navigator']]],
-  ['swap_5fbytes_8',['swap_bytes',['../classDIFUnpacker.html#a78c139331897e148f8f123e68ea04d56',1,'DIFUnpacker']]]
+  ['print_0',['print',['../classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb',1,'textDump']]],
+  ['printallcounters_1',['printAllCounters',['../classSDHCAL__buffer__loop.html#acadf406ccf9a6212609ab7aed16abcdf',1,'SDHCAL_buffer_loop::printAllCounters()'],['../structSDHCAL__buffer__LoopCounter.html#a3e415454ca8ec6f1e8bb64c9d5572da8',1,'SDHCAL_buffer_LoopCounter::printAllCounters(const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)']]],
+  ['printcounter_2',['printCounter',['../structSDHCAL__buffer__LoopCounter.html#acd13e3e717705671fbc9ce87ad77f5e6',1,'SDHCAL_buffer_LoopCounter']]],
+  ['processdif_3',['processDIF',['../classtextDump.html#af18c3f8807ee3c51f8f9bd34efc486f1',1,'textDump::processDIF()'],['../classROOTtreeDest.html#ae2ba558c9b8b041db9ab3735e08dfcf2',1,'ROOTtreeDest::processDIF()']]],
+  ['processframe_4',['processFrame',['../classtextDump.html#a7653cd632c3306dafd17fe03fc346b50',1,'textDump::processFrame()'],['../classROOTtreeDest.html#abc8202952f0eb96fc7306686ddeed5a0',1,'ROOTtreeDest::processFrame()']]],
+  ['processpadinframe_5',['processPadInFrame',['../classtextDump.html#ab1e225825096976fcd89b533e58dddbe',1,'textDump::processPadInFrame()'],['../classROOTtreeDest.html#af353c90ceb5a2714923aaa1febaf43ea',1,'ROOTtreeDest::processPadInFrame()']]],
+  ['processslowcontrol_6',['processSlowControl',['../classtextDump.html#a373c934544a3d7924762531cb3673a92',1,'textDump::processSlowControl()'],['../classROOTtreeDest.html#a4fae7fee5b676833370f9e1d4348541f',1,'ROOTtreeDest::processSlowControl()']]]
 ];

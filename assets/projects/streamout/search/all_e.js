@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sdhcal_5fbuffer_5floop_0',['SDHCAL_buffer_loop',['../classSDHCAL__buffer__loop.html#a62a45e6cbcba58a0f7d1d6eb0bb74cda',1,'SDHCAL_buffer_loop::SDHCAL_buffer_loop()'],['../classSDHCAL__buffer__loop.html',1,'SDHCAL_buffer_loop&lt; SOURCE, DESTINATION &gt;']]],
+  ['sdhcal_5fbuffer_5floop_0',['SDHCAL_buffer_loop',['../classSDHCAL__buffer__loop.html#acbe24d9bc83a3cbcdae8c6e33212f9ca',1,'SDHCAL_buffer_loop::SDHCAL_buffer_loop()'],['../classSDHCAL__buffer__loop.html',1,'SDHCAL_buffer_loop&lt; SOURCE, DESTINATION &gt;']]],
   ['sdhcal_5fbuffer_5floop_2eh_1',['SDHCAL_buffer_loop.h',['../SDHCAL__buffer__loop_8h.html',1,'']]],
   ['sdhcal_5fbuffer_5floopcounter_2',['SDHCAL_buffer_LoopCounter',['../structSDHCAL__buffer__LoopCounter.html',1,'']]],
   ['sdhcal_5fbuffer_5floopcounter_2ecc_3',['SDHCAL_buffer_LoopCounter.cc',['../SDHCAL__buffer__LoopCounter_8cc.html',1,'']]],
@@ -10,15 +10,17 @@ var searchData=
   ['sdhcal_5frawbuffer_5fnavigator_2eh_7',['SDHCAL_RawBuffer_Navigator.h',['../SDHCAL__RawBuffer__Navigator_8h.html',1,'']]],
   ['set_8',['set',['../classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05',1,'Buffer']]],
   ['setdefaultbuffersize_9',['setDefaultBufferSize',['../classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2',1,'RawdataReader']]],
-  ['setsize_10',['setSize',['../classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2',1,'Buffer']]],
-  ['size_11',['size',['../classBuffer.html#ad72b167940d615e471cc1370b21be117',1,'Buffer']]],
-  ['sizeafteralldata_12',['SizeAfterAllData',['../structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5',1,'SDHCAL_buffer_LoopCounter']]],
-  ['sizeafterdifptr_13',['SizeAfterDIFPtr',['../structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547',1,'SDHCAL_buffer_LoopCounter']]],
-  ['start_14',['start',['../classtextDump.html#ae8bb1a8350b78503a51c681da4fffc77',1,'textDump::start()'],['../classROOTtreeDest.html#ad355908f01ef50d76fffb04180a7a06a',1,'ROOTtreeDest::start()']]],
-  ['start_5fof_5fdif_15',['START_OF_DIF',['../classDU.html#a2f30ada6a89f1b06571596cfcd9a0164',1,'DU']]],
-  ['start_5fof_5fdif_5ftemp_16',['START_OF_DIF_TEMP',['../classDU.html#a75e795a5a128c3ba5adb157daed8f729',1,'DU']]],
-  ['start_5fof_5fframe_17',['START_OF_FRAME',['../classDU.html#af35326f6072dcc96e2cfeb0d619b4ae5',1,'DU']]],
-  ['start_5fof_5flines_18',['START_OF_LINES',['../classDU.html#abe6ddde88b34acfcf2ecdf0fa3e11633',1,'DU']]],
-  ['startat_19',['StartAt',['../classSDHCAL__RawBuffer__Navigator.html#aaa3b880d4caba8d577e7c726e26b5df8',1,'SDHCAL_RawBuffer_Navigator']]],
-  ['swap_5fbytes_20',['swap_bytes',['../classDIFUnpacker.html#a78c139331897e148f8f123e68ea04d56',1,'DIFUnpacker']]]
+  ['setlevel_10',['setLevel',['../classtextDump.html#a4f2558aa5a487f5f387a87d424f65ba0',1,'textDump']]],
+  ['setlogger_11',['setLogger',['../classInterface.html#a2771031eb4fcbe1b448e0346f7977d86',1,'Interface']]],
+  ['setsize_12',['setSize',['../classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2',1,'Buffer']]],
+  ['size_13',['size',['../classBuffer.html#ad72b167940d615e471cc1370b21be117',1,'Buffer']]],
+  ['sizeafteralldata_14',['SizeAfterAllData',['../structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5',1,'SDHCAL_buffer_LoopCounter']]],
+  ['sizeafterdifptr_15',['SizeAfterDIFPtr',['../structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547',1,'SDHCAL_buffer_LoopCounter']]],
+  ['start_16',['start',['../classtextDump.html#ae8bb1a8350b78503a51c681da4fffc77',1,'textDump::start()'],['../classRawdataReader.html#a2233170b528df8a97e31bebeedc8ac38',1,'RawdataReader::start()'],['../classROOTtreeDest.html#ad355908f01ef50d76fffb04180a7a06a',1,'ROOTtreeDest::start()']]],
+  ['start_5fof_5fdif_17',['START_OF_DIF',['../classDU.html#a2f30ada6a89f1b06571596cfcd9a0164',1,'DU']]],
+  ['start_5fof_5fdif_5ftemp_18',['START_OF_DIF_TEMP',['../classDU.html#a75e795a5a128c3ba5adb157daed8f729',1,'DU']]],
+  ['start_5fof_5fframe_19',['START_OF_FRAME',['../classDU.html#af35326f6072dcc96e2cfeb0d619b4ae5',1,'DU']]],
+  ['start_5fof_5flines_20',['START_OF_LINES',['../classDU.html#abe6ddde88b34acfcf2ecdf0fa3e11633',1,'DU']]],
+  ['startat_21',['StartAt',['../classSDHCAL__RawBuffer__Navigator.html#aaa3b880d4caba8d577e7c726e26b5df8',1,'SDHCAL_RawBuffer_Navigator']]],
+  ['swap_5fbytes_22',['swap_bytes',['../classDIFUnpacker.html#a78c139331897e148f8f123e68ea04d56',1,'DIFUnpacker']]]
 ];

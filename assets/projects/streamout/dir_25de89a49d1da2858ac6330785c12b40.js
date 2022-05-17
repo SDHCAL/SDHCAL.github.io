@@ -13,6 +13,10 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "DIFUnpacker.h", "DIFUnpacker_8h.html", [
       [ "DIFUnpacker", "classDIFUnpacker.html", null ]
     ] ],
+    [ "Formatters.h", "Formatters_8h.html", "Formatters_8h" ],
+    [ "Interface.h", "Interface_8h.html", [
+      [ "Interface", "classInterface.html", "classInterface" ]
+    ] ],
     [ "SDHCAL_buffer_loop.h", "SDHCAL__buffer__loop_8h.html", [
       [ "SDHCAL_buffer_loop< SOURCE, DESTINATION >", "classSDHCAL__buffer__loop.html", "classSDHCAL__buffer__loop" ]
     ] ],

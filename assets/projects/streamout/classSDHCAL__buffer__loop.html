@@ -94,20 +94,24 @@ $(document).ready(function(){initNavTree('classSDHCAL__buffer__loop.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62a45e6cbcba58a0f7d1d6eb0bb74cda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#a62a45e6cbcba58a0f7d1d6eb0bb74cda">SDHCAL_buffer_loop</a> (SOURCE &amp;source, DESTINATION &amp;dest, bool debug=false, std::ostream &amp;out=std::cout, bool verbose=false, std::ostream &amp;verbose_out=std::cout)</td></tr>
-<tr class="separator:a62a45e6cbcba58a0f7d1d6eb0bb74cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe24d9bc83a3cbcdae8c6e33212f9ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#acbe24d9bc83a3cbcdae8c6e33212f9ca">SDHCAL_buffer_loop</a> (SOURCE &amp;source, DESTINATION &amp;dest, bool debug=false)</td></tr>
+<tr class="separator:acbe24d9bc83a3cbcdae8c6e33212f9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab381231f9ad0e484a9b0cc3d08e9166a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#ab381231f9ad0e484a9b0cc3d08e9166a">addSink</a> (const spdlog::sink_ptr &amp;sink, const spdlog::level::level_enum &amp;level=spdlog::get_level())</td></tr>
+<tr class="separator:ab381231f9ad0e484a9b0cc3d08e9166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2047d4b76efd4b2c1260262b527a145c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#a2047d4b76efd4b2c1260262b527a145c">loop</a> (const std::int32_t &amp;m_NbrEventsToProcess=0)</td></tr>
 <tr class="separator:a2047d4b76efd4b2c1260262b527a145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acadf406ccf9a6212609ab7aed16abcdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#acadf406ccf9a6212609ab7aed16abcdf">printAllCounters</a> ()</td></tr>
 <tr class="separator:acadf406ccf9a6212609ab7aed16abcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89cf9129bd772e9c13cb06c35c8b016"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDHCAL__buffer__loop.html#af89cf9129bd772e9c13cb06c35c8b016">log</a> ()</td></tr>
+<tr class="separator:af89cf9129bd772e9c13cb06c35c8b016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename SOURCE, typename DESTINATION&gt;<br />
 class SDHCAL_buffer_loop&lt; SOURCE, DESTINATION &gt;</div>
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00028">28</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00034">34</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a62a45e6cbcba58a0f7d1d6eb0bb74cda" name="a62a45e6cbcba58a0f7d1d6eb0bb74cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62a45e6cbcba58a0f7d1d6eb0bb74cda">&#9670;&nbsp;</a></span>SDHCAL_buffer_loop()</h2>
+<a id="acbe24d9bc83a3cbcdae8c6e33212f9ca" name="acbe24d9bc83a3cbcdae8c6e33212f9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe24d9bc83a3cbcdae8c6e33212f9ca">&#9670;&nbsp;</a></span>SDHCAL_buffer_loop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,25 +137,7 @@ template&lt;typename SOURCE , typename DESTINATION &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>debug</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>out</em> = <code>std::cout</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>verbose</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>verbose_out</em> = <code>std::cout</code>&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -166,15 +152,95 @@ template&lt;typename SOURCE , typename DESTINATION &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00031">31</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                                                                                                                                                :</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    m_Source(source), m_Destination(dest), m_Debug(debug), m_DebugOut(out), m_Verbose(verbose), m_VerboseOut(verbose_out)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00037">37</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                                                            : m_Source(source), m_Destination(dest), m_Debug(debug)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    m_Logger = spdlog::create&lt;spdlog::sinks::null_sink_mt&gt;(<span class="stringliteral">&quot;streamout&quot;</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span>(!spdlog::get(<span class="stringliteral">&quot;streamout&quot;</span>)) { spdlog::register_logger(m_Logger); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    m_Source.setLogger(m_Logger);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    m_Destination.setLogger(m_Logger);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab381231f9ad0e484a9b0cc3d08e9166a" name="ab381231f9ad0e484a9b0cc3d08e9166a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab381231f9ad0e484a9b0cc3d08e9166a">&#9670;&nbsp;</a></span>addSink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SOURCE , typename DESTINATION &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classSDHCAL__buffer__loop.html">SDHCAL_buffer_loop</a>&lt; SOURCE, DESTINATION &gt;::addSink </td>
+          <td>(</td>
+          <td class="paramtype">const spdlog::sink_ptr &amp;&#160;</td>
+          <td class="paramname"><em>sink</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const spdlog::level::level_enum &amp;&#160;</td>
+          <td class="paramname"><em>level</em> = <code>spdlog::get_level()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00045">45</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    sink-&gt;set_level(level);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    m_Sinks.push_back(sink);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    m_Logger = std::make_shared&lt;spdlog::logger&gt;(<span class="stringliteral">&quot;streamout&quot;</span>, begin(m_Sinks), end(m_Sinks));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    m_Source.setLogger(m_Logger);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    m_Destination.setLogger(m_Logger);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af89cf9129bd772e9c13cb06c35c8b016" name="af89cf9129bd772e9c13cb06c35c8b016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af89cf9129bd772e9c13cb06c35c8b016">&#9670;&nbsp;</a></span>log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename SOURCE , typename DESTINATION &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; spdlog::logger &gt; <a class="el" href="classSDHCAL__buffer__loop.html">SDHCAL_buffer_loop</a>&lt; SOURCE, DESTINATION &gt;::log </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00120">120</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a2047d4b76efd4b2c1260262b527a145c" name="a2047d4b76efd4b2c1260262b527a145c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2047d4b76efd4b2c1260262b527a145c">&#9670;&nbsp;</a></span>loop()</h2>
 
@@ -201,87 +267,87 @@ template&lt;typename SOURCE , typename DESTINATION &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00035">35</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    m_Destination.start();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">while</span>(m_Source.nextEvent() &amp;&amp; (m_NbrEventsToProcess == 0 || m_NbrEventsToProcess &gt;= m_NbrEvents))</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordflow">while</span>(m_Source.nextDIFbuffer())</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="classBuffer.html">Buffer</a>                     buffer           = m_Source.getSDHCALBuffer();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*             debug_variable_1 = buffer.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_class" href="classSDHCAL__RawBuffer__Navigator.html">SDHCAL_RawBuffer_Navigator</a> bufferNavigator(buffer);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*             debug_variable_2 = bufferNavigator.getDIFBuffer().end();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">if</span>(m_Verbose) m_VerboseOut &lt;&lt; <span class="stringliteral">&quot;DIF BUFFER END &quot;</span> &lt;&lt; (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)debug_variable_1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)debug_variable_2 &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">if</span>(m_Debug) assert(debug_variable_1 == debug_variable_2);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        uint32_t idstart = bufferNavigator.getStartOfDIF();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span>(m_Debug &amp;&amp; idstart == 0) buffer.<a class="code hl_function" href="classBuffer.html#a18bd160d11caa5c486912c234779439f">printBuffer</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">DIFStarter</a>[idstart]++;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span>(!bufferNavigator.validBuffer()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_class" href="classDIFPtr.html">DIFPtr</a>* d = bufferNavigator.getDIFPtr();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span>(m_Debug) assert(d != NULL);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span>(d != NULL)</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">DIFPtrValueAtReturnedPos</a>[bufferNavigator.getDIFBufferStart()[d-&gt;<a class="code hl_function" href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">getGetFramePtrReturn</a>()]]++;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <span class="keywordflow">if</span>(m_Debug) assert(bufferNavigator.getDIFBufferStart()[d-&gt;<a class="code hl_function" href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">getGetFramePtrReturn</a>()] == 0xa0);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SizeAfterDIFPtr</a>[bufferNavigator.getSizeAfterDIFPtr()]++;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        m_Destination.processDIF(d);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">for</span>(uint32_t i = 0; i &lt; d-&gt;<a class="code hl_function" href="classDIFPtr.html#a907077bed8b3f39e5b5449d772959fb0">getNumberOfFrames</a>(); i++)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          m_Destination.processFrame(d, i);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          <span class="keywordflow">for</span>(uint32_t j = 0; j &lt; 64; j++) m_Destination.processPadInFrame(d, i, j);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">bool</span> processSC = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span>(bufferNavigator.hasSlowControlData())</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">hasSlowControl</a>++;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          processSC = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span>(bufferNavigator.badSCData())</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">hasBadSlowControl</a>++;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          processSC = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">if</span>(processSC) { m_Destination.processSlowControl(bufferNavigator.getSCBuffer()); }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_class" href="classBuffer.html">Buffer</a> eod = bufferNavigator.getEndOfAllData();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SizeAfterAllData</a>[eod.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()]++;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* debug_variable_3 = eod.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span>(m_Verbose) m_VerboseOut &lt;&lt; <span class="stringliteral">&quot;END DATA BUFFER END &quot;</span> &lt;&lt; (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)debug_variable_1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>*)debug_variable_3 &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span>(m_Debug) assert(debug_variable_1 == debug_variable_3);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span>(m_Verbose)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>          m_VerboseOut &lt;&lt; <span class="stringliteral">&quot;End of Data remaining stuff : &quot;</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          eod.<a class="code hl_function" href="classBuffer.html#a18bd160d11caa5c486912c234779439f">printBuffer</a>();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordtype">int</span> nonzeroCount = 0;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* it = eod.<a class="code hl_function" href="classBuffer.html#a4c7798c9946a085323546133e1639db0">begin</a>(); it != eod.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>(); it++)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="keywordflow">if</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(*it) != 0) nonzeroCount++;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">NonZeroValusAtEndOfData</a>[nonzeroCount]++;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      }  <span class="comment">// end of DIF while loop</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      m_NbrEvents++;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }  <span class="comment">// end of event while loop</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    m_Destination.end();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
-<div class="ttc" id="aclassBuffer_html"><div class="ttname"><a href="classBuffer.html">Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00014">Buffer.h:15</a></div></div>
-<div class="ttc" id="aclassBuffer_html_a0ee950ef0b449ff63cfb81eb033e36f0"><div class="ttname"><a href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">Buffer::end</a></div><div class="ttdeci">bit8_t * end()</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00028">Buffer.h:28</a></div></div>
-<div class="ttc" id="aclassBuffer_html_a18bd160d11caa5c486912c234779439f"><div class="ttname"><a href="classBuffer.html#a18bd160d11caa5c486912c234779439f">Buffer::printBuffer</a></div><div class="ttdeci">void printBuffer(uint32_t start, uint32_t stop, std::ostream &amp;flux=std::cout)</div></div>
-<div class="ttc" id="aclassBuffer_html_a4c7798c9946a085323546133e1639db0"><div class="ttname"><a href="classBuffer.html#a4c7798c9946a085323546133e1639db0">Buffer::begin</a></div><div class="ttdeci">bit8_t * begin()</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00027">Buffer.h:27</a></div></div>
-<div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00023">Buffer.h:23</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html"><div class="ttname"><a href="classDIFPtr.html">DIFPtr</a></div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00011">DIFPtr.h:12</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_a4cfea070460528bbe5bb22d08af4e00c"><div class="ttname"><a href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">DIFPtr::getGetFramePtrReturn</a></div><div class="ttdeci">std::uint32_t getGetFramePtrReturn()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00016">DIFPtr.h:16</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_a907077bed8b3f39e5b5449d772959fb0"><div class="ttname"><a href="classDIFPtr.html#a907077bed8b3f39e5b5449d772959fb0">DIFPtr::getNumberOfFrames</a></div><div class="ttdeci">std::uint32_t getNumberOfFrames()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00034">DIFPtr.h:34</a></div></div>
-<div class="ttc" id="aclassSDHCAL__RawBuffer__Navigator_html"><div class="ttname"><a href="classSDHCAL__RawBuffer__Navigator.html">SDHCAL_RawBuffer_Navigator</a></div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__RawBuffer__Navigator_8h_source.html#l00012">SDHCAL_RawBuffer_Navigator.h:13</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a49943df04131663d4c2fafdb489068f5"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SDHCAL_buffer_LoopCounter::SizeAfterAllData</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterAllData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">SDHCAL_buffer_LoopCounter.h:19</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a7c1277a70278a40590bb411d48b06b8d"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">SDHCAL_buffer_LoopCounter::hasBadSlowControl</a></div><div class="ttdeci">int hasBadSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">SDHCAL_buffer_LoopCounter.h:15</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a8154b8ed54a6efb985dc01980c0a3849"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">SDHCAL_buffer_LoopCounter::hasSlowControl</a></div><div class="ttdeci">int hasSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00014">SDHCAL_buffer_LoopCounter.h:14</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a9034358e95f936235585d8f698189547"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SDHCAL_buffer_LoopCounter::SizeAfterDIFPtr</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterDIFPtr</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">SDHCAL_buffer_LoopCounter.h:18</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_aa13b24ffdbad02c0c84353f1644c2688"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">SDHCAL_buffer_LoopCounter::DIFStarter</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFStarter</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">SDHCAL_buffer_LoopCounter.h:16</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af27698ee8108dc8d6ee77d0f136e1425"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">SDHCAL_buffer_LoopCounter::DIFPtrValueAtReturnedPos</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFPtrValueAtReturnedPos</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">SDHCAL_buffer_LoopCounter.h:17</a></div></div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af34fc9485d7879045a19933bd341eaac"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">SDHCAL_buffer_LoopCounter::NonZeroValusAtEndOfData</a></div><div class="ttdeci">std::map&lt; int, int &gt; NonZeroValusAtEndOfData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">SDHCAL_buffer_LoopCounter.h:20</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00054">54</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    m_Source.start();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    m_Destination.start();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">while</span>(m_Source.nextEvent() &amp;&amp; (m_NbrEventsToProcess == 0 || m_NbrEventsToProcess &gt;= m_NbrEvents))</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      m_Logger-&gt;warn(<span class="stringliteral">&quot;===*** Event number {} ***===&quot;</span>, m_NbrEvents);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keywordflow">while</span>(m_Source.nextDIFbuffer())</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_class" href="classBuffer.html">Buffer</a>                     buffer           = m_Source.getSDHCALBuffer();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*             debug_variable_1 = buffer.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_class" href="classSDHCAL__RawBuffer__Navigator.html">SDHCAL_RawBuffer_Navigator</a> bufferNavigator(buffer);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*             debug_variable_2 = bufferNavigator.getDIFBuffer().end();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        m_Logger-&gt;info(<span class="stringliteral">&quot;DIF BUFFER END {} {}&quot;</span>, debug_variable_1, debug_variable_2);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span>(m_Debug) assert(debug_variable_1 == debug_variable_2);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        uint32_t idstart = bufferNavigator.getStartOfDIF();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span>(m_Debug &amp;&amp; idstart == 0) m_Logger-&gt;info(<a class="code hl_function" href="Formatters_8h.html#a7bf8ddcfbb3fa62ec543fb98b6400f68">to_hex</a>(buffer));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">DIFStarter</a>[idstart]++;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span>(!bufferNavigator.validBuffer()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_class" href="classDIFPtr.html">DIFPtr</a>* d = bufferNavigator.getDIFPtr();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span>(m_Debug) assert(d != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>(d != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">DIFPtrValueAtReturnedPos</a>[bufferNavigator.getDIFBufferStart()[d-&gt;<a class="code hl_function" href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">getGetFramePtrReturn</a>()]]++;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>          <span class="keywordflow">if</span>(m_Debug) assert(bufferNavigator.getDIFBufferStart()[d-&gt;<a class="code hl_function" href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">getGetFramePtrReturn</a>()] == 0xa0);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SizeAfterDIFPtr</a>[bufferNavigator.getSizeAfterDIFPtr()]++;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        m_Destination.processDIF(d);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">for</span>(uint32_t i = 0; i &lt; d-&gt;<a class="code hl_function" href="classDIFPtr.html#a907077bed8b3f39e5b5449d772959fb0">getNumberOfFrames</a>(); i++)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>          m_Destination.processFrame(d, i);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          <span class="keywordflow">for</span>(uint32_t j = 0; j &lt; 64; j++) m_Destination.processPadInFrame(d, i, j);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">bool</span> processSC = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">if</span>(bufferNavigator.hasSlowControlData())</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">hasSlowControl</a>++;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          processSC = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">if</span>(bufferNavigator.badSCData())</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">hasBadSlowControl</a>++;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          processSC = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">if</span>(processSC) { m_Destination.processSlowControl(bufferNavigator.getSCBuffer()); }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_class" href="classBuffer.html">Buffer</a> eod = bufferNavigator.getEndOfAllData();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SizeAfterAllData</a>[eod.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()]++;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* debug_variable_3 = eod.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>();</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        m_Logger-&gt;info(<span class="stringliteral">&quot;END DATA BUFFER END {} {}&quot;</span>, debug_variable_1, debug_variable_3);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span>(m_Debug) assert(debug_variable_1 == debug_variable_3);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        m_Logger-&gt;info(<span class="stringliteral">&quot;End of Data remaining stuff : {}&quot;</span>, <a class="code hl_function" href="Formatters_8h.html#a7bf8ddcfbb3fa62ec543fb98b6400f68">to_hex</a>(eod));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordtype">int</span> nonzeroCount = 0;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* it = eod.<a class="code hl_function" href="classBuffer.html#a4c7798c9946a085323546133e1639db0">begin</a>(); it != eod.<a class="code hl_function" href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">end</a>(); it++)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>          <span class="keywordflow">if</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(*it) != 0) nonzeroCount++;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        c.<a class="code hl_variable" href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">NonZeroValusAtEndOfData</a>[nonzeroCount]++;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      }  <span class="comment">// end of DIF while loop</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      m_Logger-&gt;warn(<span class="stringliteral">&quot;***=== Event number {} ===***&quot;</span>, m_NbrEvents);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      m_NbrEvents++;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }  <span class="comment">// end of event while loop</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    m_Destination.end();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    m_Source.end();</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
+<div class="ttc" id="aFormatters_8h_html_a7bf8ddcfbb3fa62ec543fb98b6400f68"><div class="ttname"><a href="Formatters_8h.html#a7bf8ddcfbb3fa62ec543fb98b6400f68">to_hex</a></div><div class="ttdeci">std::string to_hex(const Buffer &amp;b, const std::size_t &amp;begin=0, const std::size_t &amp;end=-1)</div><div class="ttdef"><b>Definition:</b> <a href="Formatters_8cc_source.html#l00041">Formatters.cc:41</a></div></div>
+<div class="ttc" id="aclassBuffer_html"><div class="ttname"><a href="classBuffer.html">Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00013">Buffer.h:14</a></div></div>
+<div class="ttc" id="aclassBuffer_html_a0ee950ef0b449ff63cfb81eb033e36f0"><div class="ttname"><a href="classBuffer.html#a0ee950ef0b449ff63cfb81eb033e36f0">Buffer::end</a></div><div class="ttdeci">bit8_t * end()</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00027">Buffer.h:27</a></div></div>
+<div class="ttc" id="aclassBuffer_html_a4c7798c9946a085323546133e1639db0"><div class="ttname"><a href="classBuffer.html#a4c7798c9946a085323546133e1639db0">Buffer::begin</a></div><div class="ttdeci">bit8_t * begin()</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00026">Buffer.h:26</a></div></div>
+<div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00022">Buffer.h:22</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html"><div class="ttname"><a href="classDIFPtr.html">DIFPtr</a></div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00010">DIFPtr.h:11</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_a4cfea070460528bbe5bb22d08af4e00c"><div class="ttname"><a href="classDIFPtr.html#a4cfea070460528bbe5bb22d08af4e00c">DIFPtr::getGetFramePtrReturn</a></div><div class="ttdeci">std::uint32_t getGetFramePtrReturn()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00015">DIFPtr.h:15</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_a907077bed8b3f39e5b5449d772959fb0"><div class="ttname"><a href="classDIFPtr.html#a907077bed8b3f39e5b5449d772959fb0">DIFPtr::getNumberOfFrames</a></div><div class="ttdeci">std::uint32_t getNumberOfFrames()</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00033">DIFPtr.h:33</a></div></div>
+<div class="ttc" id="aclassSDHCAL__RawBuffer__Navigator_html"><div class="ttname"><a href="classSDHCAL__RawBuffer__Navigator.html">SDHCAL_RawBuffer_Navigator</a></div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__RawBuffer__Navigator_8h_source.html#l00011">SDHCAL_RawBuffer_Navigator.h:12</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a49943df04131663d4c2fafdb489068f5"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a49943df04131663d4c2fafdb489068f5">SDHCAL_buffer_LoopCounter::SizeAfterAllData</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterAllData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00020">SDHCAL_buffer_LoopCounter.h:20</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a7c1277a70278a40590bb411d48b06b8d"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d">SDHCAL_buffer_LoopCounter::hasBadSlowControl</a></div><div class="ttdeci">int hasBadSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00016">SDHCAL_buffer_LoopCounter.h:16</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a8154b8ed54a6efb985dc01980c0a3849"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849">SDHCAL_buffer_LoopCounter::hasSlowControl</a></div><div class="ttdeci">int hasSlowControl</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00015">SDHCAL_buffer_LoopCounter.h:15</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a9034358e95f936235585d8f698189547"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a9034358e95f936235585d8f698189547">SDHCAL_buffer_LoopCounter::SizeAfterDIFPtr</a></div><div class="ttdeci">std::map&lt; int, int &gt; SizeAfterDIFPtr</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00019">SDHCAL_buffer_LoopCounter.h:19</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_aa13b24ffdbad02c0c84353f1644c2688"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#aa13b24ffdbad02c0c84353f1644c2688">SDHCAL_buffer_LoopCounter::DIFStarter</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFStarter</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00017">SDHCAL_buffer_LoopCounter.h:17</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af27698ee8108dc8d6ee77d0f136e1425"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af27698ee8108dc8d6ee77d0f136e1425">SDHCAL_buffer_LoopCounter::DIFPtrValueAtReturnedPos</a></div><div class="ttdeci">std::map&lt; int, int &gt; DIFPtrValueAtReturnedPos</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00018">SDHCAL_buffer_LoopCounter.h:18</a></div></div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_af34fc9485d7879045a19933bd341eaac"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#af34fc9485d7879045a19933bd341eaac">SDHCAL_buffer_LoopCounter::NonZeroValusAtEndOfData</a></div><div class="ttdeci">std::map&lt; int, int &gt; NonZeroValusAtEndOfData</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8h_source.html#l00021">SDHCAL_buffer_LoopCounter.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -310,9 +376,9 @@ template&lt;typename SOURCE , typename DESTINATION &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00100">100</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{ c.<a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a98c9d70cd15ed1a593b6c97583eafdc2">printAllCounters</a>(m_DebugOut); }</div>
-<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a98c9d70cd15ed1a593b6c97583eafdc2"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a98c9d70cd15ed1a593b6c97583eafdc2">SDHCAL_buffer_LoopCounter::printAllCounters</a></div><div class="ttdeci">void printAllCounters(std::ostream &amp;out=std::cout)</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00007">SDHCAL_buffer_LoopCounter.cc:7</a></div></div>
+<p class="definition">Definition at line <a class="el" href="SDHCAL__buffer__loop_8h_source.html#l00119">119</a> of file <a class="el" href="SDHCAL__buffer__loop_8h_source.html">SDHCAL_buffer_loop.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{ c.<a class="code hl_function" href="structSDHCAL__buffer__LoopCounter.html#a3e415454ca8ec6f1e8bb64c9d5572da8">printAllCounters</a>(m_Logger); }</div>
+<div class="ttc" id="astructSDHCAL__buffer__LoopCounter_html_a3e415454ca8ec6f1e8bb64c9d5572da8"><div class="ttname"><a href="structSDHCAL__buffer__LoopCounter.html#a3e415454ca8ec6f1e8bb64c9d5572da8">SDHCAL_buffer_LoopCounter::printAllCounters</a></div><div class="ttdeci">void printAllCounters(const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="SDHCAL__buffer__LoopCounter_8cc_source.html#l00009">SDHCAL_buffer_LoopCounter.cc:9</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
