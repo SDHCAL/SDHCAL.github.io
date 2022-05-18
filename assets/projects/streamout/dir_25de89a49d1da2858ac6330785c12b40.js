@@ -26,7 +26,5 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "SDHCAL_RawBuffer_Navigator.h", "SDHCAL__RawBuffer__Navigator_8h.html", [
       [ "SDHCAL_RawBuffer_Navigator", "classSDHCAL__RawBuffer__Navigator.html", "classSDHCAL__RawBuffer__Navigator" ]
     ] ],
-    [ "Words.h", "Words_8h.html", [
-      [ "DU", "classDU.html", null ]
-    ] ]
+    [ "Words.h", "Words_8h.html", "Words_8h" ]
 ];

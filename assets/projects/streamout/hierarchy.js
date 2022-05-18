@@ -5,7 +5,6 @@ var hierarchy =
     [ "DIFPtr", "classDIFPtr.html", null ],
     [ "DIFSlowControl", "classDIFSlowControl.html", null ],
     [ "DIFUnpacker", "classDIFUnpacker.html", null ],
-    [ "DU", "classDU.html", null ],
     [ "Interface", "classInterface.html", [
       [ "ROOTtreeDest", "classROOTtreeDest.html", null ],
       [ "RawdataReader", "classRawdataReader.html", null ],
