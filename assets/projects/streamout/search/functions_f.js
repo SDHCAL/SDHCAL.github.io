@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['validbuffer_0',['validBuffer',['../classSDHCAL__RawBuffer__Navigator.html#af04cd664647277f7209475d939777cc4',1,'SDHCAL_RawBuffer_Navigator']]]
+  ['validbuffer_0',['validBuffer',['../classRawBufferNavigator.html#a47407ecb9f3567ea94b06f8b031eb882',1,'RawBufferNavigator']]]
 ];

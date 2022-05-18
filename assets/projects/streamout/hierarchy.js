@@ -10,7 +10,8 @@ var hierarchy =
       [ "RawdataReader", "classRawdataReader.html", null ],
       [ "textDump", "classtextDump.html", null ]
     ] ],
+    [ "RawBufferNavigator", "classRawBufferNavigator.html", null ],
     [ "SDHCAL_buffer_loop< SOURCE, DESTINATION >", "classSDHCAL__buffer__loop.html", null ],
     [ "SDHCAL_buffer_LoopCounter", "structSDHCAL__buffer__LoopCounter.html", null ],
-    [ "SDHCAL_RawBuffer_Navigator", "classSDHCAL__RawBuffer__Navigator.html", null ]
+    [ "Timer", "classTimer.html", null ]
 ];

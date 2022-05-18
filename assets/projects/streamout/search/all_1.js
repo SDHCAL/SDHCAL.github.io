@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['badscdata_0',['badSCData',['../classSDHCAL__RawBuffer__Navigator.html#af39905619e2c3f989ad51a3a58c096fa',1,'SDHCAL_RawBuffer_Navigator']]],
+  ['badscdata_0',['badSCData',['../classRawBufferNavigator.html#a9a0760b073545a6cd9848f62065b4312',1,'RawBufferNavigator']]],
   ['bcid_5fshift_1',['BCID_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414',1,'Words.h']]],
   ['begin_2',['begin',['../classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a',1,'Buffer']]],
   ['bit16_5ft_3',['bit16_t',['../Bits_8h.html#aa78a147697547750981d23e37071ccc1',1,'Bits.h']]],

@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('classInterface.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
+<p>template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getSDHCALBuffer();  
+ <a href="classInterface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Interface_8h_source.html">Interface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Interface:</div>
@@ -115,8 +118,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2771031eb4fcbe1b448e0346f7977d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00011">11</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="textblock"><p >template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getSDHCALBuffer(); </p>
+<p >void DESTINATION::start(); void DESTINATION::processDIF(const DIFPtr&amp;); void DESTINATION::processFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex); void DESTINATION::processPadInFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex,const std::uint32_t&amp; channelIndex); void DESTINATION::processSlowControl(const Buffer&amp;); void DESTINATION::end(); </p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00026">26</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4406d74c75bdfe150bf72be1f1cda8b1" name="a4406d74c75bdfe150bf72be1f1cda8b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4406d74c75bdfe150bf72be1f1cda8b1">&#9670;&nbsp;</a></span>Interface()</h2>
@@ -141,8 +146,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00014">14</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00029">29</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -169,8 +174,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00015">15</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00030">30</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -198,8 +203,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00016">16</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00031">31</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,8 +232,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00017">17</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{ m_Logger = logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00032">32</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{ m_Logger = logger; }</div>
 </div><!-- fragment -->
 </div>
 </div>
