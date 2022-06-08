@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hasbadslowcontrol_0',['hasBadSlowControl',['../structSDHCAL__buffer__LoopCounter.html#a7c1277a70278a40590bb411d48b06b8d',1,'SDHCAL_buffer_LoopCounter']]],
-  ['hasslowcontrol_1',['hasSlowControl',['../structSDHCAL__buffer__LoopCounter.html#a8154b8ed54a6efb985dc01980c0a3849',1,'SDHCAL_buffer_LoopCounter']]]
+  ['hasbadslowcontrol_0',['hasBadSlowControl',['../structBufferLooperCounter.html#ab0045623d09bd06143daa25134feb601',1,'BufferLooperCounter']]],
+  ['hasslowcontrol_1',['hasSlowControl',['../structBufferLooperCounter.html#a914864f765a44efd3c7eac34e872c72c',1,'BufferLooperCounter']]]
 ];

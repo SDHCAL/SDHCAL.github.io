@@ -1,11 +1,11 @@
 var classBuffer =
 [
     [ "Buffer", "classBuffer.html#ae7ef2cd201190fde551dcb902627112b", null ],
+    [ "~Buffer", "classBuffer.html#a781aa3047b5dc0b48777138a54b5f562", null ],
     [ "Buffer", "classBuffer.html#a1a3882a2657bd737026ea1a7336544ac", null ],
     [ "Buffer", "classBuffer.html#a47ae03acbf5b86cbb2a7e566df70811e", null ],
     [ "Buffer", "classBuffer.html#a04dcc9e6bacefd77011bb45d63cffab2", null ],
     [ "Buffer", "classBuffer.html#a1c1443c953c23337e8a5a56d893aece5", null ],
-    [ "~Buffer", "classBuffer.html#a59b8743e4a5f731bdd0c4185c9ef263b", null ],
     [ "begin", "classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a", null ],
     [ "capacity", "classBuffer.html#ae253c97c2cb35666ddf02cfd9f3e6780", null ],
     [ "end", "classBuffer.html#aa9917240b6e2c3b3a2734594b20a7637", null ],

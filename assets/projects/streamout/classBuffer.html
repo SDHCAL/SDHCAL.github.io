@@ -96,6 +96,8 @@ $(document).ready(function(){initNavTree('classBuffer.html',''); initResizable()
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7ef2cd201190fde551dcb902627112b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#ae7ef2cd201190fde551dcb902627112b">Buffer</a> ()</td></tr>
 <tr class="separator:ae7ef2cd201190fde551dcb902627112b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781aa3047b5dc0b48777138a54b5f562"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#a781aa3047b5dc0b48777138a54b5f562">~Buffer</a> ()</td></tr>
+<tr class="separator:a781aa3047b5dc0b48777138a54b5f562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3882a2657bd737026ea1a7336544ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#a1a3882a2657bd737026ea1a7336544ac">Buffer</a> (const <a class="el" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a> b[], const std::size_t &amp;i)</td></tr>
 <tr class="separator:a1a3882a2657bd737026ea1a7336544ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ae03acbf5b86cbb2a7e566df70811e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#a47ae03acbf5b86cbb2a7e566df70811e">Buffer</a> (const char b[], const std::size_t &amp;i)</td></tr>
@@ -122,8 +124,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aebd158947a4b2c957458b2697c435033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2bd4d756b93fb322ff455fc5e1986a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2">setSize</a> (const std::size_t &amp;<a class="el" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>)</td></tr>
 <tr class="separator:ae2bd4d756b93fb322ff455fc5e1986a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b8743e4a5f731bdd0c4185c9ef263b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBuffer.html#a59b8743e4a5f731bdd0c4185c9ef263b">~Buffer</a> ()</td></tr>
-<tr class="separator:a59b8743e4a5f731bdd0c4185c9ef263b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -154,6 +154,34 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00016">16</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>: m_Buffer(<span class="keyword">nullptr</span>), m_Size(0), m_Capacity(0) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a781aa3047b5dc0b48777138a54b5f562" name="a781aa3047b5dc0b48777138a54b5f562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781aa3047b5dc0b48777138a54b5f562">&#9670;&nbsp;</a></span>~Buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Buffer::~Buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00017">17</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -191,8 +219,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00017">17</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(&amp;b[0])), m_Size(i), m_Capacity(i) {}</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00018">18</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(&amp;b[0])), m_Size(i), m_Capacity(i) {}</div>
 <div class="ttc" id="aBits_8h_html_a4d64a78b268c0a8051093482b9300083"><div class="ttname"><a href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a></div><div class="ttdeci">std::uint8_t bit8_t</div><div class="ttdef"><b>Definition:</b> <a href="Bits_8h_source.html#l00010">Bits.h:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -231,8 +259,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00018">18</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(&amp;b[0]))), m_Size(i), m_Capacity(i) {}</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00019">19</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(&amp;b[0]))), m_Size(i * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)), m_Capacity(i * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,8 +290,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00019">19</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(rawdata.data()))), m_Size(rawdata.size() * <span class="keyword">sizeof</span>(T)), m_Capacity(rawdata.capacity() * <span class="keyword">sizeof</span>(T)) {}</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00020">20</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(rawdata.data()))), m_Size(rawdata.size() * <span class="keyword">sizeof</span>(T)), m_Capacity(rawdata.capacity() * <span class="keyword">sizeof</span>(T)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,36 +321,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00020">20</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(rawdata.data()))), m_Size(rawdata.size() * <span class="keyword">sizeof</span>(T)), m_Capacity(rawdata.size() * <span class="keyword">sizeof</span>(T)) {}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a59b8743e4a5f731bdd0c4185c9ef263b" name="a59b8743e4a5f731bdd0c4185c9ef263b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59b8743e4a5f731bdd0c4185c9ef263b">&#9670;&nbsp;</a></span>~Buffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Buffer::~Buffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="Buffer_8cc_source.html#l00008">8</a> of file <a class="el" href="Buffer_8cc_source.html">Buffer.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00021">21</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>: m_Buffer(<span class="keyword">const_cast&lt;</span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><a class="code hl_typedef" href="Bits_8h.html#a4d64a78b268c0a8051093482b9300083">bit8_t</a>*<span class="keyword">&gt;</span>(rawdata.data()))), m_Size(rawdata.size() * <span class="keyword">sizeof</span>(T)), m_Capacity(rawdata.size() * <span class="keyword">sizeof</span>(T)) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -350,8 +350,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00026">26</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{ <span class="keywordflow">return</span> m_Buffer; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00027">27</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{ <span class="keywordflow">return</span> m_Buffer; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,8 +378,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00023">23</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{ <span class="keywordflow">return</span> m_Capacity; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00024">24</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{ <span class="keywordflow">return</span> m_Capacity; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -406,8 +406,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00027">27</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{ <span class="keywordflow">return</span> m_Buffer + m_Size; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00028">28</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{ <span class="keywordflow">return</span> m_Buffer + m_Size; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -435,8 +435,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00028">28</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{ <span class="keywordflow">return</span> m_Buffer[pos]; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00029">29</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{ <span class="keywordflow">return</span> m_Buffer[pos]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,8 +464,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00029">29</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{ <span class="keywordflow">return</span> m_Buffer[pos]; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00030">30</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{ <span class="keywordflow">return</span> m_Buffer[pos]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -493,8 +493,8 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00025">25</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{ m_Buffer = b; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00026">26</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{ m_Buffer = b; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -522,9 +522,9 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00031">31</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{ m_Size = <a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>; }</div>
-<div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00022">Buffer.h:22</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00032">32</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{ m_Size = <a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>; }</div>
+<div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00023">Buffer.h:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -551,14 +551,13 @@ template&lt;typename T , std::size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00022">22</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{ <span class="keywordflow">return</span> m_Size; }</div>
+<p class="definition">Definition at line <a class="el" href="Buffer_8h_source.html#l00023">23</a> of file <a class="el" href="Buffer_8h_source.html">Buffer.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{ <span class="keywordflow">return</span> m_Size; }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/streamout/streamout/libs/core/include/<a class="el" href="Buffer_8h_source.html">Buffer.h</a></li>
-<li>/home/runner/work/streamout/streamout/libs/core/src/<a class="el" href="Buffer_8cc_source.html">Buffer.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

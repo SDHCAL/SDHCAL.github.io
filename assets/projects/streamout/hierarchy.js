@@ -1,6 +1,8 @@
 var hierarchy =
 [
     [ "Buffer", "classBuffer.html", null ],
+    [ "BufferLooper< SOURCE, DESTINATION >", "classBufferLooper.html", null ],
+    [ "BufferLooperCounter", "structBufferLooperCounter.html", null ],
     [ "ROOTtreeDest::DATA", "structROOTtreeDest_1_1DATA.html", null ],
     [ "DIFPtr", "classDIFPtr.html", null ],
     [ "DIFSlowControl", "classDIFSlowControl.html", null ],
@@ -11,7 +13,5 @@ var hierarchy =
       [ "textDump", "classtextDump.html", null ]
     ] ],
     [ "RawBufferNavigator", "classRawBufferNavigator.html", null ],
-    [ "SDHCAL_buffer_loop< SOURCE, DESTINATION >", "classSDHCAL__buffer__loop.html", null ],
-    [ "SDHCAL_buffer_LoopCounter", "structSDHCAL__buffer__LoopCounter.html", null ],
     [ "Timer", "classTimer.html", null ]
 ];

@@ -4,6 +4,12 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "Buffer.h", "Buffer_8h.html", [
       [ "Buffer", "classBuffer.html", "classBuffer" ]
     ] ],
+    [ "BufferLooper.h", "BufferLooper_8h.html", [
+      [ "BufferLooper< SOURCE, DESTINATION >", "classBufferLooper.html", "classBufferLooper" ]
+    ] ],
+    [ "BufferLooperCounter.h", "BufferLooperCounter_8h.html", [
+      [ "BufferLooperCounter", "structBufferLooperCounter.html", "structBufferLooperCounter" ]
+    ] ],
     [ "DIFPtr.h", "DIFPtr_8h.html", [
       [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ]
     ] ],
@@ -19,12 +25,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     ] ],
     [ "RawBufferNavigator.h", "RawBufferNavigator_8h.html", [
       [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ]
-    ] ],
-    [ "SDHCAL_buffer_loop.h", "SDHCAL__buffer__loop_8h.html", [
-      [ "SDHCAL_buffer_loop< SOURCE, DESTINATION >", "classSDHCAL__buffer__loop.html", "classSDHCAL__buffer__loop" ]
-    ] ],
-    [ "SDHCAL_buffer_LoopCounter.h", "SDHCAL__buffer__LoopCounter_8h.html", [
-      [ "SDHCAL_buffer_LoopCounter", "structSDHCAL__buffer__LoopCounter.html", "structSDHCAL__buffer__LoopCounter" ]
     ] ],
     [ "Timer.h", "Timer_8h.html", [
       [ "Timer", "classTimer.html", "classTimer" ]

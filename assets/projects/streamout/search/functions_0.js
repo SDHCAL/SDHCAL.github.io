@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addsink_0',['addSink',['../classSDHCAL__buffer__loop.html#ab381231f9ad0e484a9b0cc3d08e9166a',1,'SDHCAL_buffer_loop']]]
+  ['addsink_0',['addSink',['../classBufferLooper.html#a0d677ac1a9661d35ea59d1b38e72a858',1,'BufferLooper']]]
 ];

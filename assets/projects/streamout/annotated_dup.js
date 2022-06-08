@@ -1,6 +1,8 @@
 var annotated_dup =
 [
     [ "Buffer", "classBuffer.html", "classBuffer" ],
+    [ "BufferLooper", "classBufferLooper.html", "classBufferLooper" ],
+    [ "BufferLooperCounter", "structBufferLooperCounter.html", "structBufferLooperCounter" ],
     [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ],
     [ "DIFSlowControl", "classDIFSlowControl.html", "classDIFSlowControl" ],
     [ "DIFUnpacker", "classDIFUnpacker.html", null ],
@@ -8,8 +10,6 @@ var annotated_dup =
     [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ],
     [ "RawdataReader", "classRawdataReader.html", "classRawdataReader" ],
     [ "ROOTtreeDest", "classROOTtreeDest.html", "classROOTtreeDest" ],
-    [ "SDHCAL_buffer_loop", "classSDHCAL__buffer__loop.html", "classSDHCAL__buffer__loop" ],
-    [ "SDHCAL_buffer_LoopCounter", "structSDHCAL__buffer__LoopCounter.html", "structSDHCAL__buffer__LoopCounter" ],
     [ "textDump", "classtextDump.html", "classtextDump" ],
     [ "Timer", "classTimer.html", "classTimer" ]
 ];
