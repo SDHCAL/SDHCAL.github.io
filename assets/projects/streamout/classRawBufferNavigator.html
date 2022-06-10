@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a75341b3b596cfb40540bbf25b3cb3c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af426c82ddfaa98b7560cfbadba1a17a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawBufferNavigator.html#af426c82ddfaa98b7560cfbadba1a17a1">setBuffer</a> (const <a class="el" href="classBuffer.html">Buffer</a> &amp;b, const int &amp;start=-1)</td></tr>
 <tr class="separator:af426c82ddfaa98b7560cfbadba1a17a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b67fec159fbac44fb64a244925f930"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawBufferNavigator.html#a90b67fec159fbac44fb64a244925f930">getDetectorID</a> ()</td></tr>
+<tr class="separator:a90b67fec159fbac44fb64a244925f930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47407ecb9f3567ea94b06f8b031eb882"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawBufferNavigator.html#a47407ecb9f3567ea94b06f8b031eb882">validBuffer</a> ()</td></tr>
 <tr class="separator:a47407ecb9f3567ea94b06f8b031eb882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d9bcdf36e27e42307868f341bdc433"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawBufferNavigator.html#ad5d9bcdf36e27e42307868f341bdc433">getStartOfDIF</a> ()</td></tr>
@@ -245,11 +247,31 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00055">55</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  setSCBuffer();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">return</span> m_BadSCdata;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00057">57</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  setSCBuffer();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> m_BadSCdata;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90b67fec159fbac44fb64a244925f930" name="a90b67fec159fbac44fb64a244925f930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b67fec159fbac44fb64a244925f930">&#9670;&nbsp;</a></span>getDetectorID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t RawBufferNavigator::getDetectorID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00018">18</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{ <span class="keywordflow">return</span> m_Buffer[0]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,16 +290,16 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00038">38</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  uint32_t i{<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  uint32_t ret{0};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  ret |= ((m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[i - 2]) &lt;&lt; 8);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  ret |= m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[i - 1];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00040">40</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  uint32_t i{<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  uint32_t ret{0};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  ret |= ((m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[i - 2]) &lt;&lt; 8);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  ret |= m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[i - 1];</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 <div class="ttc" id="aclassBuffer_html_a0b1063a3e4bf43663b3fc15ccde9525a"><div class="ttname"><a href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">Buffer::begin</a></div><div class="ttdeci">bit8_t * begin() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00027">Buffer.h:27</a></div></div>
-<div class="ttc" id="aclassRawBufferNavigator_html_a5002611921565063b617d8e4a33c2ab5"><div class="ttname"><a href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">RawBufferNavigator::getEndOfDIFData</a></div><div class="ttdeci">std::uint32_t getEndOfDIFData()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00034">RawBufferNavigator.cc:34</a></div></div>
+<div class="ttc" id="aclassRawBufferNavigator_html_a5002611921565063b617d8e4a33c2ab5"><div class="ttname"><a href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">RawBufferNavigator::getEndOfDIFData</a></div><div class="ttdeci">std::uint32_t getEndOfDIFData()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00036">RawBufferNavigator.cc:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,11 +318,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00026">26</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>(), <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>()); }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00028">28</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>(), <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>()); }</div>
 <div class="ttc" id="aclassBuffer_html"><div class="ttname"><a href="classBuffer.html">Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00013">Buffer.h:14</a></div></div>
-<div class="ttc" id="aclassRawBufferNavigator_html_a62ca39505957e91186298b807261825f"><div class="ttname"><a href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">RawBufferNavigator::getDIFBufferStart</a></div><div class="ttdeci">unsigned char * getDIFBufferStart()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00022">RawBufferNavigator.cc:22</a></div></div>
-<div class="ttc" id="aclassRawBufferNavigator_html_aea335b52234b27c7da5c5cdffc540863"><div class="ttname"><a href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">RawBufferNavigator::getDIFBufferSize</a></div><div class="ttdeci">std::uint32_t getDIFBufferSize()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00024">RawBufferNavigator.cc:24</a></div></div>
+<div class="ttc" id="aclassRawBufferNavigator_html_a62ca39505957e91186298b807261825f"><div class="ttname"><a href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">RawBufferNavigator::getDIFBufferStart</a></div><div class="ttdeci">unsigned char * getDIFBufferStart()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00024">RawBufferNavigator.cc:24</a></div></div>
+<div class="ttc" id="aclassRawBufferNavigator_html_aea335b52234b27c7da5c5cdffc540863"><div class="ttname"><a href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">RawBufferNavigator::getDIFBufferSize</a></div><div class="ttdeci">std::uint32_t getDIFBufferSize()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00026">RawBufferNavigator.cc:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -319,8 +341,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00024">24</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{ <span class="keywordflow">return</span> m_Buffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>() - m_DIFstartIndex; }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00026">26</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{ <span class="keywordflow">return</span> m_Buffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>() - m_DIFstartIndex; }</div>
 <div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00023">Buffer.h:23</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -340,8 +362,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00022">22</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{ <span class="keywordflow">return</span> &amp;(m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[m_DIFstartIndex]); }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00024">24</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{ <span class="keywordflow">return</span> &amp;(m_Buffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[m_DIFstartIndex]); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,11 +382,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00028">28</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  m_TheDIFPtr.<a class="code hl_function" href="classDIFPtr.html#a1e7e8f7d6c07d42928fd79b76e51465a">setBuffer</a>(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>(), <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>());</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> m_TheDIFPtr;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00030">30</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  m_TheDIFPtr.<a class="code hl_function" href="classDIFPtr.html#a1e7e8f7d6c07d42928fd79b76e51465a">setBuffer</a>(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>(), <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>());</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">return</span> m_TheDIFPtr;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="ttc" id="aclassDIFPtr_html_a1e7e8f7d6c07d42928fd79b76e51465a"><div class="ttname"><a href="classDIFPtr.html#a1e7e8f7d6c07d42928fd79b76e51465a">DIFPtr::setBuffer</a></div><div class="ttdeci">void setBuffer(unsigned char *p, const std::uint32_t &amp;max_size)</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00056">DIFPtr.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -384,15 +406,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00094">94</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  setSCBuffer();</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordflow">if</span>(<a class="code hl_function" href="classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d">hasSlowControlData</a>() &amp;&amp; !m_BadSCdata) { <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(&amp;(m_SCbuffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[m_SCbuffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()]), <a class="code hl_function" href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">getSizeAfterDIFPtr</a>() - 3 - m_SCbuffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()); }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(&amp;(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>()[<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()]), <a class="code hl_function" href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">getSizeAfterDIFPtr</a>() - 3);  <span class="comment">// remove the 2 bytes for CRC and the DIF trailer</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
-<div class="ttc" id="aclassRawBufferNavigator_html_a095d04821c4aeb7b4f8985342ca2552d"><div class="ttname"><a href="classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d">RawBufferNavigator::hasSlowControlData</a></div><div class="ttdeci">bool hasSlowControlData()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00047">RawBufferNavigator.cc:47</a></div></div>
-<div class="ttc" id="aclassRawBufferNavigator_html_a54989b8421c806ffd6ddc34d0371d614"><div class="ttname"><a href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">RawBufferNavigator::getSizeAfterDIFPtr</a></div><div class="ttdeci">std::uint32_t getSizeAfterDIFPtr()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00036">RawBufferNavigator.cc:36</a></div></div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00096">96</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  setSCBuffer();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span>(<a class="code hl_function" href="classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d">hasSlowControlData</a>() &amp;&amp; !m_BadSCdata) { <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(&amp;(m_SCbuffer.<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[m_SCbuffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()]), <a class="code hl_function" href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">getSizeAfterDIFPtr</a>() - 3 - m_SCbuffer.<a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>()); }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classBuffer.html">Buffer</a>(&amp;(<a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>()[<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()]), <a class="code hl_function" href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">getSizeAfterDIFPtr</a>() - 3);  <span class="comment">// remove the 2 bytes for CRC and the DIF trailer</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aclassRawBufferNavigator_html_a095d04821c4aeb7b4f8985342ca2552d"><div class="ttname"><a href="classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d">RawBufferNavigator::hasSlowControlData</a></div><div class="ttdeci">bool hasSlowControlData()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00049">RawBufferNavigator.cc:49</a></div></div>
+<div class="ttc" id="aclassRawBufferNavigator_html_a54989b8421c806ffd6ddc34d0371d614"><div class="ttname"><a href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">RawBufferNavigator::getSizeAfterDIFPtr</a></div><div class="ttdeci">std::uint32_t getSizeAfterDIFPtr()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00038">RawBufferNavigator.cc:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -411,10 +433,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00034">34</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">getDIFPtr</a>().<a class="code hl_function" href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">getGetFramePtrReturn</a>() + 3; }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00036">36</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">getDIFPtr</a>().<a class="code hl_function" href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">getGetFramePtrReturn</a>() + 3; }</div>
 <div class="ttc" id="aclassDIFPtr_html_aad4a08853550fe427d2839a1d276ab3d"><div class="ttname"><a href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">DIFPtr::getGetFramePtrReturn</a></div><div class="ttdeci">std::uint32_t getGetFramePtrReturn() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00073">DIFPtr.h:73</a></div></div>
-<div class="ttc" id="aclassRawBufferNavigator_html_ae32bc7f69a5fe425be22f93ee1a26987"><div class="ttname"><a href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">RawBufferNavigator::getDIFPtr</a></div><div class="ttdeci">DIFPtr &amp; getDIFPtr()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00028">RawBufferNavigator.cc:28</a></div></div>
+<div class="ttc" id="aclassRawBufferNavigator_html_ae32bc7f69a5fe425be22f93ee1a26987"><div class="ttname"><a href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">RawBufferNavigator::getDIFPtr</a></div><div class="ttdeci">DIFPtr &amp; getDIFPtr()</div><div class="ttdef"><b>Definition:</b> <a href="RawBufferNavigator_8cc_source.html#l00030">RawBufferNavigator.cc:30</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,11 +455,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00049">49</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  setSCBuffer();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">return</span> m_SCbuffer;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00051">51</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  setSCBuffer();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> m_SCbuffer;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -456,8 +478,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00036">36</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>() - <a class="code hl_function" href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">getDIFPtr</a>().<a class="code hl_function" href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">getGetFramePtrReturn</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00038">38</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">getDIFBufferSize</a>() - <a class="code hl_function" href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">getDIFPtr</a>().<a class="code hl_function" href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">getGetFramePtrReturn</a>(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -476,8 +498,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00020">20</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{ <span class="keywordflow">return</span> m_DIFstartIndex; }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00022">22</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{ <span class="keywordflow">return</span> m_DIFstartIndex; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -496,8 +518,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00047">47</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>()[<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()] == 0xb1; }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00049">49</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">getDIFBufferStart</a>()[<a class="code hl_function" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">getEndOfDIFData</a>()] == 0xb1; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -593,8 +615,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00018">18</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
-<div class="fragment"><div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{ <span class="keywordflow">return</span> m_DIFstartIndex != 0; }</div>
+<p class="definition">Definition at line <a class="el" href="RawBufferNavigator_8cc_source.html#l00020">20</a> of file <a class="el" href="RawBufferNavigator_8cc_source.html">RawBufferNavigator.cc</a>.</p>
+<div class="fragment"><div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{ <span class="keywordflow">return</span> m_DIFstartIndex != 0; }</div>
 </div><!-- fragment -->
 </div>
 </div>

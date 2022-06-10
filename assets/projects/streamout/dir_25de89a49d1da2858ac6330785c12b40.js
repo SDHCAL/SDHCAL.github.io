@@ -10,6 +10,7 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "BufferLooperCounter.h", "BufferLooperCounter_8h.html", [
       [ "BufferLooperCounter", "structBufferLooperCounter.html", "structBufferLooperCounter" ]
     ] ],
+    [ "DetectorId.h", "DetectorId_8h.html", "DetectorId_8h" ],
     [ "DIFPtr.h", "DIFPtr_8h.html", [
       [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ]
     ] ],
