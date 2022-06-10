@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['data_0',['DATA',['../structROOTtreeDest_1_1DATA.html',1,'ROOTtreeDest']]],
+  ['data_0',['DATA',['../structROOTWritter_1_1DATA.html',1,'ROOTWritter']]],
   ['detectorid_1',['DetectorID',['../DetectorId_8h.html#a03abf05f9c222ce51d7a79b9fb5250d0',1,'DetectorId.h']]],
   ['detectorid_2eh_2',['DetectorId.h',['../DetectorId_8h.html',1,'']]],
-  ['dif_5fbcid_3',['DIF_BCID',['../structROOTtreeDest_1_1DATA.html#ad048352317afa584b5f1a87d4fc681ab',1,'ROOTtreeDest::DATA']]],
-  ['difid_4',['DIFid',['../structROOTtreeDest_1_1DATA.html#ababe5e31a3bff7accb919575ee0eefe8',1,'ROOTtreeDest::DATA']]],
+  ['dif_5fbcid_3',['DIF_BCID',['../structROOTWritter_1_1DATA.html#a8b47cb0b462306943098c4bcce43a8a3',1,'ROOTWritter::DATA']]],
+  ['difid_4',['DIFid',['../structROOTWritter_1_1DATA.html#a81a637427ae3ebf593147d78078cd721',1,'ROOTWritter::DATA']]],
   ['difptr_5',['DIFPtr',['../classDIFPtr.html',1,'']]],
   ['difptr_2eh_6',['DIFPtr.h',['../DIFPtr_8h.html',1,'']]],
   ['difptrvalueatreturnedpos_7',['DIFPtrValueAtReturnedPos',['../structBufferLooperCounter.html#ae67c0b9c39053683f1003d0a38f1b20d',1,'BufferLooperCounter']]],
@@ -15,7 +15,7 @@ var searchData=
   ['difunpacker_12',['DIFUnpacker',['../classDIFUnpacker.html',1,'']]],
   ['difunpacker_2ecc_13',['DIFUnpacker.cc',['../DIFUnpacker_8cc.html',1,'']]],
   ['difunpacker_2eh_14',['DIFUnpacker.h',['../DIFUnpacker_8h.html',1,'']]],
-  ['dtc_15',['DTC',['../structROOTtreeDest_1_1DATA.html#a0631c6389e6289abf7128ae83f6359b4',1,'ROOTtreeDest::DATA']]],
+  ['dtc_15',['DTC',['../structROOTWritter_1_1DATA.html#aa394abd577a831ab0828fb49713499f7',1,'ROOTWritter::DATA']]],
   ['dtc_5fshift_16',['DTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4',1,'Words.h']]],
   ['du_17',['DU',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfe',1,'Words.h']]],
   ['dump_18',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]],

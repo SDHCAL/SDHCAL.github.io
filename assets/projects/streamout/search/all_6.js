@@ -45,6 +45,6 @@ var searchData=
   ['gettemperaturedif_42',['getTemperatureDIF',['../classDIFPtr.html#a397506348eb8844365ecae08461d7199',1,'DIFPtr']]],
   ['getthresholdstatus_43',['getThresholdStatus',['../classDIFPtr.html#a64ea5bd24294b8f5d73b9a2fff039049',1,'DIFPtr']]],
   ['graytobin_44',['GrayToBin',['../classDIFUnpacker.html#acce5426dce4371cd862690b424eef4bc',1,'DIFUnpacker']]],
-  ['gtc_45',['GTC',['../structROOTtreeDest_1_1DATA.html#a3116d16e48680fe235bac4e6544ddb18',1,'ROOTtreeDest::DATA']]],
+  ['gtc_45',['GTC',['../structROOTWritter_1_1DATA.html#abacc3b7c56e30a9492a3f942453e94f9',1,'ROOTWritter::DATA']]],
   ['gtc_5fshift_46',['GTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1',1,'Words.h']]]
 ];

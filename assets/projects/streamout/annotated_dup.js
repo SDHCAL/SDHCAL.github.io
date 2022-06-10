@@ -9,7 +9,7 @@ var annotated_dup =
     [ "Interface", "classInterface.html", "classInterface" ],
     [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ],
     [ "RawdataReader", "classRawdataReader.html", "classRawdataReader" ],
-    [ "ROOTtreeDest", "classROOTtreeDest.html", "classROOTtreeDest" ],
+    [ "ROOTWritter", "classROOTWritter.html", "classROOTWritter" ],
     [ "textDump", "classtextDump.html", "classtextDump" ],
     [ "Timer", "classTimer.html", "classTimer" ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gtc_0',['GTC',['../structROOTtreeDest_1_1DATA.html#a3116d16e48680fe235bac4e6544ddb18',1,'ROOTtreeDest::DATA']]]
+  ['gtc_0',['GTC',['../structROOTWritter_1_1DATA.html#abacc3b7c56e30a9492a3f942453e94f9',1,'ROOTWritter::DATA']]]
 ];
