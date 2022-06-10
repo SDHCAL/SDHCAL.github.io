@@ -7,5 +7,9 @@ var searchData=
   ['hasline_4',['hasLine',['../classDIFPtr.html#a8f85e3e5a26eabfa243c8d3d238b8145',1,'DIFPtr::hasLine()'],['../classDIFUnpacker.html#aa781977ecae81609b8d1fecc437701b3',1,'DIFUnpacker::hasLine()']]],
   ['hasslowcontrol_5',['hasSlowControl',['../structBufferLooperCounter.html#a914864f765a44efd3c7eac34e872c72c',1,'BufferLooperCounter']]],
   ['hasslowcontroldata_6',['hasSlowControlData',['../classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d',1,'RawBufferNavigator']]],
-  ['hastemperature_7',['hasTemperature',['../classDIFPtr.html#ac162455069663bcdc957cbe085e766b5',1,'DIFPtr::hasTemperature()'],['../classDIFUnpacker.html#a125184d5563d1c7350c3cf4eab1db6b2',1,'DIFUnpacker::hasTemperature()']]]
+  ['hastemperature_7',['hasTemperature',['../classDIFPtr.html#ac162455069663bcdc957cbe085e766b5',1,'DIFPtr::hasTemperature()'],['../classDIFUnpacker.html#a125184d5563d1c7350c3cf4eab1db6b2',1,'DIFUnpacker::hasTemperature()']]],
+  ['hit_8',['Hit',['../classHit.html',1,'']]],
+  ['hit_2ecc_9',['Hit.cc',['../Hit_8cc.html',1,'']]],
+  ['hit_2eh_10',['Hit.h',['../Hit_8h.html',1,'']]],
+  ['hitlinkdef_2eh_11',['HitLinkDef.h',['../HitLinkDef_8h.html',1,'']]]
 ];

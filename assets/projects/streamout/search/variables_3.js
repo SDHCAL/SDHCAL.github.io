@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['frame_5fbcid_0',['frame_BCID',['../structROOTWritter_1_1DATA.html#acb07b6dacb958ea80e3ef98ab252db78',1,'ROOTWritter::DATA']]]
+  ['sizeafteralldata_0',['SizeAfterAllData',['../structBufferLooperCounter.html#a84ed6a713d0d0f14b3bfa54006b87eab',1,'BufferLooperCounter']]],
+  ['sizeafterdifptr_1',['SizeAfterDIFPtr',['../structBufferLooperCounter.html#add1bd96b22d0b2cd1b34b93ac9b7d922',1,'BufferLooperCounter']]]
 ];

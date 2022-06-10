@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['channelid_0',['CHANNELid',['../structROOTWritter_1_1DATA.html#a434a2ac1d4f99d1f1dcf312bb7dc5ba8',1,'ROOTWritter::DATA']]]
+  ['hasbadslowcontrol_0',['hasBadSlowControl',['../structBufferLooperCounter.html#ab0045623d09bd06143daa25134feb601',1,'BufferLooperCounter']]],
+  ['hasslowcontrol_1',['hasSlowControl',['../structBufferLooperCounter.html#a914864f765a44efd3c7eac34e872c72c',1,'BufferLooperCounter']]]
 ];

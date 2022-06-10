@@ -100,7 +100,7 @@ Inheritance diagram for Interface:</div>
  <div class="center">
   <img src="classInterface.png" usemap="#Interface_map" alt=""/>
   <map id="Interface_map" name="Interface_map">
-<area href="classROOTWritter.html" alt="ROOTWritter" shape="rect" coords="0,56,101,80"/>
+<area href="classROOTWriter.html" alt="ROOTWriter" shape="rect" coords="0,56,101,80"/>
 <area href="classRawdataReader.html" alt="RawdataReader" shape="rect" coords="111,56,212,80"/>
 <area href="classtextDump.html" alt="textDump" shape="rect" coords="222,56,323,80"/>
   </map>
@@ -112,6 +112,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4406d74c75bdfe150bf72be1f1cda8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67eca71a4ef8d28dc959dd495e2b2b59"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a67eca71a4ef8d28dc959dd495e2b2b59">~Interface</a> ()</td></tr>
 <tr class="separator:a67eca71a4ef8d28dc959dd495e2b2b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a189457330f41325b37a6ec84b7006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">startEvent</a> ()</td></tr>
+<tr class="separator:a12a189457330f41325b37a6ec84b7006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bb8d81d042c7f30e48e8d5d522a308"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">endEvent</a> ()</td></tr>
+<tr class="separator:a07bb8d81d042c7f30e48e8d5d522a308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe441f7d565609813ad7dd2ac5e3747"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#adbe441f7d565609813ad7dd2ac5e3747">startDIF</a> ()</td></tr>
+<tr class="separator:adbe441f7d565609813ad7dd2ac5e3747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a196fc5675d77f766ecc539cd960c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a76a196fc5675d77f766ecc539cd960c2">endDIF</a> ()</td></tr>
+<tr class="separator:a76a196fc5675d77f766ecc539cd960c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24df90c8965c80bf28bcd4f6afe1854a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a24df90c8965c80bf28bcd4f6afe1854a">startFrame</a> ()</td></tr>
+<tr class="separator:a24df90c8965c80bf28bcd4f6afe1854a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80183bde6463d010e74a410c2c685b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#ad80183bde6463d010e74a410c2c685b5">endFrame</a> ()</td></tr>
+<tr class="separator:ad80183bde6463d010e74a410c2c685b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f13ca2db76a5bb792ee880026d1de0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a44f13ca2db76a5bb792ee880026d1de0">startPad</a> ()</td></tr>
+<tr class="separator:a44f13ca2db76a5bb792ee880026d1de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40b971ad7ed5abad297b2851bc37b65"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#ae40b971ad7ed5abad297b2851bc37b65">endPad</a> ()</td></tr>
+<tr class="separator:ae40b971ad7ed5abad297b2851bc37b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8470299defcb984382533823b5b45fcd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a> ()</td></tr>
 <tr class="separator:a8470299defcb984382533823b5b45fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2771031eb4fcbe1b448e0346f7977d86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a2771031eb4fcbe1b448e0346f7977d86">setLogger</a> (const std::shared_ptr&lt; spdlog::logger &gt; &amp;logger)</td></tr>
@@ -119,7 +135,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getSDHCALBuffer(); </p>
-<p >void DESTINATION::start(); void DESTINATION::processDIF(const DIFPtr&amp;); void DESTINATION::processFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex); void DESTINATION::processPadInFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex,const std::uint32_t&amp; channelIndex); void DESTINATION::processSlowControl(const Buffer&amp;); void DESTINATION::end(); </p>
+<p >void DESTINATION::begin(); void DESTINATION::processDIF(const DIFPtr&amp;); void DESTINATION::processFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex); void DESTINATION::processPadInFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex,const std::uint32_t&amp; channelIndex); void DESTINATION::processSlowControl(const Buffer&amp;); void DESTINATION::end(); </p>
 
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00026">26</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -180,6 +196,126 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a76a196fc5675d77f766ecc539cd960c2" name="a76a196fc5675d77f766ecc539cd960c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76a196fc5675d77f766ecc539cd960c2">&#9670;&nbsp;</a></span>endDIF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::endDIF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a81d98c92eb672ce283c2000de435dd8a">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00034">34</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a07bb8d81d042c7f30e48e8d5d522a308" name="a07bb8d81d042c7f30e48e8d5d522a308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bb8d81d042c7f30e48e8d5d522a308">&#9670;&nbsp;</a></span>endEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::endEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a036c4c7c0c6eae5fbac69cc5ee33ae30">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00032">32</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad80183bde6463d010e74a410c2c685b5" name="ad80183bde6463d010e74a410c2c685b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80183bde6463d010e74a410c2c685b5">&#9670;&nbsp;</a></span>endFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::endFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a50445829ebcc4817d8f500bfa679ba33">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00036">36</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae40b971ad7ed5abad297b2851bc37b65" name="ae40b971ad7ed5abad297b2851bc37b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40b971ad7ed5abad297b2851bc37b65">&#9670;&nbsp;</a></span>endPad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::endPad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a6f62885ded06a8166b7589de69582671">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00038">38</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a8470299defcb984382533823b5b45fcd" name="a8470299defcb984382533823b5b45fcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8470299defcb984382533823b5b45fcd">&#9670;&nbsp;</a></span>log()</h2>
 
@@ -203,8 +339,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00031">31</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00039">39</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -232,8 +368,128 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00032">32</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{ m_Logger = logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00040">40</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{ m_Logger = logger; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adbe441f7d565609813ad7dd2ac5e3747" name="adbe441f7d565609813ad7dd2ac5e3747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe441f7d565609813ad7dd2ac5e3747">&#9670;&nbsp;</a></span>startDIF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::startDIF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#ab352229c0f45ce722b526b2da9fb74dc">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00033">33</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a12a189457330f41325b37a6ec84b7006" name="a12a189457330f41325b37a6ec84b7006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a189457330f41325b37a6ec84b7006">&#9670;&nbsp;</a></span>startEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::startEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a15048c1249d8a1979ccfec50724fb4b2">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00031">31</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a24df90c8965c80bf28bcd4f6afe1854a" name="a24df90c8965c80bf28bcd4f6afe1854a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24df90c8965c80bf28bcd4f6afe1854a">&#9670;&nbsp;</a></span>startFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::startFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#afcadb4debfc377d9bc184f2024722edf">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00035">35</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a44f13ca2db76a5bb792ee880026d1de0" name="a44f13ca2db76a5bb792ee880026d1de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f13ca2db76a5bb792ee880026d1de0">&#9670;&nbsp;</a></span>startPad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::startPad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a114f624ae28780cd2b6d2a0c160d4745">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00037">37</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
