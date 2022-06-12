@@ -3,7 +3,7 @@ var searchData=
   ['set_0',['set',['../classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05',1,'Buffer']]],
   ['setabsolutebcid_1',['setAbsoluteBCID',['../classDIF.html#a8a787e44f12404042ca5c4e7ca9c7197',1,'DIF::setAbsoluteBCID()'],['../classHit.html#a68083a01e8107f6ebe4482edccf7bc85',1,'Hit::setAbsoluteBCID(const std::uint64_t &amp;)']]],
   ['setasic_2',['setASIC',['../classHit.html#ab638d6fe792dbdb9e8a9135764d6ee9d',1,'Hit']]],
-  ['setbuffer_3',['setBuffer',['../classDIFPtr.html#a1e7e8f7d6c07d42928fd79b76e51465a',1,'DIFPtr::setBuffer()'],['../classRawBufferNavigator.html#af426c82ddfaa98b7560cfbadba1a17a1',1,'RawBufferNavigator::setBuffer()']]],
+  ['setbuffer_3',['setBuffer',['../classDIFPtr.html#a7e30339896b616e42c5de78e260668f9',1,'DIFPtr::setBuffer()'],['../classRawBufferNavigator.html#af426c82ddfaa98b7560cfbadba1a17a1',1,'RawBufferNavigator::setBuffer()']]],
   ['setchannel_4',['setChannel',['../classHit.html#a6da8f4a03b9f245a0793676e29ba229f',1,'Hit']]],
   ['setdefaultbuffersize_5',['setDefaultBufferSize',['../classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2',1,'RawdataReader']]],
   ['setdetectorids_6',['setDetectorIDs',['../classBufferLooper.html#a16eaf0191d7d58f06eed3c3768ee9ffc',1,'BufferLooper']]],
