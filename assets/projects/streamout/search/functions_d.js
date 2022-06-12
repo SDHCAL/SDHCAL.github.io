@@ -26,6 +26,5 @@ var searchData=
   ['startevent_23',['startEvent',['../classInterface.html#a12a189457330f41325b37a6ec84b7006',1,'Interface::startEvent()'],['../classROOTWriter.html#a15048c1249d8a1979ccfec50724fb4b2',1,'ROOTWriter::startEvent()']]],
   ['startframe_24',['startFrame',['../classInterface.html#a24df90c8965c80bf28bcd4f6afe1854a',1,'Interface::startFrame()'],['../classROOTWriter.html#afcadb4debfc377d9bc184f2024722edf',1,'ROOTWriter::startFrame()']]],
   ['startpad_25',['startPad',['../classInterface.html#a44f13ca2db76a5bb792ee880026d1de0',1,'Interface::startPad()'],['../classROOTWriter.html#a114f624ae28780cd2b6d2a0c160d4745',1,'ROOTWriter::startPad()']]],
-  ['stop_26',['stop',['../classTimer.html#a63f0eb44b27402196590a03781515dba',1,'Timer']]],
-  ['swap_5fbytes_27',['swap_bytes',['../classDIFUnpacker.html#a78c139331897e148f8f123e68ea04d56',1,'DIFUnpacker']]]
+  ['stop_26',['stop',['../classTimer.html#a63f0eb44b27402196590a03781515dba',1,'Timer']]]
 ];

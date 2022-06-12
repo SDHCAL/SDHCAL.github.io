@@ -18,6 +18,5 @@ var searchData=
   ['difunpacker_2eh_15',['DIFUnpacker.h',['../DIFUnpacker_8h.html',1,'']]],
   ['dtc_5fshift_16',['DTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4',1,'Words.h']]],
   ['du_17',['DU',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfe',1,'Words.h']]],
-  ['dump_18',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]],
-  ['dumpframeold_19',['dumpFrameOld',['../classDIFUnpacker.html#a9a710bc46d7e7aa76f0fb2bc40639cef',1,'DIFUnpacker']]]
+  ['dump_18',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]]
 ];

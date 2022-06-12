@@ -8,8 +8,8 @@ var searchData=
   ['setdefaultbuffersize_5',['setDefaultBufferSize',['../classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2',1,'RawdataReader']]],
   ['setdetectorids_6',['setDetectorIDs',['../classBufferLooper.html#a16eaf0191d7d58f06eed3c3768ee9ffc',1,'BufferLooper']]],
   ['setdif_7',['setDIF',['../classHit.html#a0fd442cb6407ac6b9763c13ef08645f7',1,'Hit']]],
-  ['setdifbcid_8',['setDIFBCID',['../classDIF.html#a8bed0d1287a2e99263986834d07ccdb0',1,'DIF::setDIFBCID()'],['../classHit.html#ad3f8c99550a70de01731572428cee5c1',1,'Hit::setDIFBCID(const std::uint32_t &amp;)']]],
-  ['setdtc_9',['setDTC',['../classHit.html#ab4c3cc85448599dbd36ab828b3003e8d',1,'Hit::setDTC()'],['../classDIF.html#a2b30530fa97b21fb9e5d9658a6397e17',1,'DIF::setDTC()']]],
+  ['setdifbcid_8',['setDIFBCID',['../classDIF.html#a8bed0d1287a2e99263986834d07ccdb0',1,'DIF::setDIFBCID()'],['../classHit.html#ad3f8c99550a70de01731572428cee5c1',1,'Hit::setDIFBCID()']]],
+  ['setdtc_9',['setDTC',['../classDIF.html#a2b30530fa97b21fb9e5d9658a6397e17',1,'DIF::setDTC()'],['../classHit.html#ab4c3cc85448599dbd36ab828b3003e8d',1,'Hit::setDTC()']]],
   ['setfilename_10',['setFilename',['../classROOTWriter.html#a6b74b8fe769444c9f5783c8f349183ea',1,'ROOTWriter']]],
   ['setframebcid_11',['setFrameBCID',['../classHit.html#a71f4c9bd38e77b8694738528ae9b3f7e',1,'Hit']]],
   ['setgtc_12',['setGTC',['../classDIF.html#a98e6b421ea1cf531c7614914b3414607',1,'DIF::setGTC()'],['../classHit.html#ad9cf797d5a1b54c30fc36825c54cf3fb',1,'Hit::setGTC()']]],
@@ -32,6 +32,5 @@ var searchData=
   ['startevent_29',['startEvent',['../classROOTWriter.html#a15048c1249d8a1979ccfec50724fb4b2',1,'ROOTWriter::startEvent()'],['../classInterface.html#a12a189457330f41325b37a6ec84b7006',1,'Interface::startEvent()']]],
   ['startframe_30',['startFrame',['../classInterface.html#a24df90c8965c80bf28bcd4f6afe1854a',1,'Interface::startFrame()'],['../classROOTWriter.html#afcadb4debfc377d9bc184f2024722edf',1,'ROOTWriter::startFrame()']]],
   ['startpad_31',['startPad',['../classInterface.html#a44f13ca2db76a5bb792ee880026d1de0',1,'Interface::startPad()'],['../classROOTWriter.html#a114f624ae28780cd2b6d2a0c160d4745',1,'ROOTWriter::startPad()']]],
-  ['stop_32',['stop',['../classTimer.html#a63f0eb44b27402196590a03781515dba',1,'Timer']]],
-  ['swap_5fbytes_33',['swap_bytes',['../classDIFUnpacker.html#a78c139331897e148f8f123e68ea04d56',1,'DIFUnpacker']]]
+  ['stop_32',['stop',['../classTimer.html#a63f0eb44b27402196590a03781515dba',1,'Timer']]]
 ];
