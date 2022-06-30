@@ -13,10 +13,7 @@ var searchData=
   ['difslowcontrol_2ecc_10',['DIFSlowControl.cc',['../DIFSlowControl_8cc.html',1,'']]],
   ['difslowcontrol_2eh_11',['DIFSlowControl.h',['../DIFSlowControl_8h.html',1,'']]],
   ['difstarter_12',['DIFStarter',['../structBufferLooperCounter.html#a663839fb72340cac92d1413072f7a174',1,'BufferLooperCounter']]],
-  ['difunpacker_13',['DIFUnpacker',['../classDIFUnpacker.html',1,'']]],
-  ['difunpacker_2ecc_14',['DIFUnpacker.cc',['../DIFUnpacker_8cc.html',1,'']]],
-  ['difunpacker_2eh_15',['DIFUnpacker.h',['../DIFUnpacker_8h.html',1,'']]],
-  ['dtc_5fshift_16',['DTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4',1,'Words.h']]],
-  ['du_17',['DU',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfe',1,'Words.h']]],
-  ['dump_18',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]]
+  ['dtc_5fshift_13',['DTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4',1,'Words.h']]],
+  ['du_14',['DU',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfe',1,'Words.h']]],
+  ['dump_15',['Dump',['../classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd',1,'DIFSlowControl']]]
 ];

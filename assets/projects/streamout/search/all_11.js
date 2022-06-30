@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['words_2eh_0',['Words.h',['../Words_8h.html',1,'']]]
+  ['validbuffer_0',['validBuffer',['../classRawBufferNavigator.html#a47407ecb9f3567ea94b06f8b031eb882',1,'RawBufferNavigator']]]
 ];

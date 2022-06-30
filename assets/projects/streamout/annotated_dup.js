@@ -6,7 +6,6 @@ var annotated_dup =
     [ "DIF", "classDIF.html", "classDIF" ],
     [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ],
     [ "DIFSlowControl", "classDIFSlowControl.html", "classDIFSlowControl" ],
-    [ "DIFUnpacker", "classDIFUnpacker.html", null ],
     [ "Event", "classEvent.html", "classEvent" ],
     [ "Hit", "classHit.html", "classHit" ],
     [ "Interface", "classInterface.html", "classInterface" ],

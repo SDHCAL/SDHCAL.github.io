@@ -146,16 +146,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a81895800d8f5d6b260fc9d3825dba9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3896d4b18b10da2a0a36485dfcff4abb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">getFrameLevel</a> (const std::uint32_t &amp;, const std::uint32_t &amp;, const std::uint32_t &amp;) const</td></tr>
 <tr class="separator:a3896d4b18b10da2a0a36485dfcff4abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809dea85ac915e4bf6f0294447173986"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a809dea85ac915e4bf6f0294447173986">getDIFid</a> () const</td></tr>
+<tr class="memitem:a809dea85ac915e4bf6f0294447173986"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a809dea85ac915e4bf6f0294447173986">getDIFid</a> () const</td></tr>
 <tr class="separator:a809dea85ac915e4bf6f0294447173986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d832303cdf06ef3a0862d6be1e661f2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a9d832303cdf06ef3a0862d6be1e661f2">getASICid</a> (const std::uint32_t &amp;) const</td></tr>
+<tr class="memitem:a9d832303cdf06ef3a0862d6be1e661f2"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a9d832303cdf06ef3a0862d6be1e661f2">getASICid</a> (const std::uint32_t &amp;) const</td></tr>
 <tr class="separator:a9d832303cdf06ef3a0862d6be1e661f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b988c403a6b8cc443e4982bdce6ee98"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a6b988c403a6b8cc443e4982bdce6ee98">getThresholdStatus</a> (const std::uint32_t &amp;, const std::uint32_t &amp;) const</td></tr>
+<tr class="memitem:a6b988c403a6b8cc443e4982bdce6ee98"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFPtr.html#a6b988c403a6b8cc443e4982bdce6ee98">getThresholdStatus</a> (const std::uint32_t &amp;, const std::uint32_t &amp;) const</td></tr>
 <tr class="separator:a6b988c403a6b8cc443e4982bdce6ee98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00014">14</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00017">17</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2a189ee33f3c9bd60eae4b3f7e6ea034" name="a2a189ee33f3c9bd60eae4b3f7e6ea034"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a189ee33f3c9bd60eae4b3f7e6ea034">&#9670;&nbsp;</a></span>getAbsoluteBCID()</h2>
@@ -180,9 +180,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00079">79</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#af4bebb77e53f430893f8fd9a6e421d69">DIFUnpacker::getAbsoluteBCID</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_af4bebb77e53f430893f8fd9a6e421d69"><div class="ttname"><a href="classDIFUnpacker.html#af4bebb77e53f430893f8fd9a6e421d69">DIFUnpacker::getAbsoluteBCID</a></div><div class="ttdeci">static std::uint64_t getAbsoluteBCID(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00053">DIFUnpacker.cc:53</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00094">94</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>{</div>
+<div class="line"><span class="lineno">   96</span>  std::uint64_t Shift{16777216ULL};  <span class="comment">// to shift the value from the 24 first bits</span></div>
+<div class="line"><span class="lineno">   97</span>  std::uint64_t pos{<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea9201cf28df8ac60a08cbacf77bd75d09">DU::ABCID_SHIFT</a>};</div>
+<div class="line"><span class="lineno">   98</span>  std::uint64_t LBC = ((theDIF_[pos] &lt;&lt; 16) | (theDIF_[pos + 1] &lt;&lt; 8) | (theDIF_[pos + 2])) * Shift + ((theDIF_[pos + 3] &lt;&lt; 16) | (theDIF_[pos + 4] &lt;&lt; 8) | (theDIF_[pos + 5]));</div>
+<div class="line"><span class="lineno">   99</span>  <span class="keywordflow">return</span> LBC;</div>
+<div class="line"><span class="lineno">  100</span>}</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea9201cf28df8ac60a08cbacf77bd75d09"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea9201cf28df8ac60a08cbacf77bd75d09">ABCID_SHIFT</a></div><div class="ttdeci">@ ABCID_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00023">Words.h:23</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,9 +215,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00099">99</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7">getFrameAsicHeader</a>(i) &amp; 0xFF; }</div>
-<div class="ttc" id="aclassDIFPtr_html_a3162bc05e0bd44477bd96493910896c7"><div class="ttname"><a href="classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7">DIFPtr::getFrameAsicHeader</a></div><div class="ttdeci">std::uint32_t getFrameAsicHeader(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00093">DIFPtr.h:93</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00141">141</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7">getFrameAsicHeader</a>(i) &amp; 0xFF; }</div>
+<div class="ttc" id="aclassDIFPtr_html_a3162bc05e0bd44477bd96493910896c7"><div class="ttname"><a href="classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7">DIFPtr::getFrameAsicHeader</a></div><div class="ttdeci">std::uint32_t getFrameAsicHeader(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00128">DIFPtr.h:128</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,9 +244,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00080">80</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#ad372e6a105a8113ad56c3afa3e9a91b1">DIFUnpacker::getBCID</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_ad372e6a105a8113ad56c3afa3e9a91b1"><div class="ttname"><a href="classDIFUnpacker.html#ad372e6a105a8113ad56c3afa3e9a91b1">DIFUnpacker::getBCID</a></div><div class="ttdeci">static std::uint32_t getBCID(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00061">DIFUnpacker.cc:61</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00102">102</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414">DU::BCID_SHIFT</a>] &lt;&lt; 16) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414">DU::BCID_SHIFT</a> + 1] &lt;&lt; 8) + theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414">DU::BCID_SHIFT</a> + 2]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8bb2cc20a30f1d813437ac6bfce99414">BCID_SHIFT</a></div><div class="ttdeci">@ BCID_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00024">Words.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,9 +273,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00098">98</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">getID</a>() &amp; 0xFF; }</div>
-<div class="ttc" id="aclassDIFPtr_html_a000e1010efebb0d049d7caee4d00d472"><div class="ttname"><a href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">DIFPtr::getID</a></div><div class="ttdeci">std::uint32_t getID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00076">DIFPtr.h:76</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00139">139</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">getID</a>() &amp; 0xFF; }</div>
+<div class="ttc" id="aclassDIFPtr_html_a000e1010efebb0d049d7caee4d00d472"><div class="ttname"><a href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">DIFPtr::getID</a></div><div class="ttdeci">std::uint32_t getID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00088">DIFPtr.h:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -297,9 +302,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00077">77</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#af244b1c8cd3f057177bf231e719ac58e">DIFUnpacker::getDTC</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_af244b1c8cd3f057177bf231e719ac58e"><div class="ttname"><a href="classDIFUnpacker.html#af244b1c8cd3f057177bf231e719ac58e">DIFUnpacker::getDTC</a></div><div class="ttdeci">static std::uint32_t getDTC(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00049">DIFUnpacker.cc:49</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00090">90</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4">DU::DTC_SHIFT</a>] &lt;&lt; 24) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4">DU::DTC_SHIFT</a> + 1] &lt;&lt; 16) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4">DU::DTC_SHIFT</a> + 2] &lt;&lt; 8) + theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4">DU::DTC_SHIFT</a> + 3]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4">DTC_SHIFT</a></div><div class="ttdeci">@ DTC_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00021">Words.h:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -327,9 +332,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00093">93</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#a5ae0b9845d2f8c454ccda35fc1c988f4">DIFUnpacker::getFrameAsicHeader</a>(theFrames_[i]); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_a5ae0b9845d2f8c454ccda35fc1c988f4"><div class="ttname"><a href="classDIFUnpacker.html#a5ae0b9845d2f8c454ccda35fc1c988f4">DIFUnpacker::getFrameAsicHeader</a></div><div class="ttdeci">static std::uint32_t getFrameAsicHeader(const unsigned char *framePtr)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00076">DIFUnpacker.cc:76</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00128">128</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ <span class="keywordflow">return</span> getFrameAsicHeaderInternal(theFrames_[i]); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -357,9 +361,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00094">94</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#a3995fe33df100cb3e822733f0c1a045c">DIFUnpacker::getFrameBCID</a>(theFrames_[i]); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_a3995fe33df100cb3e822733f0c1a045c"><div class="ttname"><a href="classDIFUnpacker.html#a3995fe33df100cb3e822733f0c1a045c">DIFUnpacker::getFrameBCID</a></div><div class="ttdeci">static std::uint32_t getFrameBCID(const unsigned char *framePtr)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00078">DIFUnpacker.cc:78</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00130">130</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="Utilities_8h.html#a7b67cb3a46e1d826747578325ba00790">GrayToBin</a>((theFrames_[i][<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8f9f2e17e6d4a54dda7d9068ea19554d">DU::FRAME_BCID_SHIFT</a>] &lt;&lt; 16) + (theFrames_[i][<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8f9f2e17e6d4a54dda7d9068ea19554d">DU::FRAME_BCID_SHIFT</a> + 1] &lt;&lt; 8) + theFrames_[i][<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8f9f2e17e6d4a54dda7d9068ea19554d">DU::FRAME_BCID_SHIFT</a> + 2]); }</div>
+<div class="ttc" id="aUtilities_8h_html_a7b67cb3a46e1d826747578325ba00790"><div class="ttname"><a href="Utilities_8h.html#a7b67cb3a46e1d826747578325ba00790">GrayToBin</a></div><div class="ttdeci">std::uint64_t GrayToBin(const std::uint64_t &amp;n)</div><div class="ttdef"><b>Definition:</b> <a href="Utilities_8h_source.html#l00009">Utilities.h:9</a></div></div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea8f9f2e17e6d4a54dda7d9068ea19554d"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea8f9f2e17e6d4a54dda7d9068ea19554d">FRAME_BCID_SHIFT</a></div><div class="ttdeci">@ FRAME_BCID_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00031">Words.h:31</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -403,9 +408,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00096">96</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#a73fc10c0b7db970d7fbd4de2ac0431a0">DIFUnpacker::getFrameLevel</a>(theFrames_[i], ipad, ilevel); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_a73fc10c0b7db970d7fbd4de2ac0431a0"><div class="ttname"><a href="classDIFUnpacker.html#a73fc10c0b7db970d7fbd4de2ac0431a0">DIFUnpacker::getFrameLevel</a></div><div class="ttdeci">static bool getFrameLevel(const unsigned char *framePtr, const std::uint32_t &amp;ip, const std::uint32_t &amp;level)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00090">DIFUnpacker.cc:90</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00134">134</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
+<div class="line"><span class="lineno">  136</span>  <span class="keywordflow">return</span> ((theFrames_[i][<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea887f81ddb2ef52790d351301136817e7">DU::FRAME_DATA_SHIFT</a> + ((3 - ipad / 16) * 4 + (ipad % 16) / 4)] &gt;&gt; (7 - (((ipad % 16) % 4) * 2 + ilevel))) &amp; 0x1);</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea887f81ddb2ef52790d351301136817e7"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea887f81ddb2ef52790d351301136817e7">FRAME_DATA_SHIFT</a></div><div class="ttdeci">@ FRAME_DATA_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00032">Words.h:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,8 +440,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00092">92</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>{ <span class="keywordflow">return</span> theFrames_[i]; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00126">126</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  126</span>{ <span class="keywordflow">return</span> theFrames_[i]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -461,8 +468,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00074">74</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> theFrames_; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00084">84</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{ <span class="keywordflow">return</span> theFrames_; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,10 +497,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00095">95</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   95</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954">getBCID</a>() - <a class="code hl_function" href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">getFrameBCID</a>(i); }</div>
-<div class="ttc" id="aclassDIFPtr_html_a826d13ed2c51711c2a368a1cdecd4954"><div class="ttname"><a href="classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954">DIFPtr::getBCID</a></div><div class="ttdeci">std::uint32_t getBCID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00080">DIFPtr.h:80</a></div></div>
-<div class="ttc" id="aclassDIFPtr_html_afd98284ba389d9bd4985ddc5f3bcfb26"><div class="ttname"><a href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">DIFPtr::getFrameBCID</a></div><div class="ttdeci">std::uint32_t getFrameBCID(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00094">DIFPtr.h:94</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00132">132</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954">getBCID</a>() - <a class="code hl_function" href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">getFrameBCID</a>(i); }</div>
+<div class="ttc" id="aclassDIFPtr_html_a826d13ed2c51711c2a368a1cdecd4954"><div class="ttname"><a href="classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954">DIFPtr::getBCID</a></div><div class="ttdeci">std::uint32_t getBCID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00102">DIFPtr.h:102</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_afd98284ba389d9bd4985ddc5f3bcfb26"><div class="ttname"><a href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">DIFPtr::getFrameBCID</a></div><div class="ttdeci">std::uint32_t getFrameBCID(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00130">DIFPtr.h:130</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,8 +527,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00073">73</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> theGetFramePtrReturn_; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00082">82</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> theGetFramePtrReturn_; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -548,9 +555,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00078">78</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#ac784681da11a086225cf981542924b42">DIFUnpacker::getGTC</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_ac784681da11a086225cf981542924b42"><div class="ttname"><a href="classDIFUnpacker.html#ac784681da11a086225cf981542924b42">DIFUnpacker::getGTC</a></div><div class="ttdeci">static std::uint32_t getGTC(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00051">DIFUnpacker.cc:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00092">92</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1">DU::GTC_SHIFT</a>] &lt;&lt; 24) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1">DU::GTC_SHIFT</a> + 1] &lt;&lt; 16) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1">DU::GTC_SHIFT</a> + 2] &lt;&lt; 8) + theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1">DU::GTC_SHIFT</a> + 3]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea2a652941450a99552bfdd96c01696ae1">GTC_SHIFT</a></div><div class="ttdeci">@ GTC_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00022">Words.h:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,9 +584,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00076">76</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#ae7dfb5ec136b555ee27cda04a230d422">DIFUnpacker::getID</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_ae7dfb5ec136b555ee27cda04a230d422"><div class="ttname"><a href="classDIFUnpacker.html#ae7dfb5ec136b555ee27cda04a230d422">DIFUnpacker::getID</a></div><div class="ttdeci">static std::uint32_t getID(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00047">DIFUnpacker.cc:47</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00088">88</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea89667e691fc3d2f29df206f6e88c02e0">DU::ID_SHIFT</a>]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea89667e691fc3d2f29df206f6e88c02e0"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea89667e691fc3d2f29df206f6e88c02e0">ID_SHIFT</a></div><div class="ttdeci">@ ID_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00020">Words.h:20</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -606,9 +613,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00081">81</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#aaa8aab86f7b79f8eb372bcfbe25fda95">DIFUnpacker::getLines</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_aaa8aab86f7b79f8eb372bcfbe25fda95"><div class="ttname"><a href="classDIFUnpacker.html#aaa8aab86f7b79f8eb372bcfbe25fda95">DIFUnpacker::getLines</a></div><div class="ttdeci">static std::uint32_t getLines(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00062">DIFUnpacker.cc:62</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00104">104</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfeaf7d2ecae50456f46ef6b91629d03d040">DU::LINES_SHIFT</a>] &gt;&gt; 4) &amp; 0x5; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfeaf7d2ecae50456f46ef6b91629d03d040"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfeaf7d2ecae50456f46ef6b91629d03d040">LINES_SHIFT</a></div><div class="ttdeci">@ LINES_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00025">Words.h:25</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -635,8 +642,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00075">75</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>{ <span class="keywordflow">return</span> theLines_; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00086">86</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> theLines_; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -663,8 +670,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00091">91</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   91</span>{ <span class="keywordflow">return</span> theFrames_.size(); }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00124">124</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{ <span class="keywordflow">return</span> theFrames_.size(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -691,8 +698,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00072">72</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <span class="keywordflow">return</span> theDIF_; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00080">80</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> theDIF_; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -719,9 +726,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00083">83</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   83</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#a0da3b0d8142a1e053470cc369a7b4500">DIFUnpacker::getTASU1</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_a0da3b0d8142a1e053470cc369a7b4500"><div class="ttname"><a href="classDIFUnpacker.html#a0da3b0d8142a1e053470cc369a7b4500">DIFUnpacker::getTASU1</a></div><div class="ttdeci">static std::uint32_t getTASU1(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00066">DIFUnpacker.cc:66</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00108">108</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac">DU::TASU1_SHIFT</a>] &lt;&lt; 24) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac">DU::TASU1_SHIFT</a> + 1] &lt;&lt; 16) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac">DU::TASU1_SHIFT</a> + 2] &lt;&lt; 8) + theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac">DU::TASU1_SHIFT</a> + 3]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea5ca32d6c2946883b05b9cfc58436cfac">TASU1_SHIFT</a></div><div class="ttdeci">@ TASU1_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00026">Words.h:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -748,9 +755,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00084">84</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#aa0dedb1d40da7ec477212fd87c3e4291">DIFUnpacker::getTASU2</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_aa0dedb1d40da7ec477212fd87c3e4291"><div class="ttname"><a href="classDIFUnpacker.html#aa0dedb1d40da7ec477212fd87c3e4291">DIFUnpacker::getTASU2</a></div><div class="ttdeci">static std::uint32_t getTASU2(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00068">DIFUnpacker.cc:68</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00110">110</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{ <span class="keywordflow">return</span> (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd">DU::TASU2_SHIFT</a>] &lt;&lt; 24) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd">DU::TASU2_SHIFT</a> + 1] &lt;&lt; 16) + (theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd">DU::TASU2_SHIFT</a> + 2] &lt;&lt; 8) + theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd">DU::TASU2_SHIFT</a> + 3]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea82357c13ec95ab0fe3c0f7b8dfd3dabd">TASU2_SHIFT</a></div><div class="ttdeci">@ TASU2_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00027">Words.h:27</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -777,9 +784,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00085">85</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#aaa4a1eee863d832660634de973db6bd5">DIFUnpacker::getTDIF</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_aaa4a1eee863d832660634de973db6bd5"><div class="ttname"><a href="classDIFUnpacker.html#aaa4a1eee863d832660634de973db6bd5">DIFUnpacker::getTDIF</a></div><div class="ttdeci">static std::uint32_t getTDIF(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00070">DIFUnpacker.cc:70</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00112">112</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <span class="keywordflow">return</span> theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea792214dda48417424d6854e2bbe0defe">DU::TDIF_SHIFT</a>]; }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfea792214dda48417424d6854e2bbe0defe"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea792214dda48417424d6854e2bbe0defe">TDIF_SHIFT</a></div><div class="ttdeci">@ TDIF_SHIFT</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00028">Words.h:28</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -806,9 +813,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00087">87</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>{ <span class="keywordflow">return</span> (<a class="code hl_function" href="classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0">getTASU1</a>() &gt;&gt; 3) * 0.0625; }</div>
-<div class="ttc" id="aclassDIFPtr_html_ae0ac061ac79deebb46805512b90950e0"><div class="ttname"><a href="classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0">DIFPtr::getTASU1</a></div><div class="ttdeci">std::uint32_t getTASU1() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00083">DIFPtr.h:83</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00116">116</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{ <span class="keywordflow">return</span> (<a class="code hl_function" href="classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0">getTASU1</a>() &gt;&gt; 3) * 0.0625; }</div>
+<div class="ttc" id="aclassDIFPtr_html_ae0ac061ac79deebb46805512b90950e0"><div class="ttname"><a href="classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0">DIFPtr::getTASU1</a></div><div class="ttdeci">std::uint32_t getTASU1() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00108">DIFPtr.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -835,9 +842,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00088">88</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> (<a class="code hl_function" href="classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0">getTASU2</a>() &gt;&gt; 3) * 0.0625; }</div>
-<div class="ttc" id="aclassDIFPtr_html_a5d1519a8ca15eb7430a012e382de40e0"><div class="ttname"><a href="classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0">DIFPtr::getTASU2</a></div><div class="ttdeci">std::uint32_t getTASU2() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00084">DIFPtr.h:84</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00118">118</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>{ <span class="keywordflow">return</span> (<a class="code hl_function" href="classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0">getTASU2</a>() &gt;&gt; 3) * 0.0625; }</div>
+<div class="ttc" id="aclassDIFPtr_html_a5d1519a8ca15eb7430a012e382de40e0"><div class="ttname"><a href="classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0">DIFPtr::getTASU2</a></div><div class="ttdeci">std::uint32_t getTASU2() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00110">DIFPtr.h:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -864,9 +871,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00086">86</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> 0.508 * <a class="code hl_function" href="classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5">getTDIF</a>() - 9.659; }</div>
-<div class="ttc" id="aclassDIFPtr_html_a9e370404238be08a8d631481a16ac1f5"><div class="ttname"><a href="classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5">DIFPtr::getTDIF</a></div><div class="ttdeci">std::uint32_t getTDIF() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00085">DIFPtr.h:85</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00114">114</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>{ <span class="keywordflow">return</span> 0.508 * <a class="code hl_function" href="classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5">getTDIF</a>() - 9.659; }</div>
+<div class="ttc" id="aclassDIFPtr_html_a9e370404238be08a8d631481a16ac1f5"><div class="ttname"><a href="classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5">DIFPtr::getTDIF</a></div><div class="ttdeci">std::uint32_t getTDIF() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00112">DIFPtr.h:112</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -904,9 +911,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00100">100</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>{ <span class="keywordflow">return</span> (((uint32_t)<a class="code hl_function" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">getFrameLevel</a>(i, ipad, 1)) &lt;&lt; 1) | ((uint32_t)<a class="code hl_function" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">getFrameLevel</a>(i, ipad, 0)); }</div>
-<div class="ttc" id="aclassDIFPtr_html_a3896d4b18b10da2a0a36485dfcff4abb"><div class="ttname"><a href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">DIFPtr::getFrameLevel</a></div><div class="ttdeci">bool getFrameLevel(const std::uint32_t &amp;, const std::uint32_t &amp;, const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00096">DIFPtr.h:96</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00143">143</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  143</span>{ <span class="keywordflow">return</span> (((std::uint32_t)<a class="code hl_function" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">getFrameLevel</a>(i, ipad, 1)) &lt;&lt; 1) | ((std::uint32_t)<a class="code hl_function" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">getFrameLevel</a>(i, ipad, 0)); }</div>
+<div class="ttc" id="aclassDIFPtr_html_a3896d4b18b10da2a0a36485dfcff4abb"><div class="ttname"><a href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">DIFPtr::getFrameLevel</a></div><div class="ttdeci">bool getFrameLevel(const std::uint32_t &amp;, const std::uint32_t &amp;, const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00134">DIFPtr.h:134</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -933,9 +940,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00090">90</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#ae534fd943565b2b5f3ad75ae9ad1f58a">DIFUnpacker::hasAnalogReadout</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_ae534fd943565b2b5f3ad75ae9ad1f58a"><div class="ttname"><a href="classDIFUnpacker.html#ae534fd943565b2b5f3ad75ae9ad1f58a">DIFUnpacker::hasAnalogReadout</a></div><div class="ttdeci">static bool hasAnalogReadout(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00074">DIFUnpacker.cc:74</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00122">122</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFPtr.html#ae7a2a93662f6bb1014dd4317257ad887">getLines</a>() != 0; }</div>
+<div class="ttc" id="aclassDIFPtr_html_ae7a2a93662f6bb1014dd4317257ad887"><div class="ttname"><a href="classDIFPtr.html#ae7a2a93662f6bb1014dd4317257ad887">DIFPtr::getLines</a></div><div class="ttdeci">std::uint32_t getLines() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00104">DIFPtr.h:104</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -963,9 +970,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00082">82</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#aa781977ecae81609b8d1fecc437701b3">DIFUnpacker::hasLine</a>(line, theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_aa781977ecae81609b8d1fecc437701b3"><div class="ttname"><a href="classDIFUnpacker.html#aa781977ecae81609b8d1fecc437701b3">DIFUnpacker::hasLine</a></div><div class="ttdeci">static bool hasLine(const std::uint32_t &amp;line, const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00064">DIFUnpacker.cc:64</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00106">106</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>{ <span class="keywordflow">return</span> ((theDIF_[<a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfeaf7d2ecae50456f46ef6b91629d03d040">DU::LINES_SHIFT</a>] &gt;&gt; line) &amp; 0x1); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -992,9 +998,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00089">89</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFUnpacker.html#a125184d5563d1c7350c3cf4eab1db6b2">DIFUnpacker::hasTemperature</a>(theDIF_); }</div>
-<div class="ttc" id="aclassDIFUnpacker_html_a125184d5563d1c7350c3cf4eab1db6b2"><div class="ttname"><a href="classDIFUnpacker.html#a125184d5563d1c7350c3cf4eab1db6b2">DIFUnpacker::hasTemperature</a></div><div class="ttdeci">static bool hasTemperature(const unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00072">DIFUnpacker.cc:72</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00120">120</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{ <span class="keywordflow">return</span> (theDIF_[0] == <a class="code hl_enumvalue" href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfeaa3404d99af9a6e63eb169b359d728417">DU::START_OF_DIF_TEMP</a>); }</div>
+<div class="ttc" id="aWords_8h_html_a5b26c948cd1643cfd8eeadb802d79cfeaa3404d99af9a6e63eb169b359d728417"><div class="ttname"><a href="Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfeaa3404d99af9a6e63eb169b359d728417">START_OF_DIF_TEMP</a></div><div class="ttdeci">@ START_OF_DIF_TEMP</div><div class="ttdef"><b>Definition:</b> <a href="Words_8h_source.html#l00012">Words.h:12</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1032,23 +1038,23 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00056">56</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
-<div class="line"><span class="lineno">   58</span>  theFrames_.clear();</div>
-<div class="line"><span class="lineno">   59</span>  theLines_.clear();</div>
-<div class="line"><span class="lineno">   60</span>  theSize_ = max_size;</div>
-<div class="line"><span class="lineno">   61</span>  theDIF_  = p;</div>
-<div class="line"><span class="lineno">   62</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   63</span>  {</div>
-<div class="line"><span class="lineno">   64</span>    theGetFramePtrReturn_ = <a class="code hl_function" href="classDIFUnpacker.html#a2ff0d20c76c65e68a6056bb65c993e28">DIFUnpacker::getFramePtr</a>(theFrames_, theLines_, theSize_, theDIF_);</div>
-<div class="line"><span class="lineno">   65</span>  }</div>
-<div class="line"><span class="lineno">   66</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::string&amp; e)</div>
-<div class="line"><span class="lineno">   67</span>  {</div>
-<div class="line"><span class="lineno">   68</span>    spdlog::get(<span class="stringliteral">&quot;streamout&quot;</span>)-&gt;error(<span class="stringliteral">&quot; DIF {} T ? {} {}&quot;</span>, <a class="code hl_function" href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">getID</a>(), <a class="code hl_function" href="classDIFPtr.html#ac162455069663bcdc957cbe085e766b5">hasTemperature</a>(), e);</div>
-<div class="line"><span class="lineno">   69</span>  }</div>
-<div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="aclassDIFPtr_html_ac162455069663bcdc957cbe085e766b5"><div class="ttname"><a href="classDIFPtr.html#ac162455069663bcdc957cbe085e766b5">DIFPtr::hasTemperature</a></div><div class="ttdeci">bool hasTemperature() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00089">DIFPtr.h:89</a></div></div>
-<div class="ttc" id="aclassDIFUnpacker_html_a2ff0d20c76c65e68a6056bb65c993e28"><div class="ttname"><a href="classDIFUnpacker.html#a2ff0d20c76c65e68a6056bb65c993e28">DIFUnpacker::getFramePtr</a></div><div class="ttdeci">static std::uint32_t getFramePtr(std::vector&lt; unsigned char * &gt; &amp;vFrame, std::vector&lt; unsigned char * &gt; &amp;vLines, const std::uint32_t &amp;max_size, unsigned char *cb, const std::uint32_t &amp;idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DIFUnpacker_8cc_source.html#l00106">DIFUnpacker.cc:106</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFPtr_8h_source.html#l00064">64</a> of file <a class="el" href="DIFPtr_8h_source.html">DIFPtr.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{</div>
+<div class="line"><span class="lineno">   66</span>  theFrames_.clear();</div>
+<div class="line"><span class="lineno">   67</span>  theLines_.clear();</div>
+<div class="line"><span class="lineno">   68</span>  theSize_ = max_size;</div>
+<div class="line"><span class="lineno">   69</span>  theDIF_  = p;</div>
+<div class="line"><span class="lineno">   70</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   71</span>  {</div>
+<div class="line"><span class="lineno">   72</span>    theGetFramePtrReturn_ = <a class="code hl_function" href="classDIFPtr.html#a73149c4a8c00388594ebf2024983d14a">getFramePtr</a>();</div>
+<div class="line"><span class="lineno">   73</span>  }</div>
+<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::string&amp; e)</div>
+<div class="line"><span class="lineno">   75</span>  {</div>
+<div class="line"><span class="lineno">   76</span>    spdlog::get(<span class="stringliteral">&quot;streamout&quot;</span>)-&gt;error(<span class="stringliteral">&quot; DIF {} T ? {} {}&quot;</span>, <a class="code hl_function" href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">getID</a>(), <a class="code hl_function" href="classDIFPtr.html#ac162455069663bcdc957cbe085e766b5">hasTemperature</a>(), e);</div>
+<div class="line"><span class="lineno">   77</span>  }</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassDIFPtr_html_a73149c4a8c00388594ebf2024983d14a"><div class="ttname"><a href="classDIFPtr.html#a73149c4a8c00388594ebf2024983d14a">DIFPtr::getFramePtr</a></div><div class="ttdeci">unsigned char * getFramePtr(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00126">DIFPtr.h:126</a></div></div>
+<div class="ttc" id="aclassDIFPtr_html_ac162455069663bcdc957cbe085e766b5"><div class="ttname"><a href="classDIFPtr.html#ac162455069663bcdc957cbe085e766b5">DIFPtr::hasTemperature</a></div><div class="ttdeci">bool hasTemperature() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFPtr_8h_source.html#l00120">DIFPtr.h:120</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

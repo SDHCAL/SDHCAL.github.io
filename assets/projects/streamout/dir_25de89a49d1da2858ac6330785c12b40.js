@@ -17,9 +17,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "DIFSlowControl.h", "DIFSlowControl_8h.html", [
       [ "DIFSlowControl", "classDIFSlowControl.html", "classDIFSlowControl" ]
     ] ],
-    [ "DIFUnpacker.h", "DIFUnpacker_8h.html", [
-      [ "DIFUnpacker", "classDIFUnpacker.html", null ]
-    ] ],
     [ "Formatters.h", "Formatters_8h.html", "Formatters_8h" ],
     [ "Interface.h", "Interface_8h.html", [
       [ "Interface", "classInterface.html", "classInterface" ]
@@ -30,5 +27,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "Timer.h", "Timer_8h.html", [
       [ "Timer", "classTimer.html", "classTimer" ]
     ] ],
+    [ "Utilities.h", "Utilities_8h.html", "Utilities_8h" ],
     [ "Words.h", "Words_8h.html", "Words_8h" ]
 ];

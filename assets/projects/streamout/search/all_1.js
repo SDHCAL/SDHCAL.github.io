@@ -9,12 +9,11 @@ var searchData=
   ['bit8_5ft_6',['bit8_t',['../Bits_8h.html#a4d64a78b268c0a8051093482b9300083',1,'Bits.h']]],
   ['bits_2ecc_7',['Bits.cc',['../Bits_8cc.html',1,'']]],
   ['bits_2eh_8',['Bits.h',['../Bits_8h.html',1,'']]],
-  ['buffer_9',['Buffer',['../classBuffer.html#ae7ef2cd201190fde551dcb902627112b',1,'Buffer::Buffer()'],['../classBuffer.html#a1a3882a2657bd737026ea1a7336544ac',1,'Buffer::Buffer(const bit8_t b[], const std::size_t &amp;i)'],['../classBuffer.html#a47ae03acbf5b86cbb2a7e566df70811e',1,'Buffer::Buffer(const char b[], const std::size_t &amp;i)'],['../classBuffer.html#a04dcc9e6bacefd77011bb45d63cffab2',1,'Buffer::Buffer(const std::vector&lt; T &gt; &amp;rawdata)'],['../classBuffer.html#a1c1443c953c23337e8a5a56d893aece5',1,'Buffer::Buffer(const std::array&lt; T, N &gt; &amp;rawdata)'],['../classBuffer.html',1,'Buffer']]],
-  ['buffer_2ecc_10',['Buffer.cc',['../Buffer_8cc.html',1,'']]],
-  ['buffer_2eh_11',['Buffer.h',['../Buffer_8h.html',1,'']]],
-  ['bufferlooper_12',['BufferLooper',['../classBufferLooper.html#a061d5bc413814f9ea2a8735a6de0383b',1,'BufferLooper::BufferLooper()'],['../classBufferLooper.html',1,'BufferLooper&lt; SOURCE, DESTINATION &gt;']]],
-  ['bufferlooper_2eh_13',['BufferLooper.h',['../BufferLooper_8h.html',1,'']]],
-  ['bufferloopercounter_14',['BufferLooperCounter',['../structBufferLooperCounter.html',1,'']]],
-  ['bufferloopercounter_2ecc_15',['BufferLooperCounter.cc',['../BufferLooperCounter_8cc.html',1,'']]],
-  ['bufferloopercounter_2eh_16',['BufferLooperCounter.h',['../BufferLooperCounter_8h.html',1,'']]]
+  ['buffer_9',['Buffer',['../classBuffer.html#ae7ef2cd201190fde551dcb902627112b',1,'Buffer::Buffer()'],['../classBuffer.html#a1c1443c953c23337e8a5a56d893aece5',1,'Buffer::Buffer(const std::array&lt; T, N &gt; &amp;rawdata)'],['../classBuffer.html#a04dcc9e6bacefd77011bb45d63cffab2',1,'Buffer::Buffer(const std::vector&lt; T &gt; &amp;rawdata)'],['../classBuffer.html#a47ae03acbf5b86cbb2a7e566df70811e',1,'Buffer::Buffer(const char b[], const std::size_t &amp;i)'],['../classBuffer.html#a1a3882a2657bd737026ea1a7336544ac',1,'Buffer::Buffer(const bit8_t b[], const std::size_t &amp;i)'],['../classBuffer.html',1,'Buffer']]],
+  ['buffer_2eh_10',['Buffer.h',['../Buffer_8h.html',1,'']]],
+  ['bufferlooper_11',['BufferLooper',['../classBufferLooper.html#a061d5bc413814f9ea2a8735a6de0383b',1,'BufferLooper::BufferLooper()'],['../classBufferLooper.html',1,'BufferLooper&lt; SOURCE, DESTINATION &gt;']]],
+  ['bufferlooper_2eh_12',['BufferLooper.h',['../BufferLooper_8h.html',1,'']]],
+  ['bufferloopercounter_13',['BufferLooperCounter',['../structBufferLooperCounter.html',1,'']]],
+  ['bufferloopercounter_2ecc_14',['BufferLooperCounter.cc',['../BufferLooperCounter_8cc.html',1,'']]],
+  ['bufferloopercounter_2eh_15',['BufferLooperCounter.h',['../BufferLooperCounter_8h.html',1,'']]]
 ];
