@@ -104,10 +104,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0862af1471604bf30a4f50a5e028637a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab78f234db6e3c88c189c2d7594ca17d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">addDIF</a> (const <a class="el" href="classDIF.html">DIF</a> &amp;dif)</td></tr>
 <tr class="separator:aab78f234db6e3c88c189c2d7594ca17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f659488a0f4f75750f21b1cadcf04d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::uint8_t, <a class="el" href="classDIF.html">DIF</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#a20f659488a0f4f75750f21b1cadcf04d">cbegin</a> () const</td></tr>
+<tr class="separator:a20f659488a0f4f75750f21b1cadcf04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48546691150104ea88a0d89c2fec5727"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::uint8_t, <a class="el" href="classDIF.html">DIF</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#a48546691150104ea88a0d89c2fec5727">cend</a> () const</td></tr>
+<tr class="separator:a48546691150104ea88a0d89c2fec5727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Event_8h_source.html#l00013">13</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Event_8h_source.html#l00015">15</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aab78f234db6e3c88c189c2d7594ca17d" name="aab78f234db6e3c88c189c2d7594ca17d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab78f234db6e3c88c189c2d7594ca17d">&#9670;&nbsp;</a></span>addDIF()</h2>
@@ -128,6 +132,46 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00010">10</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>{ DIFs[dif.<a class="code hl_function" href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">getID</a>()] = dif; }</div>
 <div class="ttc" id="aclassDIF_html_a2db76a3d710f119b75abe9f980fec5f4"><div class="ttname"><a href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">DIF::getID</a></div><div class="ttdeci">std::uint8_t getID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIF_8cc_source.html#l00014">DIF.cc:14</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20f659488a0f4f75750f21b1cadcf04d" name="a20f659488a0f4f75750f21b1cadcf04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f659488a0f4f75750f21b1cadcf04d">&#9670;&nbsp;</a></span>cbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::uint8_t, <a class="el" href="classDIF.html">DIF</a> &gt;::const_iterator Event::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00012">12</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keywordflow">return</span> DIFs.cbegin(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a48546691150104ea88a0d89c2fec5727" name="a48546691150104ea88a0d89c2fec5727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48546691150104ea88a0d89c2fec5727">&#9670;&nbsp;</a></span>cend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::uint8_t, <a class="el" href="classDIF.html">DIF</a> &gt;::const_iterator Event::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00014">14</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{ <span class="keywordflow">return</span> DIFs.cend(); }</div>
 </div><!-- fragment -->
 </div>
 </div>

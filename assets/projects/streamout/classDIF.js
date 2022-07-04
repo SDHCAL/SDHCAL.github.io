@@ -1,6 +1,9 @@
 var classDIF =
 [
     [ "addHit", "classDIF.html#a6ebb721d010f14ca61e78737b440347f", null ],
+    [ "cbegin", "classDIF.html#ae4b9fa207f2faddd5cda1c584a70cc9e", null ],
+    [ "cend", "classDIF.html#ad00aa862a82de3f80ccf0fec11e29feb", null ],
+    [ "clear", "classDIF.html#ad3b21fd0b6cb929dd459e5c907b0d72f", null ],
     [ "getAbsoluteBCID", "classDIF.html#a14f9b36fea5c35e3dd9ef0282a60c328", null ],
     [ "getDIFBCID", "classDIF.html#a769b7a21dc5b38577ed2434054827ad6", null ],
     [ "getDTC", "classDIF.html#a0e2f6a2ae1673b78ae37b02c6985d392", null ],

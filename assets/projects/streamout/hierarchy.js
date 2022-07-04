@@ -6,9 +6,13 @@ var hierarchy =
     [ "DIFPtr", "classDIFPtr.html", null ],
     [ "DIFSlowControl", "classDIFSlowControl.html", null ],
     [ "Interface", "classInterface.html", [
-      [ "ROOTWriter", "classROOTWriter.html", null ],
-      [ "RawdataReader", "classRawdataReader.html", null ],
-      [ "textDump", "classtextDump.html", null ]
+      [ "InterfaceReader", "classInterfaceReader.html", [
+        [ "RawdataReader", "classRawdataReader.html", null ]
+      ] ],
+      [ "InterfaceWriter", "classInterfaceWriter.html", [
+        [ "ROOTWriter", "classROOTWriter.html", null ],
+        [ "textDump", "classtextDump.html", null ]
+      ] ]
     ] ],
     [ "RawBufferNavigator", "classRawBufferNavigator.html", null ],
     [ "Timer", "classTimer.html", null ],
@@ -16,5 +20,8 @@ var hierarchy =
       [ "DIF", "classDIF.html", null ],
       [ "Event", "classEvent.html", null ],
       [ "Hit", "classHit.html", null ]
+    ] ],
+    [ "semver::version", null, [
+      [ "Version", "classVersion.html", null ]
     ] ]
 ];

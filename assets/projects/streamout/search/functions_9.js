@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nextdifbuffer_0',['nextDIFbuffer',['../classRawdataReader.html#afe37c995a4dc0a2f4f891c17f86a078b',1,'RawdataReader']]],
-  ['nextevent_1',['nextEvent',['../classRawdataReader.html#a3d5ea2a57722213a45e1fa81a3786b08',1,'RawdataReader']]]
+  ['log_0',['log',['../classBufferLooper.html#afb51a65acad575fda99d3628713e22a4',1,'BufferLooper::log()'],['../classInterface.html#a8470299defcb984382533823b5b45fcd',1,'Interface::log()']]],
+  ['loop_1',['loop',['../classBufferLooper.html#a21dd2c7b10a836cfd549947a25d851f0',1,'BufferLooper']]]
 ];

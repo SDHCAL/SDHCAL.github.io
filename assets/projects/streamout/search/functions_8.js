@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['log_0',['log',['../classBufferLooper.html#afb51a65acad575fda99d3628713e22a4',1,'BufferLooper::log()'],['../classInterface.html#a8470299defcb984382533823b5b45fcd',1,'Interface::log()']]],
-  ['loop_1',['loop',['../classBufferLooper.html#a21dd2c7b10a836cfd549947a25d851f0',1,'BufferLooper']]]
+  ['interface_0',['Interface',['../classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e',1,'Interface']]],
+  ['interfacereader_1',['InterfaceReader',['../classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc',1,'InterfaceReader']]],
+  ['interfacewriter_2',['InterfaceWriter',['../classInterfaceWriter.html#a6c4708e57a0ed6edf5bb5bfe8ae960a1',1,'InterfaceWriter']]]
 ];

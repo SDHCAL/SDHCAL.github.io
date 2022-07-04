@@ -9,9 +9,12 @@ var annotated_dup =
     [ "Event", "classEvent.html", "classEvent" ],
     [ "Hit", "classHit.html", "classHit" ],
     [ "Interface", "classInterface.html", "classInterface" ],
+    [ "InterfaceReader", "classInterfaceReader.html", "classInterfaceReader" ],
+    [ "InterfaceWriter", "classInterfaceWriter.html", "classInterfaceWriter" ],
     [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ],
     [ "RawdataReader", "classRawdataReader.html", "classRawdataReader" ],
     [ "ROOTWriter", "classROOTWriter.html", "classROOTWriter" ],
     [ "textDump", "classtextDump.html", "classtextDump" ],
-    [ "Timer", "classTimer.html", "classTimer" ]
+    [ "Timer", "classTimer.html", "classTimer" ],
+    [ "Version", "classVersion.html", "classVersion" ]
 ];

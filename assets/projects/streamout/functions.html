@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
+<li>addCompatibility()&#160;:&#160;<a class="el" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">InterfaceWriter</a></li>
 <li>addDIF()&#160;:&#160;<a class="el" href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">Event</a></li>
 <li>addHit()&#160;:&#160;<a class="el" href="classDIF.html#a6ebb721d010f14ca61e78737b440347f">DIF</a></li>
 <li>addSink()&#160;:&#160;<a class="el" href="classBufferLooper.html#a0d677ac1a9661d35ea59d1b38e72a858">BufferLooper&lt; SOURCE, DESTINATION &gt;</a></li>
@@ -102,7 +103,10 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>capacity()&#160;:&#160;<a class="el" href="classBuffer.html#ae253c97c2cb35666ddf02cfd9f3e6780">Buffer</a></li>
-<li>clear()&#160;:&#160;<a class="el" href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">Event</a></li>
+<li>cbegin()&#160;:&#160;<a class="el" href="classDIF.html#ae4b9fa207f2faddd5cda1c584a70cc9e">DIF</a>, <a class="el" href="classDIFSlowControl.html#abdd7ac455942c3e4ce69528dca4c59a1">DIFSlowControl</a>, <a class="el" href="classEvent.html#a20f659488a0f4f75750f21b1cadcf04d">Event</a></li>
+<li>cend()&#160;:&#160;<a class="el" href="classDIF.html#ad00aa862a82de3f80ccf0fec11e29feb">DIF</a>, <a class="el" href="classDIFSlowControl.html#aa1d862c81c584eec3079f1da9b25c362">DIFSlowControl</a>, <a class="el" href="classEvent.html#a48546691150104ea88a0d89c2fec5727">Event</a></li>
+<li>checkCompatibility()&#160;:&#160;<a class="el" href="classInterfaceWriter.html#afeeee4f51b30234d752921663e986f27">InterfaceWriter</a></li>
+<li>clear()&#160;:&#160;<a class="el" href="classDIF.html#ad3b21fd0b6cb929dd459e5c907b0d72f">DIF</a>, <a class="el" href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">Event</a>, <a class="el" href="classHit.html#ae6a8fdf29c92da4e10c573d3046efa9f">Hit</a></li>
 <li>closeFile()&#160;:&#160;<a class="el" href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">RawdataReader</a></li>
 </ul>
 
@@ -111,7 +115,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>DIFPtrValueAtReturnedPos&#160;:&#160;<a class="el" href="structBufferLooperCounter.html#ae67c0b9c39053683f1003d0a38f1b20d">BufferLooperCounter</a></li>
 <li>DIFSlowControl()&#160;:&#160;<a class="el" href="classDIFSlowControl.html#ae4364b00c3ff8e3b272df5e742d2160c">DIFSlowControl</a></li>
 <li>DIFStarter&#160;:&#160;<a class="el" href="structBufferLooperCounter.html#a663839fb72340cac92d1413072f7a174">BufferLooperCounter</a></li>
-<li>Dump()&#160;:&#160;<a class="el" href="classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd">DIFSlowControl</a></li>
 </ul>
 
 
@@ -125,53 +128,61 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>getAbsoluteBCID()&#160;:&#160;<a class="el" href="classDIF.html#a14f9b36fea5c35e3dd9ef0282a60c328">DIF</a>, <a class="el" href="classDIFPtr.html#a2a189ee33f3c9bd60eae4b3f7e6ea034">DIFPtr</a>, <a class="el" href="classHit.html#ad5e365141ba1540cd7415ab7b5136096">Hit</a></li>
-<li>getASICid()&#160;:&#160;<a class="el" href="classDIFPtr.html#a9d832303cdf06ef3a0862d6be1e661f2">DIFPtr</a>, <a class="el" href="classHit.html#aebb87810504ffe2ce2fb8dc01d678506">Hit</a></li>
+<li>getAbsoluteBCID()&#160;:&#160;<a class="el" href="classDIF.html#a14f9b36fea5c35e3dd9ef0282a60c328">DIF</a>, <a class="el" href="classDIFPtr.html#a2a189ee33f3c9bd60eae4b3f7e6ea034">DIFPtr</a>, <a class="el" href="classHit.html#abb1f941c7e8c42b708d997f5aaf38583">Hit</a></li>
+<li>getASICid()&#160;:&#160;<a class="el" href="classDIFPtr.html#a9d832303cdf06ef3a0862d6be1e661f2">DIFPtr</a>, <a class="el" href="classHit.html#a6c09206ccd13b7176a4284c2235ef723">Hit</a></li>
 <li>getBCID()&#160;:&#160;<a class="el" href="classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954">DIFPtr</a></li>
-<li>getChannelId()&#160;:&#160;<a class="el" href="classHit.html#a968fd744715b575f786c74db630acedf">Hit</a></li>
+<li>getBuffer()&#160;:&#160;<a class="el" href="classRawdataReader.html#a6c0b7ec723127e2b1b550ca16d8c63f8">RawdataReader</a></li>
+<li>getChannel()&#160;:&#160;<a class="el" href="classHit.html#a1c86a03f147347f06c0ee6eb0815d568">Hit</a></li>
 <li>getChipSlowControl()&#160;:&#160;<a class="el" href="classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523">DIFSlowControl</a></li>
 <li>getChipsMap()&#160;:&#160;<a class="el" href="classDIFSlowControl.html#afe40c42124dc4fc2fa771b2809391802">DIFSlowControl</a></li>
+<li>getCompatibility()&#160;:&#160;<a class="el" href="classInterfaceWriter.html#af08523308e0cbdfe2b75893fc0945bac">InterfaceWriter</a></li>
 <li>getDetectorID()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a90b67fec159fbac44fb64a244925f930">RawBufferNavigator</a></li>
 <li>getDIF_CRC()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a1c6d8af33dc3a4e6e23084ccd89fe935">RawBufferNavigator</a></li>
-<li>getDIFBCID()&#160;:&#160;<a class="el" href="classDIF.html#a769b7a21dc5b38577ed2434054827ad6">DIF</a>, <a class="el" href="classHit.html#aea85ebedc43ac4cc5549cca8abeead6f">Hit</a></li>
+<li>getDIFBCID()&#160;:&#160;<a class="el" href="classDIF.html#a769b7a21dc5b38577ed2434054827ad6">DIF</a>, <a class="el" href="classHit.html#a93faf6fe3b6176f10e5ee8220a1f9459">Hit</a></li>
 <li>getDIFBuffer()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a913a0c038890bc281889f0859e67a67e">RawBufferNavigator</a></li>
 <li>getDIFBufferSize()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#aea335b52234b27c7da5c5cdffc540863">RawBufferNavigator</a></li>
-<li>getDIFBufferStart()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a62ca39505957e91186298b807261825f">RawBufferNavigator</a></li>
+<li>getDIFBufferStart()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#abf680a0bb844db6ffe860842d6d5a4af">RawBufferNavigator</a></li>
 <li>getDIFid()&#160;:&#160;<a class="el" href="classDIFPtr.html#a809dea85ac915e4bf6f0294447173986">DIFPtr</a></li>
 <li>getDIFId()&#160;:&#160;<a class="el" href="classDIFSlowControl.html#a219c03fe896582e07a888f926688f9bb">DIFSlowControl</a></li>
-<li>getDIFid()&#160;:&#160;<a class="el" href="classHit.html#a627a9bc6a2424d93aed1248ec452ba8f">Hit</a></li>
+<li>getDIFid()&#160;:&#160;<a class="el" href="classHit.html#ad824eac067ffc075445ee1b11aee0cd8">Hit</a></li>
 <li>getDIFPtr()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#ae32bc7f69a5fe425be22f93ee1a26987">RawBufferNavigator</a></li>
-<li>getDTC()&#160;:&#160;<a class="el" href="classDIF.html#a0e2f6a2ae1673b78ae37b02c6985d392">DIF</a>, <a class="el" href="classDIFPtr.html#aa0cf4a88bc590686f490deff98c09ad6">DIFPtr</a>, <a class="el" href="classHit.html#acb090671a1bb57ffd001dbd6f00a7757">Hit</a></li>
+<li>getDTC()&#160;:&#160;<a class="el" href="classDIF.html#a0e2f6a2ae1673b78ae37b02c6985d392">DIF</a>, <a class="el" href="classDIFPtr.html#aa0cf4a88bc590686f490deff98c09ad6">DIFPtr</a>, <a class="el" href="classHit.html#a958c8c175eed0ecf812b8228344aee03">Hit</a></li>
 <li>getElapsedTime()&#160;:&#160;<a class="el" href="classTimer.html#a480f26479147ff5259ee40fefba59cca">Timer</a></li>
 <li>getEndOfAllData()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a3849033261f0976e1c83b7be2ce8b20c">RawBufferNavigator</a></li>
 <li>getEndOfDIFData()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a5002611921565063b617d8e4a33c2ab5">RawBufferNavigator</a></li>
 <li>getFileSize()&#160;:&#160;<a class="el" href="classRawdataReader.html#aa0139d8edaca477adcb036dc5507a428">RawdataReader</a></li>
 <li>getFrameAsicHeader()&#160;:&#160;<a class="el" href="classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7">DIFPtr</a></li>
-<li>getFrameBCID()&#160;:&#160;<a class="el" href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">DIFPtr</a>, <a class="el" href="classHit.html#a14cd756a6db10bf62fc847e1d0179ecf">Hit</a></li>
+<li>getFrameBCID()&#160;:&#160;<a class="el" href="classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26">DIFPtr</a>, <a class="el" href="classHit.html#a760a326090c94d836697555cb60f7f05">Hit</a></li>
 <li>getFrameLevel()&#160;:&#160;<a class="el" href="classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb">DIFPtr</a></li>
-<li>getFramePtr()&#160;:&#160;<a class="el" href="classDIFPtr.html#a73149c4a8c00388594ebf2024983d14a">DIFPtr</a></li>
-<li>getFramesVector()&#160;:&#160;<a class="el" href="classDIFPtr.html#a0e380c35091bae8ef324f9557aba2b72">DIFPtr</a></li>
+<li>getFramePtr()&#160;:&#160;<a class="el" href="classDIFPtr.html#a17ade513279fac60d5216df4b99f65b4">DIFPtr</a></li>
+<li>getFramesVector()&#160;:&#160;<a class="el" href="classDIFPtr.html#adefcf1f43c2312c0a3b4d4188d08fe2b">DIFPtr</a></li>
 <li>getFrameTimeToTrigger()&#160;:&#160;<a class="el" href="classDIFPtr.html#a81895800d8f5d6b260fc9d3825dba9c0">DIFPtr</a></li>
 <li>getGetFramePtrReturn()&#160;:&#160;<a class="el" href="classDIFPtr.html#aad4a08853550fe427d2839a1d276ab3d">DIFPtr</a></li>
-<li>getGTC()&#160;:&#160;<a class="el" href="classDIF.html#a171e184f0963ec33845d0d88351b25ed">DIF</a>, <a class="el" href="classDIFPtr.html#ae9fdeecfb22ae9b4e7d60d2cd5ae7056">DIFPtr</a>, <a class="el" href="classHit.html#a3d29fa62a650492f7d83fdd2bb7640a1">Hit</a></li>
+<li>getGTC()&#160;:&#160;<a class="el" href="classDIF.html#a171e184f0963ec33845d0d88351b25ed">DIF</a>, <a class="el" href="classDIFPtr.html#ae9fdeecfb22ae9b4e7d60d2cd5ae7056">DIFPtr</a>, <a class="el" href="classHit.html#a772ecb007b886879a710bd68ef0f37e2">Hit</a></li>
 <li>getID()&#160;:&#160;<a class="el" href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">DIF</a>, <a class="el" href="classDIFPtr.html#a000e1010efebb0d049d7caee4d00d472">DIFPtr</a></li>
 <li>getLines()&#160;:&#160;<a class="el" href="classDIFPtr.html#ae7a2a93662f6bb1014dd4317257ad887">DIFPtr</a></li>
-<li>getLinesVector()&#160;:&#160;<a class="el" href="classDIFPtr.html#adf3a6a44d38016d9086a42715997ea00">DIFPtr</a></li>
+<li>getLinesVector()&#160;:&#160;<a class="el" href="classDIFPtr.html#a6eb2151200d613b8fdf27a99fc8a17bd">DIFPtr</a></li>
+<li>getMajor()&#160;:&#160;<a class="el" href="classVersion.html#a6bb06a0b3a9cedff9f0755cb5fddd87e">Version</a></li>
+<li>getMinor()&#160;:&#160;<a class="el" href="classVersion.html#a1448c76b840618ca153126c2d17be44d">Version</a></li>
+<li>getName()&#160;:&#160;<a class="el" href="classInterface.html#a73eee93e24c223cd265b5fb0ca1640b8">Interface</a></li>
 <li>getNumberOfFrames()&#160;:&#160;<a class="el" href="classDIFPtr.html#a371e5d19ad3bd2d4effe3e922def2574">DIFPtr</a></li>
-<li>getPtr()&#160;:&#160;<a class="el" href="classDIFPtr.html#ae30778c8c6be6a9c6cd348aaf7e61cb2">DIFPtr</a></li>
+<li>getPatch()&#160;:&#160;<a class="el" href="classVersion.html#a37aefabfc9479302d79ad5e140b1d0bc">Version</a></li>
+<li>getPreRelease()&#160;:&#160;<a class="el" href="classVersion.html#a70f840485e421ae8881faf1546503892">Version</a></li>
+<li>getPreReleaseNumber()&#160;:&#160;<a class="el" href="classVersion.html#a2b439b7a9740fea5e6d3fdbb7f883ed1">Version</a></li>
+<li>getPtr()&#160;:&#160;<a class="el" href="classDIFPtr.html#a9498d5182a1abbd06373b6772180e74e">DIFPtr</a></li>
 <li>getSCBuffer()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a18423d4d14ccf28a8356394836574763">RawBufferNavigator</a></li>
-<li>getSDHCALBuffer()&#160;:&#160;<a class="el" href="classRawdataReader.html#a86abd710b323427e1fc0ba2304cda990">RawdataReader</a></li>
 <li>getSizeAfterDIFPtr()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a54989b8421c806ffd6ddc34d0371d614">RawBufferNavigator</a></li>
-<li>getStartOfDIF()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#ad5d9bcdf36e27e42307868f341bdc433">RawBufferNavigator</a></li>
+<li>getStartOfPayload()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a6957083b5e5be7185f0c1cc6996e8f46">RawBufferNavigator</a></li>
 <li>getTASU1()&#160;:&#160;<a class="el" href="classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0">DIFPtr</a></li>
 <li>getTASU2()&#160;:&#160;<a class="el" href="classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0">DIFPtr</a></li>
 <li>getTDIF()&#160;:&#160;<a class="el" href="classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5">DIFPtr</a></li>
 <li>getTemperatureASU1()&#160;:&#160;<a class="el" href="classDIFPtr.html#a2fbd9cd59c10704fa41986ce4f1d9fd2">DIFPtr</a></li>
 <li>getTemperatureASU2()&#160;:&#160;<a class="el" href="classDIFPtr.html#af3c0857a16517fb79601d78cb3dc85ed">DIFPtr</a></li>
 <li>getTemperatureDIF()&#160;:&#160;<a class="el" href="classDIFPtr.html#a397506348eb8844365ecae08461d7199">DIFPtr</a></li>
-<li>getThreshold()&#160;:&#160;<a class="el" href="classHit.html#a2dcf183809c3bcb1058b4954daad61cd">Hit</a></li>
+<li>getThreshold()&#160;:&#160;<a class="el" href="classHit.html#a63313c1a169e033f1366333b4bbf0d21">Hit</a></li>
 <li>getThresholdStatus()&#160;:&#160;<a class="el" href="classDIFPtr.html#a6b988c403a6b8cc443e4982bdce6ee98">DIFPtr</a></li>
-<li>getTimestamp()&#160;:&#160;<a class="el" href="classHit.html#a7f486fd52aad6ad67fa048d6b6a7297a">Hit</a></li>
+<li>getTimestamp()&#160;:&#160;<a class="el" href="classHit.html#a65f7a6da7e99655a705ea75d8362ddfc">Hit</a></li>
+<li>getVersion()&#160;:&#160;<a class="el" href="classInterface.html#a17f63fe4105c23a77c729cda45aaa2f2">Interface</a></li>
 </ul>
 
 
@@ -186,13 +197,20 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>Interface()&#160;:&#160;<a class="el" href="classInterface.html#a4406d74c75bdfe150bf72be1f1cda8b1">Interface</a></li>
+<li>Interface()&#160;:&#160;<a class="el" href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface</a></li>
+<li>InterfaceReader()&#160;:&#160;<a class="el" href="classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc">InterfaceReader</a></li>
+<li>InterfaceWriter()&#160;:&#160;<a class="el" href="classInterfaceWriter.html#a6c4708e57a0ed6edf5bb5bfe8ae960a1">InterfaceWriter</a></li>
 </ul>
 
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
 <li>log()&#160;:&#160;<a class="el" href="classBufferLooper.html#afb51a65acad575fda99d3628713e22a4">BufferLooper&lt; SOURCE, DESTINATION &gt;</a>, <a class="el" href="classInterface.html#a8470299defcb984382533823b5b45fcd">Interface</a></li>
 <li>loop()&#160;:&#160;<a class="el" href="classBufferLooper.html#a21dd2c7b10a836cfd549947a25d851f0">BufferLooper&lt; SOURCE, DESTINATION &gt;</a></li>
+</ul>
+
+
+<h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>m_Buffer&#160;:&#160;<a class="el" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader</a></li>
 </ul>
 
 
@@ -221,7 +239,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>RawBufferNavigator()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#af53efc13a9ce0ed66fb17163f9baf604">RawBufferNavigator</a></li>
+<li>RawBufferNavigator()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#ac6b32c19d624408f221bd94eee7fc496">RawBufferNavigator</a></li>
 <li>RawdataReader()&#160;:&#160;<a class="el" href="classRawdataReader.html#a463dd80c97f2f3f1df14a24898cacd51">RawdataReader</a></li>
 <li>ROOTWriter()&#160;:&#160;<a class="el" href="classROOTWriter.html#a3cff7f76826536bf8ce7ef5eb3cd7357">ROOTWriter</a></li>
 </ul>
@@ -231,7 +249,7 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>set()&#160;:&#160;<a class="el" href="classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05">Buffer</a></li>
 <li>setAbsoluteBCID()&#160;:&#160;<a class="el" href="classDIF.html#a8a787e44f12404042ca5c4e7ca9c7197">DIF</a>, <a class="el" href="classHit.html#a68083a01e8107f6ebe4482edccf7bc85">Hit</a></li>
 <li>setASIC()&#160;:&#160;<a class="el" href="classHit.html#ab638d6fe792dbdb9e8a9135764d6ee9d">Hit</a></li>
-<li>setBuffer()&#160;:&#160;<a class="el" href="classDIFPtr.html#a7e30339896b616e42c5de78e260668f9">DIFPtr</a>, <a class="el" href="classRawBufferNavigator.html#af426c82ddfaa98b7560cfbadba1a17a1">RawBufferNavigator</a></li>
+<li>setBuffer()&#160;:&#160;<a class="el" href="classDIFPtr.html#a7e30339896b616e42c5de78e260668f9">DIFPtr</a>, <a class="el" href="classRawBufferNavigator.html#a107737c20f1408d407069c1e5d3f9255">RawBufferNavigator</a></li>
 <li>setChannel()&#160;:&#160;<a class="el" href="classHit.html#a6da8f4a03b9f245a0793676e29ba229f">Hit</a></li>
 <li>setDefaultBufferSize()&#160;:&#160;<a class="el" href="classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2">RawdataReader</a></li>
 <li>setDetectorIDs()&#160;:&#160;<a class="el" href="classBufferLooper.html#a16eaf0191d7d58f06eed3c3768ee9ffc">BufferLooper&lt; SOURCE, DESTINATION &gt;</a></li>
@@ -267,12 +285,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
 <li>validBuffer()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#a47407ecb9f3567ea94b06f8b031eb882">RawBufferNavigator</a></li>
+<li>Version()&#160;:&#160;<a class="el" href="classVersion.html#ab5751421d16459dcc2df6365ef3341b4">Version</a></li>
 </ul>
 
 
 <h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
 <li>~Buffer()&#160;:&#160;<a class="el" href="classBuffer.html#a781aa3047b5dc0b48777138a54b5f562">Buffer</a></li>
-<li>~Interface()&#160;:&#160;<a class="el" href="classInterface.html#a67eca71a4ef8d28dc959dd495e2b2b59">Interface</a></li>
+<li>~Interface()&#160;:&#160;<a class="el" href="classInterface.html#a7c171febd7287540790a9b7d0382cd61">Interface</a></li>
+<li>~InterfaceReader()&#160;:&#160;<a class="el" href="classInterfaceReader.html#a447532a1584be2e02169c5816621bc31">InterfaceReader</a></li>
+<li>~InterfaceWriter()&#160;:&#160;<a class="el" href="classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3">InterfaceWriter</a></li>
 <li>~RawBufferNavigator()&#160;:&#160;<a class="el" href="classRawBufferNavigator.html#aa4eefd0eed865160425b45e88ebd1e9d">RawBufferNavigator</a></li>
 <li>~RawdataReader()&#160;:&#160;<a class="el" href="classRawdataReader.html#aaa3606613a1234580e863e88f9c983c2">RawdataReader</a></li>
 </ul>

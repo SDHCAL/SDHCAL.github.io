@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['_7ebuffer_0',['~Buffer',['../classBuffer.html#a781aa3047b5dc0b48777138a54b5f562',1,'Buffer']]],
-  ['_7einterface_1',['~Interface',['../classInterface.html#a67eca71a4ef8d28dc959dd495e2b2b59',1,'Interface']]],
-  ['_7erawbuffernavigator_2',['~RawBufferNavigator',['../classRawBufferNavigator.html#aa4eefd0eed865160425b45e88ebd1e9d',1,'RawBufferNavigator']]],
-  ['_7erawdatareader_3',['~RawdataReader',['../classRawdataReader.html#aaa3606613a1234580e863e88f9c983c2',1,'RawdataReader']]]
+  ['validbuffer_0',['validBuffer',['../classRawBufferNavigator.html#a47407ecb9f3567ea94b06f8b031eb882',1,'RawBufferNavigator']]],
+  ['version_1',['Version',['../classVersion.html#ab5751421d16459dcc2df6365ef3341b4',1,'Version::Version(const std::uint8_t &amp;mj, const std::uint8_t &amp;mn, const std::uint8_t &amp;pt, const semver::prerelease &amp;prt=semver::prerelease::none, const std::uint8_t &amp;prn=0) noexcept'],['../classVersion.html#a25dcc9516c4d7b6b79a1d951701d940c',1,'Version::Version(const std::string_view &amp;str)'],['../classVersion.html#ac71fb396ded3e82064597111bc767737',1,'Version::Version()=default']]]
 ];

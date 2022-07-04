@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nonzerovalusatendofdata_0',['NonZeroValusAtEndOfData',['../structBufferLooperCounter.html#a5267d6a1cb21901edc46e516715e9ecc',1,'BufferLooperCounter']]]
+  ['m_5fbuffer_0',['m_Buffer',['../classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6',1,'InterfaceReader']]]
 ];

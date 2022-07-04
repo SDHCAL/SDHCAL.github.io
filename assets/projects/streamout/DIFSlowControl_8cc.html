@@ -83,19 +83,58 @@ $(document).ready(function(){initNavTree('DIFSlowControl_8cc.html',''); initResi
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">DIFSlowControl.cc File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="DIFSlowControl_8h_source.html">DIFSlowControl.h</a>&quot;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="DIFSlowControl_8cc_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afd721272250fc16808e4ad254f42717e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DIFSlowControl_8cc.html#afd721272250fc16808e4ad254f42717e">to_string</a> (const <a class="el" href="classDIFSlowControl.html">DIFSlowControl</a> &amp;c)</td></tr>
+<tr class="separator:afd721272250fc16808e4ad254f42717e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section copyright"><dt>Copyright</dt><dd>2022 G.Grenier F.Lagarde </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="afd721272250fc16808e4ad254f42717e" name="afd721272250fc16808e4ad254f42717e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd721272250fc16808e4ad254f42717e">&#9670;&nbsp;</a></span>to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDIFSlowControl.html">DIFSlowControl</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00256">256</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  257</span>{</div>
+<div class="line"><span class="lineno">  258</span>  std::string ret;</div>
+<div class="line"><span class="lineno">  259</span>  <span class="keywordflow">for</span>(std::map&lt;<span class="keywordtype">int</span>, std::map&lt;std::string, int&gt;&gt;::const_iterator it = c.<a class="code hl_function" href="classDIFSlowControl.html#abdd7ac455942c3e4ce69528dca4c59a1">cbegin</a>(); it != c.<a class="code hl_function" href="classDIFSlowControl.html#aa1d862c81c584eec3079f1da9b25c362">cend</a>(); it++)</div>
+<div class="line"><span class="lineno">  260</span>  {</div>
+<div class="line"><span class="lineno">  261</span>    ret += <span class="stringliteral">&quot;ASIC &quot;</span> + <a class="code hl_function" href="DIFSlowControl_8cc.html#afd721272250fc16808e4ad254f42717e">std::to_string</a>(it-&gt;first) + <span class="stringliteral">&quot; :\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">for</span>(std::map&lt;std::string, int&gt;::const_iterator jt = (it-&gt;second).begin(); jt != (it-&gt;second).end(); jt++) ret += jt-&gt;first + <span class="stringliteral">&quot; : &quot;</span> + <a class="code hl_function" href="DIFSlowControl_8cc.html#afd721272250fc16808e4ad254f42717e">std::to_string</a>(jt-&gt;second) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  263</span>  }</div>
+<div class="line"><span class="lineno">  264</span>  <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  265</span>}</div>
+<div class="ttc" id="aDIFSlowControl_8cc_html_afd721272250fc16808e4ad254f42717e"><div class="ttname"><a href="DIFSlowControl_8cc.html#afd721272250fc16808e4ad254f42717e">to_string</a></div><div class="ttdeci">std::string to_string(const DIFSlowControl &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="DIFSlowControl_8cc_source.html#l00256">DIFSlowControl.cc:256</a></div></div>
+<div class="ttc" id="aclassDIFSlowControl_html_aa1d862c81c584eec3079f1da9b25c362"><div class="ttname"><a href="classDIFSlowControl.html#aa1d862c81c584eec3079f1da9b25c362">DIFSlowControl::cend</a></div><div class="ttdeci">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator cend() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFSlowControl_8h_source.html#l00049">DIFSlowControl.h:49</a></div></div>
+<div class="ttc" id="aclassDIFSlowControl_html_abdd7ac455942c3e4ce69528dca4c59a1"><div class="ttname"><a href="classDIFSlowControl.html#abdd7ac455942c3e4ce69528dca4c59a1">DIFSlowControl::cbegin</a></div><div class="ttdeci">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator cbegin() const</div><div class="ttdef"><b>Definition:</b> <a href="DIFSlowControl_8h_source.html#l00047">DIFSlowControl.h:47</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

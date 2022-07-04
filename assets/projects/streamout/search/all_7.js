@@ -11,5 +11,6 @@ var searchData=
   ['hit_8',['Hit',['../classHit.html',1,'']]],
   ['hit_2ecc_9',['Hit.cc',['../Hit_8cc.html',1,'']]],
   ['hit_2eh_10',['Hit.h',['../Hit_8h.html',1,'']]],
-  ['hitlinkdef_2eh_11',['HitLinkDef.h',['../HitLinkDef_8h.html',1,'']]]
+  ['hitlinkdef_2eh_11',['HitLinkDef.h',['../HitLinkDef_8h.html',1,'']]],
+  ['hits_5fconst_5fiterator_12',['Hits_const_iterator',['../DIF_8h.html#a9c434e72252115a5d8fbf24da2822a1f',1,'DIF.h']]]
 ];

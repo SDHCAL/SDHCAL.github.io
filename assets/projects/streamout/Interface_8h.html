@@ -84,27 +84,87 @@ $(document).ready(function(){initNavTree('Interface_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Interface.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;AppVersion.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="Buffer_8h_source.html">Buffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Version_8h_source.html">Version.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;semver.hpp&gt;</code><br />
 <code>#include &lt;spdlog/logger.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="Interface_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html">Interface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getSDHCALBuffer();  <a href="classInterface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceReader.html">InterfaceReader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterfaceWriter.html">InterfaceWriter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:af1ef2c97e255bd7f21d3b7614b283d9d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9d">InterfaceType</a> { <a class="el" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> = 0
+, <a class="el" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271">Reader</a> = 1
+, <a class="el" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">Writer</a> = 2
+ }</td></tr>
+<tr class="memdesc:af1ef2c97e255bd7f21d3b7614b283d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getBuffer();  <a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9d">More...</a><br /></td></tr>
+<tr class="separator:af1ef2c97e255bd7f21d3b7614b283d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section copyright"><dt>Copyright</dt><dd>2022 G.Grenier F.Lagarde </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af1ef2c97e255bd7f21d3b7614b283d9d" name="af1ef2c97e255bd7f21d3b7614b283d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ef2c97e255bd7f21d3b7614b283d9d">&#9670;&nbsp;</a></span>InterfaceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9d">InterfaceType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const <a class="el" href="classBuffer.html">Buffer</a>&amp; SOURCE::getBuffer(); </p>
+<p >void DESTINATION::begin(); void DESTINATION::processDIF(const DIFPtr&amp;); void DESTINATION::processFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex); void DESTINATION::processPadInFrame(const DIFPtr&amp;,const std::uint32_t&amp; frameIndex,const std::uint32_t&amp; channelIndex); void DESTINATION::processSlowControl(const Buffer&amp;); void DESTINATION::end(); </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e" name="af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271" name="af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271"></a>Reader&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f" name="af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f"></a>Writer&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00032">32</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{</div>
+<div class="line"><span class="lineno">   34</span>  <a class="code hl_enumvalue" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> = 0,</div>
+<div class="line"><span class="lineno">   35</span>  <a class="code hl_enumvalue" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271">Reader</a>  = 1,</div>
+<div class="line"><span class="lineno">   36</span>  <a class="code hl_enumvalue" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">Writer</a>  = 2</div>
+<div class="line"><span class="lineno">   37</span>};</div>
+<div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e">InterfaceType::Unknown</a></div><div class="ttdeci">@ Unknown</div></div>
+<div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da8a91260e19101b5e3063a7af7760c271">InterfaceType::Reader</a></div><div class="ttdeci">@ Reader</div></div>
+<div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">InterfaceType::Writer</a></div><div class="ttdeci">@ Writer</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

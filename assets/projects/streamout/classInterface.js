@@ -1,11 +1,13 @@
 var classInterface =
 [
-    [ "Interface", "classInterface.html#a4406d74c75bdfe150bf72be1f1cda8b1", null ],
-    [ "~Interface", "classInterface.html#a67eca71a4ef8d28dc959dd495e2b2b59", null ],
+    [ "Interface", "classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e", null ],
+    [ "~Interface", "classInterface.html#a7c171febd7287540790a9b7d0382cd61", null ],
     [ "endDIF", "classInterface.html#a76a196fc5675d77f766ecc539cd960c2", null ],
     [ "endEvent", "classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308", null ],
     [ "endFrame", "classInterface.html#ad80183bde6463d010e74a410c2c685b5", null ],
     [ "endPad", "classInterface.html#ae40b971ad7ed5abad297b2851bc37b65", null ],
+    [ "getName", "classInterface.html#a73eee93e24c223cd265b5fb0ca1640b8", null ],
+    [ "getVersion", "classInterface.html#a17f63fe4105c23a77c729cda45aaa2f2", null ],
     [ "log", "classInterface.html#a8470299defcb984382533823b5b45fcd", null ],
     [ "setLogger", "classInterface.html#a2771031eb4fcbe1b448e0346f7977d86", null ],
     [ "startDIF", "classInterface.html#adbe441f7d565609813ad7dd2ac5e3747", null ],

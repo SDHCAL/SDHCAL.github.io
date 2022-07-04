@@ -95,20 +95,27 @@ $(document).ready(function(){initNavTree('Event_8h_source.html',''); initResizab
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classEvent.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classEvent.html">Event</a> : <span class="keyword">public</span> TObject</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">clear</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">addDIF</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDIF.html">DIF</a>&amp; dif);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  std::map&lt;std::uint8_t, DIF&gt; DIFs;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  ClassDef(<a class="code hl_class" href="classEvent.html">Event</a>, 1);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="Event_8h.html#ae267580fc0fc7632b05614ba950f6017">   13</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="Event_8h.html#ae267580fc0fc7632b05614ba950f6017">DIFs_const_iterator</a> = std::map&lt;std::uint8_t, DIF&gt;::const_iterator;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classEvent.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classEvent.html">Event</a> : <span class="keyword">public</span> TObject</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">void</span>                                        <a class="code hl_function" href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">clear</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">void</span>                                        <a class="code hl_function" href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">addDIF</a>(<span class="keyword">const</span> <a class="code hl_class" href="classDIF.html">DIF</a>&amp; dif);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  std::map&lt;std::uint8_t, DIF&gt;::const_iterator <a class="code hl_function" href="classEvent.html#a20f659488a0f4f75750f21b1cadcf04d">cbegin</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::map&lt;std::uint8_t, DIF&gt;::const_iterator <a class="code hl_function" href="classEvent.html#a48546691150104ea88a0d89c2fec5727">cend</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  std::map&lt;std::uint8_t, DIF&gt; DIFs;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  ClassDef(<a class="code hl_class" href="classEvent.html">Event</a>, 1);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 <div class="ttc" id="aDIF_8h_html"><div class="ttname"><a href="DIF_8h.html">DIF.h</a></div></div>
-<div class="ttc" id="aclassDIF_html"><div class="ttname"><a href="classDIF.html">DIF</a></div><div class="ttdef"><b>Definition:</b> <a href="DIF_8h_source.html#l00013">DIF.h:14</a></div></div>
-<div class="ttc" id="aclassEvent_html"><div class="ttname"><a href="classEvent.html">Event</a></div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00013">Event.h:14</a></div></div>
+<div class="ttc" id="aEvent_8h_html_ae267580fc0fc7632b05614ba950f6017"><div class="ttname"><a href="Event_8h.html#ae267580fc0fc7632b05614ba950f6017">DIFs_const_iterator</a></div><div class="ttdeci">std::map&lt; std::uint8_t, DIF &gt;::const_iterator DIFs_const_iterator</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00013">Event.h:13</a></div></div>
+<div class="ttc" id="aclassDIF_html"><div class="ttname"><a href="classDIF.html">DIF</a></div><div class="ttdef"><b>Definition:</b> <a href="DIF_8h_source.html#l00016">DIF.h:17</a></div></div>
+<div class="ttc" id="aclassEvent_html"><div class="ttname"><a href="classEvent.html">Event</a></div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00015">Event.h:16</a></div></div>
 <div class="ttc" id="aclassEvent_html_a0862af1471604bf30a4f50a5e028637a"><div class="ttname"><a href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">Event::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00008">Event.cc:8</a></div></div>
+<div class="ttc" id="aclassEvent_html_a20f659488a0f4f75750f21b1cadcf04d"><div class="ttname"><a href="classEvent.html#a20f659488a0f4f75750f21b1cadcf04d">Event::cbegin</a></div><div class="ttdeci">std::map&lt; std::uint8_t, DIF &gt;::const_iterator cbegin() const</div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00012">Event.cc:12</a></div></div>
+<div class="ttc" id="aclassEvent_html_a48546691150104ea88a0d89c2fec5727"><div class="ttname"><a href="classEvent.html#a48546691150104ea88a0d89c2fec5727">Event::cend</a></div><div class="ttdeci">std::map&lt; std::uint8_t, DIF &gt;::const_iterator cend() const</div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00014">Event.cc:14</a></div></div>
 <div class="ttc" id="aclassEvent_html_aab78f234db6e3c88c189c2d7594ca17d"><div class="ttname"><a href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">Event::addDIF</a></div><div class="ttdeci">void addDIF(const DIF &amp;dif)</div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00010">Event.cc:10</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

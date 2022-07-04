@@ -100,6 +100,8 @@ Inheritance diagram for DIF:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad3b21fd0b6cb929dd459e5c907b0d72f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#ad3b21fd0b6cb929dd459e5c907b0d72f">clear</a> ()</td></tr>
+<tr class="separator:ad3b21fd0b6cb929dd459e5c907b0d72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebb721d010f14ca61e78737b440347f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a6ebb721d010f14ca61e78737b440347f">addHit</a> (const <a class="el" href="classHit.html">Hit</a> &amp;)</td></tr>
 <tr class="separator:a6ebb721d010f14ca61e78737b440347f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15848fb0777746d852c5c353444ae8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#af15848fb0777746d852c5c353444ae8c">setID</a> (const std::uint8_t &amp;)</td></tr>
@@ -122,10 +124,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a787e44f12404042ca5c4e7ca9c7197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f9b36fea5c35e3dd9ef0282a60c328"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a14f9b36fea5c35e3dd9ef0282a60c328">getAbsoluteBCID</a> () const</td></tr>
 <tr class="separator:a14f9b36fea5c35e3dd9ef0282a60c328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b9fa207f2faddd5cda1c584a70cc9e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classHit.html">Hit</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#ae4b9fa207f2faddd5cda1c584a70cc9e">cbegin</a> () const</td></tr>
+<tr class="separator:ae4b9fa207f2faddd5cda1c584a70cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00aa862a82de3f80ccf0fec11e29feb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classHit.html">Hit</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#ad00aa862a82de3f80ccf0fec11e29feb">cend</a> () const</td></tr>
+<tr class="separator:ad00aa862a82de3f80ccf0fec11e29feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="DIF_8h_source.html#l00013">13</a> of file <a class="el" href="DIF_8h_source.html">DIF.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DIF_8h_source.html#l00016">16</a> of file <a class="el" href="DIF_8h_source.html">DIF.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6ebb721d010f14ca61e78737b440347f" name="a6ebb721d010f14ca61e78737b440347f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ebb721d010f14ca61e78737b440347f">&#9670;&nbsp;</a></span>addHit()</h2>
@@ -145,6 +151,66 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00010">10</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   10</span>{ m_Hits.push_back(hit); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4b9fa207f2faddd5cda1c584a70cc9e" name="ae4b9fa207f2faddd5cda1c584a70cc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b9fa207f2faddd5cda1c584a70cc9e">&#9670;&nbsp;</a></span>cbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classHit.html">Hit</a> &gt;::const_iterator DIF::cbegin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00032">32</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> m_Hits.cbegin(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad00aa862a82de3f80ccf0fec11e29feb" name="ad00aa862a82de3f80ccf0fec11e29feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00aa862a82de3f80ccf0fec11e29feb">&#9670;&nbsp;</a></span>cend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classHit.html">Hit</a> &gt;::const_iterator DIF::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00034">34</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> m_Hits.cend(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3b21fd0b6cb929dd459e5c907b0d72f" name="ad3b21fd0b6cb929dd459e5c907b0d72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b21fd0b6cb929dd459e5c907b0d72f">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIF::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00036">36</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ m_Hits.clear(); }</div>
 </div><!-- fragment -->
 </div>
 </div>

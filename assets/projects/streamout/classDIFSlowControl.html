@@ -90,9 +90,6 @@ $(document).ready(function(){initNavTree('classDIFSlowControl.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Handler of <a class="el" href="classDIF.html">DIF</a> Slow Control info.  
- <a href="classDIFSlowControl.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="DIFSlowControl_8h_source.html">libs/core/include/DIFSlowControl.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -112,17 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fd85884e578f231ba1fb816e9e6deb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFSlowControl.html#a1fd85884e578f231ba1fb816e9e6deb3">getChipSlowControl</a> (const std::int8_t &amp;asicid, const std::string &amp;param)</td></tr>
 <tr class="memdesc:a1fd85884e578f231ba1fb816e9e6deb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one Chip value.  <a href="classDIFSlowControl.html#a1fd85884e578f231ba1fb816e9e6deb3">More...</a><br /></td></tr>
 <tr class="separator:a1fd85884e578f231ba1fb816e9e6deb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5d12af4062366925fbe631687f987dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd">Dump</a> ()</td></tr>
-<tr class="memdesc:af5d12af4062366925fbe631687f987dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">print out full map  <a href="classDIFSlowControl.html#af5d12af4062366925fbe631687f987dd">More...</a><br /></td></tr>
-<tr class="separator:af5d12af4062366925fbe631687f987dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd7ac455942c3e4ce69528dca4c59a1"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFSlowControl.html#abdd7ac455942c3e4ce69528dca4c59a1">cbegin</a> () const</td></tr>
+<tr class="separator:abdd7ac455942c3e4ce69528dca4c59a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d862c81c584eec3079f1da9b25c362"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIFSlowControl.html#aa1d862c81c584eec3079f1da9b25c362">cend</a> () const</td></tr>
+<tr class="separator:aa1d862c81c584eec3079f1da9b25c362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Handler of <a class="el" href="classDIF.html">DIF</a> Slow Control info. </p>
-<dl class="section author"><dt>Author</dt><dd>L.Mirabito </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>March 2010 </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8h_source.html#l00019">19</a> of file <a class="el" href="DIFSlowControl_8h_source.html">DIFSlowControl.h</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8h_source.html#l00013">13</a> of file <a class="el" href="DIFSlowControl_8h_source.html">DIFSlowControl.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae4364b00c3ff8e3b272df5e742d2160c" name="ae4364b00c3ff8e3b272df5e742d2160c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4364b00c3ff8e3b272df5e742d2160c">&#9670;&nbsp;</a></span>DIFSlowControl()</h2>
@@ -166,62 +160,90 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00010">10</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                                                                                                      : m_Version(version), m_DIFId(DIfId), m_AsicType(2)</div>
-<div class="line"><span class="lineno">   11</span>{</div>
-<div class="line"><span class="lineno">   12</span>  <span class="keywordflow">if</span>(cbuf[0] != 0xb1) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   13</span>  <span class="keywordtype">int</span> header_shift{6};</div>
-<div class="line"><span class="lineno">   14</span>  <span class="keywordflow">if</span>(m_Version &lt; 8) m_NbrAsic = cbuf[5];</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   16</span>  {</div>
-<div class="line"><span class="lineno">   17</span>    m_DIFId      = cbuf[1];</div>
-<div class="line"><span class="lineno">   18</span>    m_NbrAsic    = cbuf[2];</div>
-<div class="line"><span class="lineno">   19</span>    header_shift = 3;</div>
-<div class="line"><span class="lineno">   20</span>  }</div>
-<div class="line"><span class="lineno">   21</span>  <span class="keywordtype">int</span> size_hardroc1 = m_NbrAsic * 72 + header_shift + 1;</div>
-<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">if</span>(cbuf[size_hardroc1 - 1] != 0xa1) size_hardroc1 = 0;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>  <span class="keywordtype">int</span> size_hardroc2 = m_NbrAsic * 109 + header_shift + 1;</div>
-<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">if</span>(cbuf[size_hardroc2 - 1] != 0xa1) size_hardroc2 = 0;</div>
-<div class="line"><span class="lineno">   26</span>  <span class="keywordflow">if</span>(size_hardroc1 != 0)</div>
-<div class="line"><span class="lineno">   27</span>  {</div>
-<div class="line"><span class="lineno">   28</span>    FillHR1(header_shift, cbuf);</div>
-<div class="line"><span class="lineno">   29</span>    m_AsicType = 1;</div>
-<div class="line"><span class="lineno">   30</span>  }</div>
-<div class="line"><span class="lineno">   31</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(size_hardroc2 != 0)</div>
-<div class="line"><span class="lineno">   32</span>    FillHR2(header_shift, cbuf);</div>
-<div class="line"><span class="lineno">   33</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00007">7</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                                                                      : m_Version(version), m_DIFId(DIfId), m_AsicType(2)</div>
+<div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>  <span class="keywordflow">if</span>(cbuf[0] != 0xb1) <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   10</span>  <span class="keywordtype">int</span> header_shift{6};</div>
+<div class="line"><span class="lineno">   11</span>  <span class="keywordflow">if</span>(m_Version &lt; 8) m_NbrAsic = cbuf[5];</div>
+<div class="line"><span class="lineno">   12</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   13</span>  {</div>
+<div class="line"><span class="lineno">   14</span>    m_DIFId      = cbuf[1];</div>
+<div class="line"><span class="lineno">   15</span>    m_NbrAsic    = cbuf[2];</div>
+<div class="line"><span class="lineno">   16</span>    header_shift = 3;</div>
+<div class="line"><span class="lineno">   17</span>  }</div>
+<div class="line"><span class="lineno">   18</span>  <span class="keywordtype">int</span> size_hardroc1 = m_NbrAsic * 72 + header_shift + 1;</div>
+<div class="line"><span class="lineno">   19</span>  <span class="keywordflow">if</span>(cbuf[size_hardroc1 - 1] != 0xa1) size_hardroc1 = 0;</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>  <span class="keywordtype">int</span> size_hardroc2 = m_NbrAsic * 109 + header_shift + 1;</div>
+<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">if</span>(cbuf[size_hardroc2 - 1] != 0xa1) size_hardroc2 = 0;</div>
+<div class="line"><span class="lineno">   23</span>  <span class="keywordflow">if</span>(size_hardroc1 != 0)</div>
+<div class="line"><span class="lineno">   24</span>  {</div>
+<div class="line"><span class="lineno">   25</span>    FillHR1(header_shift, cbuf);</div>
+<div class="line"><span class="lineno">   26</span>    m_AsicType = 1;</div>
+<div class="line"><span class="lineno">   27</span>  }</div>
+<div class="line"><span class="lineno">   28</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(size_hardroc2 != 0)</div>
+<div class="line"><span class="lineno">   29</span>    FillHR2(header_shift, cbuf);</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   32</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af5d12af4062366925fbe631687f987dd" name="af5d12af4062366925fbe631687f987dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5d12af4062366925fbe631687f987dd">&#9670;&nbsp;</a></span>Dump()</h2>
+<a id="abdd7ac455942c3e4ce69528dca4c59a1" name="abdd7ac455942c3e4ce69528dca4c59a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd7ac455942c3e4ce69528dca4c59a1">&#9670;&nbsp;</a></span>cbegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DIFSlowControl::Dump </td>
+          <td class="memname">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator DIFSlowControl::cbegin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>print out full map </p>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8h_source.html#l00047">47</a> of file <a class="el" href="DIFSlowControl_8h_source.html">DIFSlowControl.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> m_MapSC.cbegin(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa1d862c81c584eec3079f1da9b25c362" name="aa1d862c81c584eec3079f1da9b25c362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d862c81c584eec3079f1da9b25c362">&#9670;&nbsp;</a></span>cend()</h2>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00045">45</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
-<div class="line"><span class="lineno">   47</span>  <span class="keywordflow">for</span>(std::map&lt;<span class="keywordtype">int</span>, std::map&lt;std::string, int&gt;&gt;::iterator it = m_MapSC.begin(); it != m_MapSC.end(); it++)</div>
-<div class="line"><span class="lineno">   48</span>  {</div>
-<div class="line"><span class="lineno">   49</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;ASIC &quot;</span> &lt;&lt; it-&gt;first &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span>(std::map&lt;std::string, int&gt;::iterator jt = (it-&gt;second).begin(); jt != (it-&gt;second).end(); jt++) std::cout &lt;&lt; jt-&gt;first &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; jt-&gt;second &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   51</span>  }</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; int, std::map&lt; std::string, int &gt; &gt;::const_iterator DIFSlowControl::cend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8h_source.html#l00049">49</a> of file <a class="el" href="DIFSlowControl_8h_source.html">DIFSlowControl.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> m_MapSC.cend(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -258,8 +280,8 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a map of &lt;string (parameter name),int (parameter value) &gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00041">41</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> m_MapSC[asicid]; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00038">38</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{ <span class="keywordflow">return</span> m_MapSC[asicid]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,9 +328,9 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00043">43</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523">getChipSlowControl</a>(asicid)[param]; }</div>
-<div class="ttc" id="aclassDIFSlowControl_html_a39059f6c39b7e112fc0d818e3da19523"><div class="ttname"><a href="classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523">DIFSlowControl::getChipSlowControl</a></div><div class="ttdeci">std::map&lt; std::string, int &gt; getChipSlowControl(const int &amp;asicid)</div><div class="ttdoc">Get one chip map.</div><div class="ttdef"><b>Definition:</b> <a href="DIFSlowControl_8cc_source.html#l00041">DIFSlowControl.cc:41</a></div></div>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00040">40</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523">getChipSlowControl</a>(asicid)[param]; }</div>
+<div class="ttc" id="aclassDIFSlowControl_html_a39059f6c39b7e112fc0d818e3da19523"><div class="ttname"><a href="classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523">DIFSlowControl::getChipSlowControl</a></div><div class="ttdeci">std::map&lt; std::string, int &gt; getChipSlowControl(const int &amp;asicid)</div><div class="ttdoc">Get one chip map.</div><div class="ttdef"><b>Definition:</b> <a href="DIFSlowControl_8cc_source.html#l00038">DIFSlowControl.cc:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,8 +360,8 @@ Public Member Functions</h2></td></tr>
 <p>Get chips map. </p>
 <dl class="section return"><dt>Returns</dt><dd>a map of &lt; Asic Id, map of &lt;string (parameter name),int (parameter value) &gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00039">39</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> m_MapSC; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00036">36</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> m_MapSC; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -368,8 +390,8 @@ Public Member Functions</h2></td></tr>
 
 <p>get <a class="el" href="classDIF.html">DIF</a> id </p>
 
-<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00037">37</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>{ <span class="keywordflow">return</span> m_DIFId; }</div>
+<p class="definition">Definition at line <a class="el" href="DIFSlowControl_8cc_source.html#l00034">34</a> of file <a class="el" href="DIFSlowControl_8cc_source.html">DIFSlowControl.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> m_DIFId; }</div>
 </div><!-- fragment -->
 </div>
 </div>
