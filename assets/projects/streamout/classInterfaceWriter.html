@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00074">74</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00073">73</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c4708e57a0ed6edf5bb5bfe8ae960a1" name="a6c4708e57a0ed6edf5bb5bfe8ae960a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c4708e57a0ed6edf5bb5bfe8ae960a1">&#9670;&nbsp;</a></span>InterfaceWriter()</h2>
@@ -183,10 +183,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00077">77</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>: <a class="code hl_function" href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface</a>(name, version, <a class="code hl_enumvalue" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">InterfaceType::Writer</a>) {}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00076">76</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>: <a class="code hl_function" href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface</a>(name, version, <a class="code hl_enumvalue" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">InterfaceType::Writer</a>) {}</div>
 <div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9dabbad3d307be077bacf6e77b0520db65f">InterfaceType::Writer</a></div><div class="ttdeci">@ Writer</div></div>
-<div class="ttc" id="aclassInterface_html_adc192005d5dbf4f061b7eb1b5d18144e"><div class="ttname"><a href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface::Interface</a></div><div class="ttdeci">Interface(const std::string &amp;name, const std::string &amp;version, const InterfaceType &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00042">Interface.h:42</a></div></div>
+<div class="ttc" id="aclassInterface_html_adc192005d5dbf4f061b7eb1b5d18144e"><div class="ttname"><a href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface::Interface</a></div><div class="ttdeci">Interface(const std::string &amp;name, const std::string &amp;version, const InterfaceType &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00041">Interface.h:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,8 +250,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00079">79</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>{ m_Compatible[name] = version; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00078">78</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>{ m_Compatible[name] = version; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,19 +289,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00083">83</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>  {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">if</span>(m_Compatible.find(name) != m_Compatible.end())</div>
-<div class="line"><span class="lineno">   86</span>    {</div>
-<div class="line"><span class="lineno">   87</span>      <span class="keyword">auto</span>            ran = semver::range::detail::range(m_Compatible[name]);</div>
-<div class="line"><span class="lineno">   88</span>      semver::version ver = semver::version(version);</div>
-<div class="line"><span class="lineno">   89</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   90</span>      <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   92</span>    }</div>
-<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   94</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   95</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00082">82</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>  {</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">if</span>(m_Compatible.find(name) != m_Compatible.end())</div>
+<div class="line"><span class="lineno">   85</span>    {</div>
+<div class="line"><span class="lineno">   86</span>      <span class="keyword">auto</span>            ran = semver::range::detail::range(m_Compatible[name]);</div>
+<div class="line"><span class="lineno">   87</span>      semver::version ver = semver::version(version);</div>
+<div class="line"><span class="lineno">   88</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   89</span>      <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   93</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   94</span>  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,8 +328,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00081">81</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> m_Compatible; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00080">80</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <span class="keywordflow">return</span> m_Compatible; }</div>
 </div><!-- fragment -->
 </div>
 </div>
