@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rawbuffernavigator_0',['RawBufferNavigator',['../classRawBufferNavigator.html',1,'RawBufferNavigator'],['../classRawBufferNavigator.html#ac6b32c19d624408f221bd94eee7fc496',1,'RawBufferNavigator::RawBufferNavigator(const std::shared_ptr&lt; spdlog::logger &gt; &amp;)'],['../classRawBufferNavigator.html#a8276c67f02d43b017f72a60f53c81331',1,'RawBufferNavigator::RawBufferNavigator(const Buffer &amp;b)']]],
+  ['rawbuffernavigator_0',['RawBufferNavigator',['../classRawBufferNavigator.html',1,'RawBufferNavigator'],['../classRawBufferNavigator.html#a6dc42aeefca95b97b93768429b1c8214',1,'RawBufferNavigator::RawBufferNavigator()']]],
   ['rawbuffernavigator_2ecc_1',['RawBufferNavigator.cc',['../RawBufferNavigator_8cc.html',1,'']]],
   ['rawbuffernavigator_2eh_2',['RawBufferNavigator.h',['../RawBufferNavigator_8h.html',1,'']]],
   ['rawdatareader_3',['RawdataReader',['../classRawdataReader.html',1,'RawdataReader'],['../classRawdataReader.html#a463dd80c97f2f3f1df14a24898cacd51',1,'RawdataReader::RawdataReader()']]],

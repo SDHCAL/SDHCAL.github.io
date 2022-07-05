@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['_7ebuffer_0',['~Buffer',['../classBuffer.html#a781aa3047b5dc0b48777138a54b5f562',1,'Buffer']]],
-  ['_7einterface_1',['~Interface',['../classInterface.html#a7c171febd7287540790a9b7d0382cd61',1,'Interface']]],
-  ['_7einterfacereader_2',['~InterfaceReader',['../classInterfaceReader.html#a447532a1584be2e02169c5816621bc31',1,'InterfaceReader']]],
-  ['_7einterfacewriter_3',['~InterfaceWriter',['../classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3',1,'InterfaceWriter']]],
-  ['_7erawbuffernavigator_4',['~RawBufferNavigator',['../classRawBufferNavigator.html#aa4eefd0eed865160425b45e88ebd1e9d',1,'RawBufferNavigator']]],
-  ['_7erawdatareader_5',['~RawdataReader',['../classRawdataReader.html#aaa3606613a1234580e863e88f9c983c2',1,'RawdataReader']]]
+  ['validpayload_0',['validPayload',['../classRawBufferNavigator.html#acc804d1c28ee3876e4ec50f157d1e74b',1,'RawBufferNavigator']]],
+  ['version_1',['Version',['../classVersion.html#ab5751421d16459dcc2df6365ef3341b4',1,'Version::Version(const std::uint8_t &amp;mj, const std::uint8_t &amp;mn, const std::uint8_t &amp;pt, const semver::prerelease &amp;prt=semver::prerelease::none, const std::uint8_t &amp;prn=0) noexcept'],['../classVersion.html#a25dcc9516c4d7b6b79a1d951701d940c',1,'Version::Version(const std::string_view &amp;str)'],['../classVersion.html#ac71fb396ded3e82064597111bc767737',1,'Version::Version()=default']]]
 ];

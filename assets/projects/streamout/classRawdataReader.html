@@ -199,12 +199,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00016">16</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                 : <a class="code hl_function" href="classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc">InterfaceReader</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>)</div>
-<div class="line"><span class="lineno">   17</span>{</div>
-<div class="line"><span class="lineno">   18</span>  m_buf.reserve(m_BufferSize);</div>
-<div class="line"><span class="lineno">   19</span>  m_Filename = fileName;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00018">18</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                 : <a class="code hl_function" href="classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc">InterfaceReader</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>)</div>
+<div class="line"><span class="lineno">   19</span>{</div>
+<div class="line"><span class="lineno">   20</span>  m_buf.reserve(m_BufferSize);</div>
+<div class="line"><span class="lineno">   21</span>  m_Filename = fileName;</div>
+<div class="line"><span class="lineno">   22</span>}</div>
 <div class="ttc" id="aclassInterfaceReader_html_a35dbcfd705c9fe7c7a7006a8d04ee8dc"><div class="ttname"><a href="classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc">InterfaceReader::InterfaceReader</a></div><div class="ttdeci">InterfaceReader(const std::string &amp;name, const std::string &amp;version)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00067">Interface.h:67</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -234,7 +234,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="RawdataReader_8h_source.html#l00029">29</a> of file <a class="el" href="RawdataReader_8h_source.html">RawdataReader.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span>{ <a class="code hl_function" href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">closeFile</a>(); }</div>
-<div class="ttc" id="aclassRawdataReader_html_a343c72de59de023eb893272663ea3cff"><div class="ttname"><a href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">RawdataReader::closeFile</a></div><div class="ttdeci">void closeFile()</div><div class="ttdef"><b>Definition:</b> <a href="RawdataReader_8cc_source.html#l00042">RawdataReader.cc:42</a></div></div>
+<div class="ttc" id="aclassRawdataReader_html_a343c72de59de023eb893272663ea3cff"><div class="ttname"><a href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">RawdataReader::closeFile</a></div><div class="ttdeci">void closeFile()</div><div class="ttdef"><b>Definition:</b> <a href="RawdataReader_8cc_source.html#l00047">RawdataReader.cc:47</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -254,18 +254,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00042">42</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{</div>
-<div class="line"><span class="lineno">   44</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   45</span>  {</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span>(m_FileStream.is_open()) m_FileStream.close();</div>
-<div class="line"><span class="lineno">   47</span>  }</div>
-<div class="line"><span class="lineno">   48</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
-<div class="line"><span class="lineno">   49</span>  {</div>
-<div class="line"><span class="lineno">   50</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in closeFile : {} {}&quot;</span>, e.what(), e.code().value());</div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">throw</span>;</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00047">47</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{</div>
+<div class="line"><span class="lineno">   49</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   50</span>  {</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span>(m_FileStream.is_open()) m_FileStream.close();</div>
 <div class="line"><span class="lineno">   52</span>  }</div>
-<div class="line"><span class="lineno">   53</span>}</div>
+<div class="line"><span class="lineno">   53</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
+<div class="line"><span class="lineno">   54</span>  {</div>
+<div class="line"><span class="lineno">   55</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in closeFile : {} {}&quot;</span>, e.what(), e.code().value());</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">throw</span>;</div>
+<div class="line"><span class="lineno">   57</span>  }</div>
+<div class="line"><span class="lineno">   58</span>}</div>
 <div class="ttc" id="aclassInterface_html_a8470299defcb984382533823b5b45fcd"><div class="ttname"><a href="classInterface.html#a8470299defcb984382533823b5b45fcd">Interface::log</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; &amp; log()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00052">Interface.h:52</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -285,8 +285,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00024">24</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <a class="code hl_function" href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">closeFile</a>(); }</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00026">26</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{ <a class="code hl_function" href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">closeFile</a>(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -305,11 +305,11 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00117">117</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
-<div class="line"><span class="lineno">  119</span>  uncompress();</div>
-<div class="line"><span class="lineno">  120</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a>;</div>
-<div class="line"><span class="lineno">  121</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00122">122</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  123</span>{</div>
+<div class="line"><span class="lineno">  124</span>  uncompress();</div>
+<div class="line"><span class="lineno">  125</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a>;</div>
+<div class="line"><span class="lineno">  126</span>}</div>
 <div class="ttc" id="aclassInterfaceReader_html_a162c9aaa4706267c348d14c2441c7bf6"><div class="ttname"><a href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader::m_Buffer</a></div><div class="ttdeci">Buffer m_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00071">Interface.h:71</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -329,8 +329,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00125">125</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>{ <span class="keywordflow">return</span> m_FileSize; }</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00130">130</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> m_FileSize; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,32 +349,32 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00090">90</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   91</span>{</div>
-<div class="line"><span class="lineno">   92</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   93</span>  {</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> DIF_processed{0};</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span>(DIF_processed &gt;= m_NumberOfDIF)</div>
-<div class="line"><span class="lineno">   96</span>    {</div>
-<div class="line"><span class="lineno">   97</span>      DIF_processed = 0;</div>
-<div class="line"><span class="lineno">   98</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">else</span></div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00095">95</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{</div>
+<div class="line"><span class="lineno">   97</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   98</span>  {</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> DIF_processed{0};</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">if</span>(DIF_processed &gt;= m_NumberOfDIF)</div>
 <div class="line"><span class="lineno">  101</span>    {</div>
-<div class="line"><span class="lineno">  102</span>      DIF_processed++;</div>
-<div class="line"><span class="lineno">  103</span>      std::uint32_t bsize{0};</div>
-<div class="line"><span class="lineno">  104</span>      m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;bsize), <span class="keyword">sizeof</span>(std::uint32_t));</div>
-<div class="line"><span class="lineno">  105</span>      m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_buf[0]), bsize);</div>
-<div class="line"><span class="lineno">  106</span>      <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a> = <a class="code hl_class" href="classBuffer.html">Buffer</a>(m_buf);</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span>  }</div>
-<div class="line"><span class="lineno">  109</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
-<div class="line"><span class="lineno">  110</span>  {</div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in openFile : {}&quot;</span>, e.what());</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  102</span>      DIF_processed = 0;</div>
+<div class="line"><span class="lineno">  103</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
+<div class="line"><span class="lineno">  105</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>      DIF_processed++;</div>
+<div class="line"><span class="lineno">  108</span>      std::uint32_t bsize{0};</div>
+<div class="line"><span class="lineno">  109</span>      m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;bsize), <span class="keyword">sizeof</span>(std::uint32_t));</div>
+<div class="line"><span class="lineno">  110</span>      m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_buf[0]), bsize);</div>
+<div class="line"><span class="lineno">  111</span>      <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a> = <a class="code hl_class" href="classBuffer.html">Buffer</a>(m_buf);</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
 <div class="line"><span class="lineno">  113</span>  }</div>
-<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  115</span>}</div>
+<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
+<div class="line"><span class="lineno">  115</span>  {</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in openFile : {}&quot;</span>, e.what());</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  118</span>  }</div>
+<div class="line"><span class="lineno">  119</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  120</span>}</div>
 <div class="ttc" id="aclassBuffer_html"><div class="ttname"><a href="classBuffer.html">Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00014">Buffer.h:15</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -394,19 +394,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00076">76</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>{</div>
-<div class="line"><span class="lineno">   78</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   79</span>  {</div>
-<div class="line"><span class="lineno">   80</span>    m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_EventNumber), <span class="keyword">sizeof</span>(std::uint32_t));</div>
-<div class="line"><span class="lineno">   81</span>    m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_NumberOfDIF), <span class="keyword">sizeof</span>(std::uint32_t));</div>
-<div class="line"><span class="lineno">   82</span>  }</div>
-<div class="line"><span class="lineno">   83</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00081">81</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>{</div>
+<div class="line"><span class="lineno">   83</span>  <span class="keywordflow">try</span></div>
 <div class="line"><span class="lineno">   84</span>  {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   86</span>  }</div>
-<div class="line"><span class="lineno">   87</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   88</span>}</div>
+<div class="line"><span class="lineno">   85</span>    m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_EventNumber), <span class="keyword">sizeof</span>(std::uint32_t));</div>
+<div class="line"><span class="lineno">   86</span>    m_FileStream.read(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(&amp;m_NumberOfDIF), <span class="keyword">sizeof</span>(std::uint32_t));</div>
+<div class="line"><span class="lineno">   87</span>  }</div>
+<div class="line"><span class="lineno">   88</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
+<div class="line"><span class="lineno">   89</span>  {</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   91</span>  }</div>
+<div class="line"><span class="lineno">   92</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   93</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -426,26 +426,26 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00055">55</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{</div>
-<div class="line"><span class="lineno">   57</span>  <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   58</span>  {</div>
-<div class="line"><span class="lineno">   59</span>    m_FileStream.rdbuf()-&gt;pubsetbuf(0, 0);</div>
-<div class="line"><span class="lineno">   60</span>    m_FileStream.exceptions(std::ifstream::failbit | std::ifstream::badbit);</div>
-<div class="line"><span class="lineno">   61</span>    m_FileStream.open(fileName.c_str(), std::ios::in | std::ios::binary | std::ios::ate);  <span class="comment">// Start at the end to directly calculate the size of the file then come back to beginning</span></div>
-<div class="line"><span class="lineno">   62</span>    m_FileStream.rdbuf()-&gt;pubsetbuf(0, 0);</div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span>(m_FileStream.is_open())</div>
-<div class="line"><span class="lineno">   64</span>    {</div>
-<div class="line"><span class="lineno">   65</span>      setFileSize(m_FileStream.tellg());</div>
-<div class="line"><span class="lineno">   66</span>      m_FileStream.seekg(0, std::ios::beg);</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span>  }</div>
-<div class="line"><span class="lineno">   69</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
-<div class="line"><span class="lineno">   70</span>  {</div>
-<div class="line"><span class="lineno">   71</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in openFile : {}&quot;</span>, e.what());</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">throw</span>;</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00060">60</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>  <span class="keywordflow">try</span></div>
+<div class="line"><span class="lineno">   63</span>  {</div>
+<div class="line"><span class="lineno">   64</span>    m_FileStream.rdbuf()-&gt;pubsetbuf(0, 0);</div>
+<div class="line"><span class="lineno">   65</span>    m_FileStream.exceptions(std::ifstream::failbit | std::ifstream::badbit);</div>
+<div class="line"><span class="lineno">   66</span>    m_FileStream.open(fileName.c_str(), std::ios::in | std::ios::binary | std::ios::ate);  <span class="comment">// Start at the end to directly calculate the size of the file then come back to beginning</span></div>
+<div class="line"><span class="lineno">   67</span>    m_FileStream.rdbuf()-&gt;pubsetbuf(0, 0);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span>(m_FileStream.is_open())</div>
+<div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span>      setFileSize(m_FileStream.tellg());</div>
+<div class="line"><span class="lineno">   71</span>      m_FileStream.seekg(0, std::ios::beg);</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
 <div class="line"><span class="lineno">   73</span>  }</div>
-<div class="line"><span class="lineno">   74</span>}</div>
+<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">catch</span>(<span class="keyword">const</span> std::ios_base::failure&amp; e)</div>
+<div class="line"><span class="lineno">   75</span>  {</div>
+<div class="line"><span class="lineno">   76</span>    <a class="code hl_function" href="classInterface.html#a8470299defcb984382533823b5b45fcd">log</a>()-&gt;error(<span class="stringliteral">&quot;Caught an ios_base::failure in openFile : {}&quot;</span>, e.what());</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">throw</span>;</div>
+<div class="line"><span class="lineno">   78</span>  }</div>
+<div class="line"><span class="lineno">   79</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,8 +473,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00014">14</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{ m_BufferSize = size; }</div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00016">16</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{ m_BufferSize = size; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -493,9 +493,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00022">22</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{ <a class="code hl_function" href="classRawdataReader.html#aebfcbb4e0805b60502384c20c0dd26d2">openFile</a>(m_Filename); }</div>
-<div class="ttc" id="aclassRawdataReader_html_aebfcbb4e0805b60502384c20c0dd26d2"><div class="ttname"><a href="classRawdataReader.html#aebfcbb4e0805b60502384c20c0dd26d2">RawdataReader::openFile</a></div><div class="ttdeci">void openFile(const std::string &amp;fileName)</div><div class="ttdef"><b>Definition:</b> <a href="RawdataReader_8cc_source.html#l00055">RawdataReader.cc:55</a></div></div>
+<p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00024">24</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <a class="code hl_function" href="classRawdataReader.html#aebfcbb4e0805b60502384c20c0dd26d2">openFile</a>(m_Filename); }</div>
+<div class="ttc" id="aclassRawdataReader_html_aebfcbb4e0805b60502384c20c0dd26d2"><div class="ttname"><a href="classRawdataReader.html#aebfcbb4e0805b60502384c20c0dd26d2">RawdataReader::openFile</a></div><div class="ttdeci">void openFile(const std::string &amp;fileName)</div><div class="ttdef"><b>Definition:</b> <a href="RawdataReader_8cc_source.html#l00060">RawdataReader.cc:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

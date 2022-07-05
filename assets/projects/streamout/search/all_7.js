@@ -6,7 +6,7 @@ var searchData=
   ['hasbadslowcontrol_3',['hasBadSlowControl',['../structBufferLooperCounter.html#ab0045623d09bd06143daa25134feb601',1,'BufferLooperCounter']]],
   ['hasline_4',['hasLine',['../classDIFPtr.html#a8ea2d4468fe182f9bc56ff0581d2fc56',1,'DIFPtr']]],
   ['hasslowcontrol_5',['hasSlowControl',['../structBufferLooperCounter.html#a914864f765a44efd3c7eac34e872c72c',1,'BufferLooperCounter']]],
-  ['hasslowcontroldata_6',['hasSlowControlData',['../classRawBufferNavigator.html#a095d04821c4aeb7b4f8985342ca2552d',1,'RawBufferNavigator']]],
+  ['hasslowcontroldata_6',['hasSlowControlData',['../classDIFPtr.html#a0840385700a7d25e9ce603b8cd13b75b',1,'DIFPtr']]],
   ['hastemperature_7',['hasTemperature',['../classDIFPtr.html#ac162455069663bcdc957cbe085e766b5',1,'DIFPtr']]],
   ['hit_8',['Hit',['../classHit.html',1,'']]],
   ['hit_2ecc_9',['Hit.cc',['../Hit_8cc.html',1,'']]],

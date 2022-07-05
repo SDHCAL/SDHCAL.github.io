@@ -5,6 +5,7 @@ var hierarchy =
     [ "BufferLooperCounter", "structBufferLooperCounter.html", null ],
     [ "DIFPtr", "classDIFPtr.html", null ],
     [ "DIFSlowControl", "classDIFSlowControl.html", null ],
+    [ "Exception", "classException.html", null ],
     [ "Interface", "classInterface.html", [
       [ "InterfaceReader", "classInterfaceReader.html", [
         [ "RawdataReader", "classRawdataReader.html", null ]

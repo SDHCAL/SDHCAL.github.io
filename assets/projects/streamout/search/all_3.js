@@ -6,7 +6,7 @@ var searchData=
   ['dif_2ecc_3',['DIF.cc',['../DIF_8cc.html',1,'']]],
   ['dif_2eh_4',['DIF.h',['../DIF_8h.html',1,'']]],
   ['diflinkdef_2eh_5',['DIFLinkDef.h',['../DIFLinkDef_8h.html',1,'']]],
-  ['difptr_6',['DIFPtr',['../classDIFPtr.html',1,'']]],
+  ['difptr_6',['DIFPtr',['../classDIFPtr.html',1,'DIFPtr'],['../classDIFPtr.html#a381c395a81a92fa0a4ba39821be204e8',1,'DIFPtr::DIFPtr()']]],
   ['difptr_2eh_7',['DIFPtr.h',['../DIFPtr_8h.html',1,'']]],
   ['difptrvalueatreturnedpos_8',['DIFPtrValueAtReturnedPos',['../structBufferLooperCounter.html#ae67c0b9c39053683f1003d0a38f1b20d',1,'BufferLooperCounter']]],
   ['difs_5fconst_5fiterator_9',['DIFs_const_iterator',['../Event_8h.html#ae267580fc0fc7632b05614ba950f6017',1,'Event.h']]],

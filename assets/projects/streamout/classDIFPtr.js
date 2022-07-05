@@ -1,10 +1,17 @@
 var classDIFPtr =
 [
+    [ "DIFPtr", "classDIFPtr.html#a381c395a81a92fa0a4ba39821be204e8", null ],
+    [ "badSCData", "classDIFPtr.html#a72e9186bc65b07e8bba203b01e62094c", null ],
+    [ "begin", "classDIFPtr.html#a0830e07886b8b87cd267271b6e9e9bbe", null ],
+    [ "end", "classDIFPtr.html#a0ad8d6dacdd66e3374673c6055619815", null ],
     [ "getAbsoluteBCID", "classDIFPtr.html#a2a189ee33f3c9bd60eae4b3f7e6ea034", null ],
     [ "getASICid", "classDIFPtr.html#a9d832303cdf06ef3a0862d6be1e661f2", null ],
     [ "getBCID", "classDIFPtr.html#a826d13ed2c51711c2a368a1cdecd4954", null ],
+    [ "getDIF_CRC", "classDIFPtr.html#ac2a8a23b9484d4efdc54ef79e4355866", null ],
     [ "getDIFid", "classDIFPtr.html#a809dea85ac915e4bf6f0294447173986", null ],
     [ "getDTC", "classDIFPtr.html#aa0cf4a88bc590686f490deff98c09ad6", null ],
+    [ "getEndOfAllData", "classDIFPtr.html#abe48fe6fc6ebb156f6c1c6056e2098bf", null ],
+    [ "getEndOfDIFData", "classDIFPtr.html#a055d8cc0ff048f6744412b29cf169a51", null ],
     [ "getFrameAsicHeader", "classDIFPtr.html#a3162bc05e0bd44477bd96493910896c7", null ],
     [ "getFrameBCID", "classDIFPtr.html#afd98284ba389d9bd4985ddc5f3bcfb26", null ],
     [ "getFrameLevel", "classDIFPtr.html#a3896d4b18b10da2a0a36485dfcff4abb", null ],
@@ -18,6 +25,8 @@ var classDIFPtr =
     [ "getLinesVector", "classDIFPtr.html#a6eb2151200d613b8fdf27a99fc8a17bd", null ],
     [ "getNumberOfFrames", "classDIFPtr.html#a371e5d19ad3bd2d4effe3e922def2574", null ],
     [ "getPtr", "classDIFPtr.html#a9498d5182a1abbd06373b6772180e74e", null ],
+    [ "getSCBuffer", "classDIFPtr.html#a3bdd78028590f8b4c34b69af3dbaea1a", null ],
+    [ "getSizeAfterDIFPtr", "classDIFPtr.html#af6e1bce48180959e906b670803123c56", null ],
     [ "getTASU1", "classDIFPtr.html#ae0ac061ac79deebb46805512b90950e0", null ],
     [ "getTASU2", "classDIFPtr.html#a5d1519a8ca15eb7430a012e382de40e0", null ],
     [ "getTDIF", "classDIFPtr.html#a9e370404238be08a8d631481a16ac1f5", null ],
@@ -27,6 +36,9 @@ var classDIFPtr =
     [ "getThresholdStatus", "classDIFPtr.html#a6b988c403a6b8cc443e4982bdce6ee98", null ],
     [ "hasAnalogReadout", "classDIFPtr.html#a11a5540c5a20b1e912f6aee8dad2f822", null ],
     [ "hasLine", "classDIFPtr.html#a8ea2d4468fe182f9bc56ff0581d2fc56", null ],
+    [ "hasSlowControlData", "classDIFPtr.html#a0840385700a7d25e9ce603b8cd13b75b", null ],
     [ "hasTemperature", "classDIFPtr.html#ac162455069663bcdc957cbe085e766b5", null ],
-    [ "setBuffer", "classDIFPtr.html#a7e30339896b616e42c5de78e260668f9", null ]
+    [ "setBuffer", "classDIFPtr.html#a2bc5dae3f9440bfaf93cabd6c18bfbe8", null ],
+    [ "setBuffer", "classDIFPtr.html#a7e30339896b616e42c5de78e260668f9", null ],
+    [ "setSCBuffer", "classDIFPtr.html#a147578803ab98dae4f5142cf186ea090", null ]
 ];

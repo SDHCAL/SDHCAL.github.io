@@ -15,6 +15,9 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
       [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ]
     ] ],
     [ "DIFSlowControl.h", "DIFSlowControl_8h.html", "DIFSlowControl_8h" ],
+    [ "Exception.h", "Exception_8h.html", [
+      [ "Exception", "classException.html", "classException" ]
+    ] ],
     [ "Filesystem.h", "Filesystem_8h.html", "Filesystem_8h" ],
     [ "Formatters.h", "Formatters_8h.html", "Formatters_8h" ],
     [ "Interface.h", "Interface_8h.html", "Interface_8h" ],
