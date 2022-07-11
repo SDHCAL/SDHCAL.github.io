@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['set_0',['set',['../classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05',1,'Buffer']]],
-  ['setabsolutebcid_1',['setAbsoluteBCID',['../classDIF.html#a8a787e44f12404042ca5c4e7ca9c7197',1,'DIF::setAbsoluteBCID()'],['../classHit.html#a68083a01e8107f6ebe4482edccf7bc85',1,'Hit::setAbsoluteBCID(const std::uint64_t &amp;)']]],
+  ['set_0',['set',['../classBuffer.html#a791a15dc7a239daf29dbf5282b80955f',1,'Buffer::set(const Buffer &amp;buffer)'],['../classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05',1,'Buffer::set(unsigned char *b)']]],
+  ['setabsolutebcid_1',['setAbsoluteBCID',['../classHit.html#a68083a01e8107f6ebe4482edccf7bc85',1,'Hit::setAbsoluteBCID()'],['../classDIF.html#a8a787e44f12404042ca5c4e7ca9c7197',1,'DIF::setAbsoluteBCID()']]],
   ['setasic_2',['setASIC',['../classHit.html#ab638d6fe792dbdb9e8a9135764d6ee9d',1,'Hit']]],
-  ['setbuffer_3',['setBuffer',['../classDIFPtr.html#a2bc5dae3f9440bfaf93cabd6c18bfbe8',1,'DIFPtr::setBuffer(const Buffer &amp;buffer)'],['../classDIFPtr.html#a7e30339896b616e42c5de78e260668f9',1,'DIFPtr::setBuffer(unsigned char *, const std::uint32_t &amp;)'],['../classRawBufferNavigator.html#a1cc326cc4525a1c85bbbc584d5b376d2',1,'RawBufferNavigator::setBuffer()']]],
+  ['setbuffer_3',['setBuffer',['../classPayloadParser.html#a67503cd23fe894b6a655727bd5080fbf',1,'PayloadParser::setBuffer()'],['../classRawBufferNavigator.html#a1cc326cc4525a1c85bbbc584d5b376d2',1,'RawBufferNavigator::setBuffer()']]],
   ['setchannel_4',['setChannel',['../classHit.html#a6da8f4a03b9f245a0793676e29ba229f',1,'Hit']]],
   ['setdefaultbuffersize_5',['setDefaultBufferSize',['../classRawdataReader.html#af9f5b05c6b55fe44c23320161f8755c2',1,'RawdataReader']]],
   ['setdetectorids_6',['setDetectorIDs',['../classBufferLooper.html#a16eaf0191d7d58f06eed3c3768ee9ffc',1,'BufferLooper']]],
@@ -16,7 +16,7 @@ var searchData=
   ['setid_13',['setID',['../classDIF.html#af15848fb0777746d852c5c353444ae8c',1,'DIF']]],
   ['setlevel_14',['setLevel',['../classtextDump.html#a4f2558aa5a487f5f387a87d424f65ba0',1,'textDump']]],
   ['setlogger_15',['setLogger',['../classInterface.html#a2771031eb4fcbe1b448e0346f7977d86',1,'Interface']]],
-  ['setscbuffer_16',['setSCBuffer',['../classDIFPtr.html#a147578803ab98dae4f5142cf186ea090',1,'DIFPtr']]],
+  ['setscbuffer_16',['setSCBuffer',['../classPayloadParser.html#a32f0d037556794a4a5d75ece3a4ef3d9',1,'PayloadParser']]],
   ['setsize_17',['setSize',['../classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2',1,'Buffer']]],
   ['setthreshold_18',['setThreshold',['../classHit.html#a655f626ed8a635040dd676ad31093998',1,'Hit']]],
   ['settimestamp_19',['setTimestamp',['../classHit.html#a70c540091f47e453fa20fbff91d72b72',1,'Hit']]],

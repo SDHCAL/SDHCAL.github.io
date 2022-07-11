@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hasanalogreadout_0',['hasAnalogReadout',['../classDIFPtr.html#a11a5540c5a20b1e912f6aee8dad2f822',1,'DIFPtr']]],
-  ['hasline_1',['hasLine',['../classDIFPtr.html#a8ea2d4468fe182f9bc56ff0581d2fc56',1,'DIFPtr']]],
-  ['hasslowcontroldata_2',['hasSlowControlData',['../classDIFPtr.html#a0840385700a7d25e9ce603b8cd13b75b',1,'DIFPtr']]],
-  ['hastemperature_3',['hasTemperature',['../classDIFPtr.html#ac162455069663bcdc957cbe085e766b5',1,'DIFPtr']]]
+  ['hasanalogreadout_0',['hasAnalogReadout',['../classPayloadParser.html#a80b4d75a04f1efac6b69fc7aaa13f049',1,'PayloadParser']]],
+  ['hasline_1',['hasLine',['../classPayloadParser.html#ac6a868ac7ac2219cb5d58c096aa20395',1,'PayloadParser']]],
+  ['hasslowcontroldata_2',['hasSlowControlData',['../classPayloadParser.html#a696b09425a1d6178bc120eb87568a1e9',1,'PayloadParser']]],
+  ['hastemperature_3',['hasTemperature',['../classPayloadParser.html#a2cfbb8127bf7b308362036d412927f31',1,'PayloadParser']]]
 ];

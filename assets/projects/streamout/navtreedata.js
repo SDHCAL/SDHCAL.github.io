@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Bits_8cc.html",
-"classDIFSlowControl.html#afe40c42124dc4fc2fa771b2809391802"
+"classInterface.html#a44f13ca2db76a5bb792ee880026d1de0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,8 @@
 var hierarchy =
 [
-    [ "Buffer", "classBuffer.html", null ],
+    [ "Buffer", "classBuffer.html", [
+      [ "PayloadParser", "classPayloadParser.html", null ]
+    ] ],
     [ "BufferLooper< SOURCE, DESTINATION >", "classBufferLooper.html", null ],
     [ "BufferLooperCounter", "structBufferLooperCounter.html", null ],
     [ "DIFPtr", "classDIFPtr.html", null ],

@@ -11,6 +11,7 @@ var classBuffer =
     [ "end", "classBuffer.html#aa9917240b6e2c3b3a2734594b20a7637", null ],
     [ "operator[]", "classBuffer.html#a2f5b198a8967b9cc29362e03436b0d12", null ],
     [ "operator[]", "classBuffer.html#aebd158947a4b2c957458b2697c435033", null ],
+    [ "set", "classBuffer.html#a791a15dc7a239daf29dbf5282b80955f", null ],
     [ "set", "classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05", null ],
     [ "setSize", "classBuffer.html#ae2bd4d756b93fb322ff455fc5e1986a2", null ],
     [ "size", "classBuffer.html#ad72b167940d615e471cc1370b21be117", null ]

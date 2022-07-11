@@ -11,9 +11,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
       [ "BufferLooperCounter", "structBufferLooperCounter.html", "structBufferLooperCounter" ]
     ] ],
     [ "DetectorId.h", "DetectorId_8h.html", "DetectorId_8h" ],
-    [ "DIFPtr.h", "DIFPtr_8h.html", [
-      [ "DIFPtr", "classDIFPtr.html", "classDIFPtr" ]
-    ] ],
     [ "DIFSlowControl.h", "DIFSlowControl_8h.html", "DIFSlowControl_8h" ],
     [ "Exception.h", "Exception_8h.html", [
       [ "Exception", "classException.html", "classException" ]
@@ -21,6 +18,9 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "Filesystem.h", "Filesystem_8h.html", "Filesystem_8h" ],
     [ "Formatters.h", "Formatters_8h.html", "Formatters_8h" ],
     [ "Interface.h", "Interface_8h.html", "Interface_8h" ],
+    [ "PayloadParser.h", "PayloadParser_8h.html", [
+      [ "PayloadParser", "classPayloadParser.html", "classPayloadParser" ]
+    ] ],
     [ "RawBufferNavigator.h", "RawBufferNavigator_8h.html", [
       [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ]
     ] ],
