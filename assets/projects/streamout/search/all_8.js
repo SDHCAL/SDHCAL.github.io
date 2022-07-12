@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_5fshift_0',['ID_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea89667e691fc3d2f29df206f6e88c02e0',1,'Words.h']]],
+  ['information_5fcounter_0',['INFORMATION_COUNTER',['../Words_8h.html#a151ff600064aa318f3a3366cb8c85bb5a60582ed24d0c066ab8d06e0ea7321e10',1,'Words.h']]],
   ['interface_1',['Interface',['../classInterface.html',1,'Interface'],['../classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e',1,'Interface::Interface()']]],
   ['interface_2eh_2',['Interface.h',['../Interface_8h.html',1,'']]],
   ['interfacereader_3',['InterfaceReader',['../classInterfaceReader.html',1,'InterfaceReader'],['../classInterfaceReader.html#a35dbcfd705c9fe7c7a7006a8d04ee8dc',1,'InterfaceReader::InterfaceReader()']]],

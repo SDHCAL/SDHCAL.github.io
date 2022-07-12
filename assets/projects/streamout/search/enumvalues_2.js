@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dtc_5fshift_0',['DTC_SHIFT',['../Words_8h.html#a5b26c948cd1643cfd8eeadb802d79cfea6635e5004f390201d9eb8a49fea37ac4',1,'Words.h']]]
+  ['crc_5flsb_0',['CRC_LSB',['../Words_8h.html#a151ff600064aa318f3a3366cb8c85bb5af063382e5542847970aa3e8460076fae',1,'Words.h']]],
+  ['crc_5fmsb_1',['CRC_MSB',['../Words_8h.html#a151ff600064aa318f3a3366cb8c85bb5a7a314c0d9c4bc3258778b1dba91e5e22',1,'Words.h']]]
 ];
