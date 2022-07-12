@@ -1,7 +1,7 @@
 var structBufferLooperCounter =
 [
     [ "printAllCounters", "structBufferLooperCounter.html#a4ea15a8b5058678d850cd94ce0323866", null ],
-    [ "printCounter", "structBufferLooperCounter.html#a11e74702e4021f0afae866769b39c2a7", null ],
+    [ "printCounter", "structBufferLooperCounter.html#a6a52fcebb84ed6f7b48253394bd6d946", null ],
     [ "DIFPtrValueAtReturnedPos", "structBufferLooperCounter.html#ae67c0b9c39053683f1003d0a38f1b20d", null ],
     [ "DIFStarter", "structBufferLooperCounter.html#a663839fb72340cac92d1413072f7a174", null ],
     [ "hasBadSlowControl", "structBufferLooperCounter.html#ab0045623d09bd06143daa25134feb601", null ],
