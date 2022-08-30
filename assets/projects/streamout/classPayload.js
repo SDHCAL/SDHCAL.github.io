@@ -1,6 +1,7 @@
 var classPayload =
 [
     [ "Payload", "classPayload.html#aa033c09a0129e5a46820c6c069079459", null ],
+    [ "~Payload", "classPayload.html#a045efdf5699754b13a4d291d900795b3", null ],
     [ "getAbsoluteBCID", "classPayload.html#a05b1843202385d9391e22cbe89d53e1c", null ],
     [ "getASICid", "classPayload.html#ae01859398b5310c8637b371b7ac0622f", null ],
     [ "getBCID", "classPayload.html#a02060faa8469a0f6c5bb61edd205146a", null ],

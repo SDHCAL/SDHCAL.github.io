@@ -2,7 +2,8 @@ var hierarchy =
 [
     [ "Buffer", "classBuffer.html", [
       [ "Payload", "classPayload.html", [
-        [ "Payload100", "classPayload100.html", null ]
+        [ "Payload100", "classPayload100.html", null ],
+        [ "Payload150", "classPayload150.html", null ]
       ] ]
     ] ],
     [ "BufferLooper< SOURCE, DESTINATION >", "classBufferLooper.html", null ],

@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00012">12</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00013">13</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac882840df91cc176af6e9011f5739c1a" name="ac882840df91cc176af6e9011f5739c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac882840df91cc176af6e9011f5739c1a">&#9670;&nbsp;</a></span>PayloadLoader()</h2>
@@ -153,15 +153,17 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00016">16</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>  {</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">switch</span>(detector_id)</div>
-<div class="line"><span class="lineno">   19</span>    {</div>
-<div class="line"><span class="lineno">   20</span>      <span class="keywordflow">case</span> 100: payload = <span class="keyword">new</span> <a class="code hl_class" href="classPayload100.html">Payload100</a>();</div>
-<div class="line"><span class="lineno">   21</span>    }</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">return</span> payload;</div>
-<div class="line"><span class="lineno">   23</span>  }</div>
-<div class="ttc" id="aclassPayload100_html"><div class="ttname"><a href="classPayload100.html">Payload100</a></div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00037">Payload100.h:38</a></div></div>
+<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00017">17</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>  {</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">switch</span>(detector_id)</div>
+<div class="line"><span class="lineno">   20</span>    {</div>
+<div class="line"><span class="lineno">   21</span>      <span class="keywordflow">case</span> 100: payload = <span class="keyword">new</span> <a class="code hl_class" href="classPayload100.html">Payload100</a>(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   22</span>      <span class="keywordflow">case</span> 150: payload = <span class="keyword">new</span> <a class="code hl_class" href="classPayload150.html">Payload150</a>(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> payload;</div>
+<div class="line"><span class="lineno">   25</span>  }</div>
+<div class="ttc" id="aclassPayload100_html"><div class="ttname"><a href="classPayload100.html">Payload100</a></div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00027">Payload100.h:28</a></div></div>
+<div class="ttc" id="aclassPayload150_html"><div class="ttname"><a href="classPayload150.html">Payload150</a></div><div class="ttdef"><b>Definition:</b> <a href="Payload150_8h_source.html#l00010">Payload150.h:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
