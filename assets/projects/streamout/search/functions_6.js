@@ -30,7 +30,7 @@ var searchData=
   ['getname_27',['getName',['../classInterface.html#a73eee93e24c223cd265b5fb0ca1640b8',1,'Interface']]],
   ['getnumberofframes_28',['getNumberOfFrames',['../classPayload100.html#af7885a78d2f64662d0a5cfacb85b64b1',1,'Payload100']]],
   ['getpatch_29',['getPatch',['../classVersion.html#a37aefabfc9479302d79ad5e140b1d0bc',1,'Version']]],
-  ['getpayload_30',['getPayload',['../classRawBufferNavigator.html#a7ab6551d0b6b9b52c5c43e9a3b545879',1,'RawBufferNavigator']]],
+  ['getpayload_30',['getPayload',['../classRawBufferNavigator.html#a7ab6551d0b6b9b52c5c43e9a3b545879',1,'RawBufferNavigator::getPayload()'],['../classPayloadLoader.html#a326dd2b5c5d8340d0393931cf62cf206',1,'PayloadLoader::getPayload()']]],
   ['getprerelease_31',['getPreRelease',['../classVersion.html#a70f840485e421ae8881faf1546503892',1,'Version']]],
   ['getprereleasenumber_32',['getPreReleaseNumber',['../classVersion.html#a2b439b7a9740fea5e6d3fdbb7f883ed1',1,'Version']]],
   ['getsizeafterdifptr_33',['getSizeAfterDIFPtr',['../classPayload100.html#a97f368e789d327dbff0128152555c145',1,'Payload100']]],

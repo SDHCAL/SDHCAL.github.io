@@ -17,6 +17,7 @@ var hierarchy =
         [ "textDump", "classtextDump.html", null ]
       ] ]
     ] ],
+    [ "PayloadLoader", "classPayloadLoader.html", null ],
     [ "RawBufferNavigator", "classRawBufferNavigator.html", null ],
     [ "Timer", "classTimer.html", null ],
     [ "TObject", null, [
