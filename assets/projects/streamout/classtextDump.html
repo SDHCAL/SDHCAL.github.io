@@ -108,12 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac0b0e2e906a467e777c06a22de1b525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8bb1a8350b78503a51c681da4fffc77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#ae8bb1a8350b78503a51c681da4fffc77">start</a> ()</td></tr>
 <tr class="separator:ae8bb1a8350b78503a51c681da4fffc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa61bf76cc1e876cf32dc294f3c9c05d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#aa61bf76cc1e876cf32dc294f3c9c05d1">processDIF</a> (const <a class="el" href="classPayload100.html">Payload100</a> &amp;)</td></tr>
-<tr class="separator:aa61bf76cc1e876cf32dc294f3c9c05d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12e0fe91a14e4b2f3f000197bd9e0c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#ad12e0fe91a14e4b2f3f000197bd9e0c8">processFrame</a> (const <a class="el" href="classPayload100.html">Payload100</a> &amp;, uint32_t frameIndex)</td></tr>
-<tr class="separator:ad12e0fe91a14e4b2f3f000197bd9e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e1a265ab1526624a8c70eb8b0371f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#a1e1a265ab1526624a8c70eb8b0371f4d">processPadInFrame</a> (const <a class="el" href="classPayload100.html">Payload100</a> &amp;, uint32_t frameIndex, uint32_t channelIndex)</td></tr>
-<tr class="separator:a1e1a265ab1526624a8c70eb8b0371f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a81d00a7fe855ab858b70ebb84b816d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#a1a81d00a7fe855ab858b70ebb84b816d">processDIF</a> (const <a class="el" href="classPayload.html">Payload</a> &amp;)</td></tr>
+<tr class="separator:a1a81d00a7fe855ab858b70ebb84b816d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd61238cb539d1a8fd0d210d0678dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#a3bd61238cb539d1a8fd0d210d0678dca">processFrame</a> (const <a class="el" href="classPayload.html">Payload</a> &amp;, uint32_t frameIndex)</td></tr>
+<tr class="separator:a3bd61238cb539d1a8fd0d210d0678dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a67b16f817d917308b3313539c1186b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#a1a67b16f817d917308b3313539c1186b">processPadInFrame</a> (const <a class="el" href="classPayload.html">Payload</a> &amp;, uint32_t frameIndex, uint32_t channelIndex)</td></tr>
+<tr class="separator:a1a67b16f817d917308b3313539c1186b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373c934544a3d7924762531cb3673a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#a373c934544a3d7924762531cb3673a92">processSlowControl</a> (<a class="el" href="classBuffer.html">Buffer</a>)</td></tr>
 <tr class="separator:a373c934544a3d7924762531cb3673a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad786c3026dac9dc823e4dc10dd17b024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtextDump.html#ad786c3026dac9dc823e4dc10dd17b024">end</a> ()</td></tr>
@@ -182,14 +182,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00009">9</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>                   : <a class="code hl_function" href="classInterfaceWriter.html#a6c4708e57a0ed6edf5bb5bfe8ae960a1">InterfaceWriter</a>(<span class="stringliteral">&quot;textDump&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>)</div>
-<div class="line"><span class="lineno">   10</span>{</div>
-<div class="line"><span class="lineno">   11</span>  m_InternalLogger = std::make_shared&lt;spdlog::logger&gt;(<span class="stringliteral">&quot;textDump&quot;</span>, std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;());</div>
-<div class="line"><span class="lineno">   12</span>  m_InternalLogger-&gt;set_level(spdlog::level::trace);</div>
-<div class="line"><span class="lineno">   13</span>  <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>);</div>
-<div class="line"><span class="lineno">   14</span>  <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;DIFdataExample&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>);</div>
-<div class="line"><span class="lineno">   15</span>}</div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00007">7</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                   : <a class="code hl_function" href="classInterfaceWriter.html#a6c4708e57a0ed6edf5bb5bfe8ae960a1">InterfaceWriter</a>(<span class="stringliteral">&quot;textDump&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>)</div>
+<div class="line"><span class="lineno">    8</span>{</div>
+<div class="line"><span class="lineno">    9</span>  m_InternalLogger = std::make_shared&lt;spdlog::logger&gt;(<span class="stringliteral">&quot;textDump&quot;</span>, std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;());</div>
+<div class="line"><span class="lineno">   10</span>  m_InternalLogger-&gt;set_level(spdlog::level::trace);</div>
+<div class="line"><span class="lineno">   11</span>  <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span>  <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;DIFdataExample&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>}</div>
 <div class="ttc" id="aclassInterfaceWriter_html_a0d588d7f1dea1c3e8ae2cade3c2e5b36"><div class="ttname"><a href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">InterfaceWriter::addCompatibility</a></div><div class="ttdeci">void addCompatibility(const std::string &amp;name, const std::string &amp;version)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00078">Interface.h:78</a></div></div>
 <div class="ttc" id="aclassInterfaceWriter_html_a6c4708e57a0ed6edf5bb5bfe8ae960a1"><div class="ttname"><a href="classInterfaceWriter.html#a6c4708e57a0ed6edf5bb5bfe8ae960a1">InterfaceWriter::InterfaceWriter</a></div><div class="ttdeci">InterfaceWriter(const std::string &amp;name, const std::string &amp;version)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00076">Interface.h:76</a></div></div>
 </div><!-- fragment -->
@@ -211,8 +211,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00033">33</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;textDump end of report&quot;</span>); }</div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00031">31</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;textDump end of report&quot;</span>); }</div>
 <div class="ttc" id="aclasstextDump_html_a840dd4ef01deba6944eefdd6d444d5cb"><div class="ttname"><a href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">textDump::print</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; &amp; print()</div><div class="ttdef"><b>Definition:</b> <a href="textDump_8h_source.html#l00024">textDump.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -245,8 +245,8 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa61bf76cc1e876cf32dc294f3c9c05d1" name="aa61bf76cc1e876cf32dc294f3c9c05d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa61bf76cc1e876cf32dc294f3c9c05d1">&#9670;&nbsp;</a></span>processDIF()</h2>
+<a id="a1a81d00a7fe855ab858b70ebb84b816d" name="a1a81d00a7fe855ab858b70ebb84b816d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a81d00a7fe855ab858b70ebb84b816d">&#9670;&nbsp;</a></span>processDIF()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,26 +254,26 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void textDump::processDIF </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPayload100.html">Payload100</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classPayload.html">Payload</a> &amp;&#160;</td>
           <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00019">19</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;DIF_ID : {}, DTC : {}, GTC : {}, DIF BCID {}, Absolute BCID : {}, Nbr frames {}&quot;</span>, d.<a class="code hl_function" href="classPayload100.html#a98a23b2e32c6045a66e373e43c9a59ad">getDIFid</a>(), d.<a class="code hl_function" href="classPayload100.html#abcc248301991dc78a35541f51f2f8141">getDTC</a>(), d.<a class="code hl_function" href="classPayload100.html#a866c64bffdd2d7285e69f7e4c260510b">getGTC</a>(), d.<a class="code hl_function" href="classPayload100.html#afdf04cfc52557649f0daa02d0b8cd0b2">getBCID</a>(), d.<a class="code hl_function" href="classPayload100.html#ac42c345d81cbb3270fc6f0e5f7c86aff">getAbsoluteBCID</a>(), d.<a class="code hl_function" href="classPayload100.html#af7885a78d2f64662d0a5cfacb85b64b1">getNumberOfFrames</a>()); }</div>
-<div class="ttc" id="aclassPayload100_html_a866c64bffdd2d7285e69f7e4c260510b"><div class="ttname"><a href="classPayload100.html#a866c64bffdd2d7285e69f7e4c260510b">Payload100::getGTC</a></div><div class="ttdeci">std::uint32_t getGTC() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00227">Payload100.h:227</a></div></div>
-<div class="ttc" id="aclassPayload100_html_a98a23b2e32c6045a66e373e43c9a59ad"><div class="ttname"><a href="classPayload100.html#a98a23b2e32c6045a66e373e43c9a59ad">Payload100::getDIFid</a></div><div class="ttdeci">std::uint32_t getDIFid() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00271">Payload100.h:271</a></div></div>
-<div class="ttc" id="aclassPayload100_html_abcc248301991dc78a35541f51f2f8141"><div class="ttname"><a href="classPayload100.html#abcc248301991dc78a35541f51f2f8141">Payload100::getDTC</a></div><div class="ttdeci">std::uint32_t getDTC() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00221">Payload100.h:221</a></div></div>
-<div class="ttc" id="aclassPayload100_html_ac42c345d81cbb3270fc6f0e5f7c86aff"><div class="ttname"><a href="classPayload100.html#ac42c345d81cbb3270fc6f0e5f7c86aff">Payload100::getAbsoluteBCID</a></div><div class="ttdeci">std::uint64_t getAbsoluteBCID() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00233">Payload100.h:233</a></div></div>
-<div class="ttc" id="aclassPayload100_html_af7885a78d2f64662d0a5cfacb85b64b1"><div class="ttname"><a href="classPayload100.html#af7885a78d2f64662d0a5cfacb85b64b1">Payload100::getNumberOfFrames</a></div><div class="ttdeci">std::uint32_t getNumberOfFrames() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00253">Payload100.h:253</a></div></div>
-<div class="ttc" id="aclassPayload100_html_afdf04cfc52557649f0daa02d0b8cd0b2"><div class="ttname"><a href="classPayload100.html#afdf04cfc52557649f0daa02d0b8cd0b2">Payload100::getBCID</a></div><div class="ttdeci">std::uint32_t getBCID() const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00241">Payload100.h:241</a></div></div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00017">17</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;DIF_ID : {}, DTC : {}, GTC : {}, DIF BCID {}, Absolute BCID : {}, Nbr frames {}&quot;</span>, d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>(), d.<a class="code hl_function" href="classPayload.html#a50e89667a95003d0c6f4577c1a71b1ae">getDTC</a>(), d.<a class="code hl_function" href="classPayload.html#a8395ecc4f6af3574fc90a0f8071aabc1">getGTC</a>(), d.<a class="code hl_function" href="classPayload.html#a02060faa8469a0f6c5bb61edd205146a">getBCID</a>(), d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>(), d.<a class="code hl_function" href="classPayload.html#a2bca643b8f14ab887e13aa675f91f858">getNumberOfFrames</a>()); }</div>
+<div class="ttc" id="aclassPayload_html_a02060faa8469a0f6c5bb61edd205146a"><div class="ttname"><a href="classPayload.html#a02060faa8469a0f6c5bb61edd205146a">Payload::getBCID</a></div><div class="ttdeci">virtual std::uint32_t getBCID() const =0</div></div>
+<div class="ttc" id="aclassPayload_html_a05b1843202385d9391e22cbe89d53e1c"><div class="ttname"><a href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">Payload::getAbsoluteBCID</a></div><div class="ttdeci">virtual std::uint64_t getAbsoluteBCID() const =0</div></div>
+<div class="ttc" id="aclassPayload_html_a0cd2b5cb17d89ea0407f954248a59113"><div class="ttname"><a href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">Payload::getDIFid</a></div><div class="ttdeci">virtual std::uint32_t getDIFid() const =0</div></div>
+<div class="ttc" id="aclassPayload_html_a2bca643b8f14ab887e13aa675f91f858"><div class="ttname"><a href="classPayload.html#a2bca643b8f14ab887e13aa675f91f858">Payload::getNumberOfFrames</a></div><div class="ttdeci">virtual std::uint32_t getNumberOfFrames() const =0</div></div>
+<div class="ttc" id="aclassPayload_html_a50e89667a95003d0c6f4577c1a71b1ae"><div class="ttname"><a href="classPayload.html#a50e89667a95003d0c6f4577c1a71b1ae">Payload::getDTC</a></div><div class="ttdeci">virtual std::uint32_t getDTC() const =0</div></div>
+<div class="ttc" id="aclassPayload_html_a8395ecc4f6af3574fc90a0f8071aabc1"><div class="ttname"><a href="classPayload.html#a8395ecc4f6af3574fc90a0f8071aabc1">Payload::getGTC</a></div><div class="ttdeci">virtual std::uint32_t getGTC() const =0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad12e0fe91a14e4b2f3f000197bd9e0c8" name="ad12e0fe91a14e4b2f3f000197bd9e0c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12e0fe91a14e4b2f3f000197bd9e0c8">&#9670;&nbsp;</a></span>processFrame()</h2>
+<a id="a3bd61238cb539d1a8fd0d210d0678dca" name="a3bd61238cb539d1a8fd0d210d0678dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bd61238cb539d1a8fd0d210d0678dca">&#9670;&nbsp;</a></span>processFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void textDump::processFrame </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPayload100.html">Payload100</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classPayload.html">Payload</a> &amp;&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -298,18 +298,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00021">21</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>  <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;\tDisplaying frame number {} : ASIC ID {}, Frame BCID {}, Frame Time To Trigger (a.k.a timestamp) is {}&quot;</span>, frameIndex, d.<a class="code hl_function" href="classPayload100.html#a17b859750d3220d3327ddb79f8bd51ea">getASICid</a>(frameIndex), d.<a class="code hl_function" href="classPayload100.html#a148ece034a518ecb90ffcd5ddc2051a9">getFrameBCID</a>(frameIndex), d.<a class="code hl_function" href="classPayload100.html#a9b1c8cca78a8357c10b3cb73eb258db1">getFrameTimeToTrigger</a>(frameIndex));</div>
-<div class="line"><span class="lineno">   24</span>}</div>
-<div class="ttc" id="aclassPayload100_html_a148ece034a518ecb90ffcd5ddc2051a9"><div class="ttname"><a href="classPayload100.html#a148ece034a518ecb90ffcd5ddc2051a9">Payload100::getFrameBCID</a></div><div class="ttdeci">std::uint32_t getFrameBCID(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00257">Payload100.h:257</a></div></div>
-<div class="ttc" id="aclassPayload100_html_a17b859750d3220d3327ddb79f8bd51ea"><div class="ttname"><a href="classPayload100.html#a17b859750d3220d3327ddb79f8bd51ea">Payload100::getASICid</a></div><div class="ttdeci">std::uint32_t getASICid(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00277">Payload100.h:277</a></div></div>
-<div class="ttc" id="aclassPayload100_html_a9b1c8cca78a8357c10b3cb73eb258db1"><div class="ttname"><a href="classPayload100.html#a9b1c8cca78a8357c10b3cb73eb258db1">Payload100::getFrameTimeToTrigger</a></div><div class="ttdeci">std::uint32_t getFrameTimeToTrigger(const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00263">Payload100.h:263</a></div></div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00019">19</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
+<div class="line"><span class="lineno">   21</span>  <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;\tDisplaying frame number {} : ASIC ID {}, Frame BCID {}, Frame Time To Trigger (a.k.a timestamp) is {}&quot;</span>, frameIndex, d.<a class="code hl_function" href="classPayload.html#ae01859398b5310c8637b371b7ac0622f">getASICid</a>(frameIndex), d.<a class="code hl_function" href="classPayload.html#a514d51f1ab19ba36bbf2125fca34401e">getFrameBCID</a>(frameIndex), d.<a class="code hl_function" href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">getFrameTimeToTrigger</a>(frameIndex));</div>
+<div class="line"><span class="lineno">   22</span>}</div>
+<div class="ttc" id="aclassPayload_html_a514d51f1ab19ba36bbf2125fca34401e"><div class="ttname"><a href="classPayload.html#a514d51f1ab19ba36bbf2125fca34401e">Payload::getFrameBCID</a></div><div class="ttdeci">virtual std::uint32_t getFrameBCID(const std::uint32_t &amp;) const =0</div></div>
+<div class="ttc" id="aclassPayload_html_ae01859398b5310c8637b371b7ac0622f"><div class="ttname"><a href="classPayload.html#ae01859398b5310c8637b371b7ac0622f">Payload::getASICid</a></div><div class="ttdeci">virtual std::uint32_t getASICid(const std::uint32_t &amp;) const =0</div></div>
+<div class="ttc" id="aclassPayload_html_af0490bf60b4aa729c933d615a717ad8f"><div class="ttname"><a href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">Payload::getFrameTimeToTrigger</a></div><div class="ttdeci">virtual std::uint32_t getFrameTimeToTrigger(const std::uint32_t &amp;) const =0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1e1a265ab1526624a8c70eb8b0371f4d" name="a1e1a265ab1526624a8c70eb8b0371f4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e1a265ab1526624a8c70eb8b0371f4d">&#9670;&nbsp;</a></span>processPadInFrame()</h2>
+<a id="a1a67b16f817d917308b3313539c1186b" name="a1a67b16f817d917308b3313539c1186b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a67b16f817d917308b3313539c1186b">&#9670;&nbsp;</a></span>processPadInFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -317,7 +317,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void textDump::processPadInFrame </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classPayload100.html">Payload100</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classPayload.html">Payload</a> &amp;&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
@@ -340,11 +340,11 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00026">26</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{</div>
-<div class="line"><span class="lineno">   28</span>  <span class="keywordflow">if</span>(d.<a class="code hl_function" href="classPayload100.html#aad19399fccfcbffbc67fca3a286b908d">getThresholdStatus</a>(frameIndex, channelIndex) &gt; 0) { <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;\t\tChannel {}, Threshold {}&quot;</span>, channelIndex, d.<a class="code hl_function" href="classPayload100.html#aad19399fccfcbffbc67fca3a286b908d">getThresholdStatus</a>(frameIndex, channelIndex)); }</div>
-<div class="line"><span class="lineno">   29</span>}</div>
-<div class="ttc" id="aclassPayload100_html_aad19399fccfcbffbc67fca3a286b908d"><div class="ttname"><a href="classPayload100.html#aad19399fccfcbffbc67fca3a286b908d">Payload100::getThresholdStatus</a></div><div class="ttdeci">std::uint32_t getThresholdStatus(const std::uint32_t &amp;, const std::uint32_t &amp;) const</div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00279">Payload100.h:279</a></div></div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00024">24</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>{</div>
+<div class="line"><span class="lineno">   26</span>  <span class="keywordflow">if</span>(d.<a class="code hl_function" href="classPayload.html#a455769a2572301b6109c21b40b216d1b">getThresholdStatus</a>(frameIndex, channelIndex) &gt; 0) { <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;\t\tChannel {}, Threshold {}&quot;</span>, channelIndex, d.<a class="code hl_function" href="classPayload.html#a455769a2572301b6109c21b40b216d1b">getThresholdStatus</a>(frameIndex, channelIndex)); }</div>
+<div class="line"><span class="lineno">   27</span>}</div>
+<div class="ttc" id="aclassPayload_html_a455769a2572301b6109c21b40b216d1b"><div class="ttname"><a href="classPayload.html#a455769a2572301b6109c21b40b216d1b">Payload::getThresholdStatus</a></div><div class="ttdeci">virtual std::uint32_t getThresholdStatus(const std::uint32_t &amp;, const std::uint32_t &amp;) const =0</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -364,8 +364,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00031">31</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;error(<span class="stringliteral">&quot;textDump::processSlowControl not implemented yet.&quot;</span>); }</div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00029">29</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;error(<span class="stringliteral">&quot;textDump::processSlowControl not implemented yet.&quot;</span>); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -413,8 +413,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00017">17</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;Will dump bunch of DIF data&quot;</span>); }</div>
+<p class="definition">Definition at line <a class="el" href="textDump_8cc_source.html#l00015">15</a> of file <a class="el" href="textDump_8cc_source.html">textDump.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>{ <a class="code hl_function" href="classtextDump.html#a840dd4ef01deba6944eefdd6d444d5cb">print</a>()-&gt;info(<span class="stringliteral">&quot;Will dump bunch of DIF data&quot;</span>); }</div>
 </div><!-- fragment -->
 </div>
 </div>
