@@ -8,7 +8,7 @@ var searchData=
   ['getchipslowcontrol_5',['getChipSlowControl',['../classDIFSlowControl.html#a39059f6c39b7e112fc0d818e3da19523',1,'DIFSlowControl::getChipSlowControl(const int &amp;asicid)'],['../classDIFSlowControl.html#a1fd85884e578f231ba1fb816e9e6deb3',1,'DIFSlowControl::getChipSlowControl(const std::int8_t &amp;asicid, const std::string &amp;param)']]],
   ['getchipsmap_6',['getChipsMap',['../classDIFSlowControl.html#afe40c42124dc4fc2fa771b2809391802',1,'DIFSlowControl']]],
   ['getcompatibility_7',['getCompatibility',['../classInterfaceWriter.html#af08523308e0cbdfe2b75893fc0945bac',1,'InterfaceWriter']]],
-  ['getdetectorid_8',['getDetectorID',['../classRawBufferNavigator.html#a90b67fec159fbac44fb64a244925f930',1,'RawBufferNavigator']]],
+  ['getdetectorid_8',['getDetectorID',['../classRawBufferNavigator.html#a4a29bbc572868325697d18b7864ea014',1,'RawBufferNavigator']]],
   ['getdifbcid_9',['getDIFBCID',['../classDIF.html#a769b7a21dc5b38577ed2434054827ad6',1,'DIF::getDIFBCID()'],['../classHit.html#a93faf6fe3b6176f10e5ee8220a1f9459',1,'Hit::getDIFBCID()']]],
   ['getdifid_10',['getDIFid',['../classPayload.html#a0cd2b5cb17d89ea0407f954248a59113',1,'Payload']]],
   ['getdifid_11',['getDIFId',['../classDIFSlowControl.html#a219c03fe896582e07a888f926688f9bb',1,'DIFSlowControl']]],
