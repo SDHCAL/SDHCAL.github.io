@@ -96,12 +96,12 @@ $(document).ready(function(){initNavTree('classPayloadLoader.html',''); initResi
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac882840df91cc176af6e9011f5739c1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayloadLoader.html#ac882840df91cc176af6e9011f5739c1a">PayloadLoader</a> ()=default</td></tr>
 <tr class="separator:ac882840df91cc176af6e9011f5739c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a201fbcee67142d971027beedd84800f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPayload.html">Payload</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayloadLoader.html#a201fbcee67142d971027beedd84800f3">getPayload</a> (const std::int32_t &amp;detector_id)</td></tr>
-<tr class="separator:a201fbcee67142d971027beedd84800f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b1d6a8f1b5520c03ee44955fdd47b1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classPayload.html">Payload</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayloadLoader.html#a01b1d6a8f1b5520c03ee44955fdd47b1">getPayload</a> (const std::int32_t &amp;detector_id)</td></tr>
+<tr class="separator:a01b1d6a8f1b5520c03ee44955fdd47b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00013">13</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00014">14</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac882840df91cc176af6e9011f5739c1a" name="ac882840df91cc176af6e9011f5739c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac882840df91cc176af6e9011f5739c1a">&#9670;&nbsp;</a></span>PayloadLoader()</h2>
@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a201fbcee67142d971027beedd84800f3" name="a201fbcee67142d971027beedd84800f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a201fbcee67142d971027beedd84800f3">&#9670;&nbsp;</a></span>getPayload()</h2>
+<a id="a01b1d6a8f1b5520c03ee44955fdd47b1" name="a01b1d6a8f1b5520c03ee44955fdd47b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b1d6a8f1b5520c03ee44955fdd47b1">&#9670;&nbsp;</a></span>getPayload()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classPayload.html">Payload</a> * PayloadLoader::getPayload </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classPayload.html">Payload</a> &gt; &amp; PayloadLoader::getPayload </td>
           <td>(</td>
           <td class="paramtype">const std::int32_t &amp;&#160;</td>
           <td class="paramname"><em>detector_id</em></td><td>)</td>
@@ -153,17 +153,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00017">17</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>  {</div>
-<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">switch</span>(detector_id)</div>
-<div class="line"><span class="lineno">   20</span>    {</div>
-<div class="line"><span class="lineno">   21</span>      <span class="keywordflow">case</span> 100: payload = <span class="keyword">new</span> <a class="code hl_class" href="classPayload100.html">Payload100</a>(); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   22</span>      <span class="keywordflow">case</span> 150: payload = <span class="keyword">new</span> <a class="code hl_class" href="classPayload150.html">Payload150</a>(); <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> payload;</div>
-<div class="line"><span class="lineno">   25</span>  }</div>
-<div class="ttc" id="aclassPayload100_html"><div class="ttname"><a href="classPayload100.html">Payload100</a></div><div class="ttdef"><b>Definition:</b> <a href="Payload100_8h_source.html#l00027">Payload100.h:28</a></div></div>
-<div class="ttc" id="aclassPayload150_html"><div class="ttname"><a href="classPayload150.html">Payload150</a></div><div class="ttdef"><b>Definition:</b> <a href="Payload150_8h_source.html#l00010">Payload150.h:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="PayloadLoader_8h_source.html#l00018">18</a> of file <a class="el" href="PayloadLoader_8h_source.html">PayloadLoader.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>  {</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">switch</span>(detector_id)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span>      <span class="keywordflow">case</span> 100: payload = std::make_unique&lt;Payload100&gt;(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   23</span>      <span class="keywordflow">case</span> 150: payload = std::make_unique&lt;Payload150&gt;(); <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   24</span>    }</div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">return</span> payload;</div>
+<div class="line"><span class="lineno">   26</span>  }</div>
 </div><!-- fragment -->
 </div>
 </div>
