@@ -148,11 +148,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95977548e234745541a06378a7da95e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2c7490da6cb4cd6e312035b51d4a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90">setEventNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
 <tr class="separator:a5b2c7490da6cb4cd6e312035b51d4a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66973993ba6478967d0a72d4f3564e3d"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a> ()</td></tr>
+<tr class="separator:a66973993ba6478967d0a72d4f3564e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e112228cc9ec8c7b3e1edc5b998795a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">setRunNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
+<tr class="separator:a1e112228cc9ec8c7b3e1edc5b998795a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a1f729567389a5c7e1c4dfb0299cda4b1"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> {0}</td></tr>
 <tr class="separator:a1f729567389a5c7e1c4dfb0299cda4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541bd47c05443535805690651a9f413b"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> {0}</td></tr>
+<tr class="separator:a541bd47c05443535805690651a9f413b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -374,7 +380,7 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00055">55</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   55</span>{<span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a>;}</div>
-<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00058">Interface.h:58</a></div></div>
+<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00060">Interface.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -403,6 +409,35 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00053">53</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   53</span>{ <span class="keywordflow">return</span> m_Name; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a66973993ba6478967d0a72d4f3564e3d" name="a66973993ba6478967d0a72d4f3564e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66973993ba6478967d0a72d4f3564e3d">&#9670;&#160;</a></span>getRunNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Interface::getRunNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00057">57</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{<span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a>;}</div>
+<div class="ttc" id="aclassInterface_html_a541bd47c05443535805690651a9f413b"><div class="ttname"><a href="classInterface.html#a541bd47c05443535805690651a9f413b">Interface::m_RunNumber</a></div><div class="ttdeci">std::uint32_t m_RunNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00061">Interface.h:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -517,6 +552,35 @@ Protected Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00052">52</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   52</span>{ m_Logger = logger; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e112228cc9ec8c7b3e1edc5b998795a" name="a1e112228cc9ec8c7b3e1edc5b998795a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e112228cc9ec8c7b3e1edc5b998795a">&#9670;&#160;</a></span>setRunNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interface::setRunNumber </td>
+          <td>(</td>
+          <td class="paramtype">const std::uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>nbr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00058">58</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{<a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a>=nbr;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -661,7 +725,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00058">58</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00060">60</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+
+</div>
+</div>
+<a id="a541bd47c05443535805690651a9f413b" name="a541bd47c05443535805690651a9f413b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541bd47c05443535805690651a9f413b">&#9670;&#160;</a></span>m_RunNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Interface::m_RunNumber {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00061">61</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 
 </div>
 </div>

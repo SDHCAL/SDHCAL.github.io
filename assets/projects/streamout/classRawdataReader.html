@@ -170,6 +170,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95977548e234745541a06378a7da95e0 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90">setEventNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
 <tr class="separator:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a> ()</td></tr>
+<tr class="separator:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">setRunNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
+<tr class="separator:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -184,6 +188,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classInterface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classInterface.html">Interface</a></td></tr>
 <tr class="memitem:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> {0}</td></tr>
 <tr class="separator:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> {0}</td></tr>
+<tr class="separator:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -219,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   19</span>  m_buf.reserve(m_BufferSize);</div>
 <div class="line"><span class="lineno">   20</span>  m_Filename = fileName;</div>
 <div class="line"><span class="lineno">   21</span>}</div>
-<div class="ttc" id="aclassInterfaceReader_html"><div class="ttname"><a href="classInterfaceReader.html">InterfaceReader</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00066">Interface.h:67</a></div></div>
+<div class="ttc" id="aclassInterfaceReader_html"><div class="ttname"><a href="classInterfaceReader.html">InterfaceReader</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00069">Interface.h:70</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -324,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  123</span>  uncompress();</div>
 <div class="line"><span class="lineno">  124</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a>;</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="aclassInterfaceReader_html_a162c9aaa4706267c348d14c2441c7bf6"><div class="ttname"><a href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader::m_Buffer</a></div><div class="ttdeci">Buffer m_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00073">Interface.h:73</a></div></div>
+<div class="ttc" id="aclassInterfaceReader_html_a162c9aaa4706267c348d14c2441c7bf6"><div class="ttname"><a href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader::m_Buffer</a></div><div class="ttdeci">Buffer m_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00076">Interface.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -421,7 +427,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   90</span>  }</div>
 <div class="line"><span class="lineno">   91</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00058">Interface.h:58</a></div></div>
+<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00060">Interface.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

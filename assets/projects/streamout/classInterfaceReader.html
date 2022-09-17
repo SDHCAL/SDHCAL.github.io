@@ -149,6 +149,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95977548e234745541a06378a7da95e0 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90">setEventNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
 <tr class="separator:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a> ()</td></tr>
+<tr class="separator:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">setRunNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
+<tr class="separator:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -157,10 +161,12 @@ Protected Attributes</h2></td></tr>
 <tr class="inherit_header pro_attribs_classInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classInterface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classInterface.html">Interface</a></td></tr>
 <tr class="memitem:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> {0}</td></tr>
 <tr class="separator:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> {0}</td></tr>
+<tr class="separator:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00066">66</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00069">69</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a35dbcfd705c9fe7c7a7006a8d04ee8dc" name="a35dbcfd705c9fe7c7a7006a8d04ee8dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35dbcfd705c9fe7c7a7006a8d04ee8dc">&#9670;&#160;</a></span>InterfaceReader()</h2>
@@ -196,8 +202,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00069">69</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   69</span>: <a class="code hl_class" href="classInterface.html">Interface</a>(name, version, InterfaceType::Reader) {}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00072">72</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>: <a class="code hl_class" href="classInterface.html">Interface</a>(name, version, InterfaceType::Reader) {}</div>
 <div class="ttc" id="aclassInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00038">Interface.h:39</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -248,7 +254,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00073">73</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00076">76</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 
 </div>
 </div>

@@ -187,12 +187,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95977548e234745541a06378a7da95e0 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90">setEventNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
 <tr class="separator:a5b2c7490da6cb4cd6e312035b51d4a90 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a> ()</td></tr>
+<tr class="separator:a66973993ba6478967d0a72d4f3564e3d inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">setRunNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
+<tr class="separator:a1e112228cc9ec8c7b3e1edc5b998795a inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classInterface"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classInterface')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classInterface.html">Interface</a></td></tr>
 <tr class="memitem:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> {0}</td></tr>
 <tr class="separator:a1f729567389a5c7e1c4dfb0299cda4b1 inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> {0}</td></tr>
+<tr class="separator:a541bd47c05443535805690651a9f413b inherit pro_attribs_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -213,10 +219,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00019">19</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>: <a class="code hl_class" href="classInterfaceWriter.html">InterfaceWriter</a>(<span class="stringliteral">&quot;LCIOWriter&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>), m_LCWriter(IOIMPL::LCFactory::getInstance()-&gt;createLCWriter()) { <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>); }</div>
-<div class="ttc" id="aclassInterfaceWriter_html"><div class="ttname"><a href="classInterfaceWriter.html">InterfaceWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00076">Interface.h:77</a></div></div>
-<div class="ttc" id="aclassInterfaceWriter_html_a0d588d7f1dea1c3e8ae2cade3c2e5b36"><div class="ttname"><a href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">InterfaceWriter::addCompatibility</a></div><div class="ttdeci">void addCompatibility(const std::string &amp;name, const std::string &amp;version)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00081">Interface.h:81</a></div></div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00020">20</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>: <a class="code hl_class" href="classInterfaceWriter.html">InterfaceWriter</a>(<span class="stringliteral">&quot;LCIOWriter&quot;</span>, <span class="stringliteral">&quot;1.0.0&quot;</span>), m_LCWriter(IOIMPL::LCFactory::getInstance()-&gt;createLCWriter()) { <a class="code hl_function" href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">addCompatibility</a>(<span class="stringliteral">&quot;RawdataReader&quot;</span>, <span class="stringliteral">&quot;&gt;=1.0.0&quot;</span>); }</div>
+<div class="ttc" id="aclassInterfaceWriter_html"><div class="ttname"><a href="classInterfaceWriter.html">InterfaceWriter</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00079">Interface.h:80</a></div></div>
+<div class="ttc" id="aclassInterfaceWriter_html_a0d588d7f1dea1c3e8ae2cade3c2e5b36"><div class="ttname"><a href="classInterfaceWriter.html#a0d588d7f1dea1c3e8ae2cade3c2e5b36">InterfaceWriter::addCompatibility</a></div><div class="ttdeci">void addCompatibility(const std::string &amp;name, const std::string &amp;version)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00084">Interface.h:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -236,8 +242,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00032">32</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ m_LCWriter-&gt;close(); }</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00037">37</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{ m_LCWriter-&gt;close(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,8 +272,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#a76a196fc5675d77f766ecc539cd960c2">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00088">88</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00094">94</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -296,11 +302,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00080">80</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   81</span>{</div>
-<div class="line"><span class="lineno">   82</span>  m_LCEvent-&gt;addCollection(m_CollectionVec, <span class="stringliteral">&quot;DHCALRawHits&quot;</span>);</div>
-<div class="line"><span class="lineno">   83</span>  m_LCWriter-&gt;writeEvent(m_LCEvent.get());</div>
-<div class="line"><span class="lineno">   84</span>}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00086">86</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   87</span>{</div>
+<div class="line"><span class="lineno">   88</span>  m_LCEvent-&gt;addCollection(m_CollectionVec, <span class="stringliteral">&quot;DHCALRawHits&quot;</span>);</div>
+<div class="line"><span class="lineno">   89</span>  m_LCWriter-&gt;writeEvent(m_LCEvent.get());</div>
+<div class="line"><span class="lineno">   90</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,8 +335,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#ad80183bde6463d010e74a410c2c685b5">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00092">92</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00098">98</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -359,8 +365,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#ae40b971ad7ed5abad297b2851bc37b65">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00096">96</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00102">102</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,20 +386,20 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00034">34</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>{</div>
-<div class="line"><span class="lineno">   36</span>  std::string   parameter_name = <span class="stringliteral">&quot;DIF&quot;</span> + std::to_string(d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>()) + <span class="stringliteral">&quot;_Triggers&quot;</span>;</div>
-<div class="line"><span class="lineno">   37</span>  EVENT::IntVec parameters;</div>
-<div class="line"><span class="lineno">   38</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a50e89667a95003d0c6f4577c1a71b1ae">getDTC</a>());</div>
-<div class="line"><span class="lineno">   39</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a8395ecc4f6af3574fc90a0f8071aabc1">getGTC</a>());</div>
-<div class="line"><span class="lineno">   40</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a02060faa8469a0f6c5bb61edd205146a">getBCID</a>());</div>
-<div class="line"><span class="lineno">   41</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>() &amp; 0xFFFFFF);</div>
-<div class="line"><span class="lineno">   42</span>  parameters.push_back((d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>() &gt;&gt; 24) &amp; 0xFFFFFF);</div>
-<div class="line"><span class="lineno">   43</span>  parameters.push_back(0);</div>
-<div class="line"><span class="lineno">   44</span>  parameters.push_back(0);</div>
-<div class="line"><span class="lineno">   45</span>  parameters.push_back(0);</div>
-<div class="line"><span class="lineno">   46</span>  m_CollectionVec-&gt;parameters().setValues(<span class="stringliteral">&quot;DIF&quot;</span> + std::to_string(d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>()) + <span class="stringliteral">&quot;_Triggers&quot;</span>, parameters);</div>
-<div class="line"><span class="lineno">   47</span>}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00039">39</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>  std::string   parameter_name = <span class="stringliteral">&quot;DIF&quot;</span> + std::to_string(d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>()) + <span class="stringliteral">&quot;_Triggers&quot;</span>;</div>
+<div class="line"><span class="lineno">   42</span>  EVENT::IntVec parameters;</div>
+<div class="line"><span class="lineno">   43</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a50e89667a95003d0c6f4577c1a71b1ae">getDTC</a>());</div>
+<div class="line"><span class="lineno">   44</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a8395ecc4f6af3574fc90a0f8071aabc1">getGTC</a>());</div>
+<div class="line"><span class="lineno">   45</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a02060faa8469a0f6c5bb61edd205146a">getBCID</a>());</div>
+<div class="line"><span class="lineno">   46</span>  parameters.push_back(d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>() &amp; 0xFFFFFF);</div>
+<div class="line"><span class="lineno">   47</span>  parameters.push_back((d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>() &gt;&gt; 24) &amp; 0xFFFFFF);</div>
+<div class="line"><span class="lineno">   48</span>  parameters.push_back(0);</div>
+<div class="line"><span class="lineno">   49</span>  parameters.push_back(0);</div>
+<div class="line"><span class="lineno">   50</span>  parameters.push_back(0);</div>
+<div class="line"><span class="lineno">   51</span>  m_CollectionVec-&gt;parameters().setValues(<span class="stringliteral">&quot;DIF&quot;</span> + std::to_string(d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>()) + <span class="stringliteral">&quot;_Triggers&quot;</span>, parameters);</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 <div class="ttc" id="aclassPayload_html_a02060faa8469a0f6c5bb61edd205146a"><div class="ttname"><a href="classPayload.html#a02060faa8469a0f6c5bb61edd205146a">Payload::getBCID</a></div><div class="ttdeci">virtual std::uint32_t getBCID() const =0</div></div>
 <div class="ttc" id="aclassPayload_html_a05b1843202385d9391e22cbe89d53e1c"><div class="ttname"><a href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">Payload::getAbsoluteBCID</a></div><div class="ttdeci">virtual std::uint64_t getAbsoluteBCID() const =0</div></div>
 <div class="ttc" id="aclassPayload_html_a0cd2b5cb17d89ea0407f954248a59113"><div class="ttname"><a href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">Payload::getDIFid</a></div><div class="ttdeci">virtual std::uint32_t getDIFid() const =0</div></div>
@@ -428,8 +434,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00049">49</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00054">54</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -465,20 +471,22 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00051">51</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
-<div class="line"><span class="lineno">   53</span>  m_LCEvent-&gt;setTimeStamp(d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>()*10e9);</div>
-<div class="line"><span class="lineno">   54</span>  IMPL::RawCalorimeterHitImpl* hit = <span class="keyword">new</span> IMPL::RawCalorimeterHitImpl;</div>
-<div class="line"><span class="lineno">   55</span>  <span class="keywordtype">int</span>                          ID0 = channelIndex;</div>
-<div class="line"><span class="lineno">   56</span>  ID0                              = ID0 &lt;&lt; 8;</div>
-<div class="line"><span class="lineno">   57</span>  ID0 += d.<a class="code hl_function" href="classPayload.html#ae01859398b5310c8637b371b7ac0622f">getASICid</a>(frameIndex);</div>
-<div class="line"><span class="lineno">   58</span>  ID0 = ID0 &lt;&lt; 8;</div>
-<div class="line"><span class="lineno">   59</span>  ID0 += d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>();</div>
-<div class="line"><span class="lineno">   60</span>  hit-&gt;setCellID0(ID0);</div>
-<div class="line"><span class="lineno">   61</span>  hit-&gt;setAmplitude(d.<a class="code hl_function" href="classPayload.html#a455769a2572301b6109c21b40b216d1b">getThresholdStatus</a>(frameIndex, channelIndex));</div>
-<div class="line"><span class="lineno">   62</span>  hit-&gt;setTimeStamp(d.<a class="code hl_function" href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">getFrameTimeToTrigger</a>(frameIndex));</div>
-<div class="line"><span class="lineno">   63</span>  m_CollectionVec-&gt;addElement(hit);</div>
-<div class="line"><span class="lineno">   64</span>}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00056">56</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{</div>
+<div class="line"><span class="lineno">   58</span>  m_LCEvent-&gt;setTimeStamp(d.<a class="code hl_function" href="classPayload.html#a05b1843202385d9391e22cbe89d53e1c">getAbsoluteBCID</a>()*200);</div>
+<div class="line"><span class="lineno">   59</span>  m_LCEvent-&gt;setRunNumber(<a class="code hl_function" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a>());</div>
+<div class="line"><span class="lineno">   60</span>  IMPL::RawCalorimeterHitImpl* hit = <span class="keyword">new</span> IMPL::RawCalorimeterHitImpl;</div>
+<div class="line"><span class="lineno">   61</span>  <span class="keywordtype">int</span>                          ID0 = channelIndex;</div>
+<div class="line"><span class="lineno">   62</span>  ID0                              = ID0 &lt;&lt; 8;</div>
+<div class="line"><span class="lineno">   63</span>  ID0 += d.<a class="code hl_function" href="classPayload.html#ae01859398b5310c8637b371b7ac0622f">getASICid</a>(frameIndex);</div>
+<div class="line"><span class="lineno">   64</span>  ID0 = ID0 &lt;&lt; 8;</div>
+<div class="line"><span class="lineno">   65</span>  ID0 += d.<a class="code hl_function" href="classPayload.html#a0cd2b5cb17d89ea0407f954248a59113">getDIFid</a>();</div>
+<div class="line"><span class="lineno">   66</span>  hit-&gt;setCellID0(ID0);</div>
+<div class="line"><span class="lineno">   67</span>  hit-&gt;setAmplitude(d.<a class="code hl_function" href="classPayload.html#a455769a2572301b6109c21b40b216d1b">getThresholdStatus</a>(frameIndex, channelIndex));</div>
+<div class="line"><span class="lineno">   68</span>  hit-&gt;setTimeStamp(d.<a class="code hl_function" href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">getFrameTimeToTrigger</a>(frameIndex));</div>
+<div class="line"><span class="lineno">   69</span>  m_CollectionVec-&gt;addElement(hit);</div>
+<div class="line"><span class="lineno">   70</span>}</div>
+<div class="ttc" id="aclassInterface_html_a66973993ba6478967d0a72d4f3564e3d"><div class="ttname"><a href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">Interface::getRunNumber</a></div><div class="ttdeci">std::uint32_t getRunNumber()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00057">Interface.h:57</a></div></div>
 <div class="ttc" id="aclassPayload_html_a455769a2572301b6109c21b40b216d1b"><div class="ttname"><a href="classPayload.html#a455769a2572301b6109c21b40b216d1b">Payload::getThresholdStatus</a></div><div class="ttdeci">virtual std::uint32_t getThresholdStatus(const std::uint32_t &amp;, const std::uint32_t &amp;) const =0</div></div>
 <div class="ttc" id="aclassPayload_html_ae01859398b5310c8637b371b7ac0622f"><div class="ttname"><a href="classPayload.html#ae01859398b5310c8637b371b7ac0622f">Payload::getASICid</a></div><div class="ttdeci">virtual std::uint32_t getASICid(const std::uint32_t &amp;) const =0</div></div>
 <div class="ttc" id="aclassPayload_html_af0490bf60b4aa729c933d615a717ad8f"><div class="ttname"><a href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">Payload::getFrameTimeToTrigger</a></div><div class="ttdeci">virtual std::uint32_t getFrameTimeToTrigger(const std::uint32_t &amp;) const =0</div></div>
@@ -530,8 +538,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00017">17</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>{ m_Filename = <a class="code hl_function" href="Filesystem_8h.html#a7bb16ac5e7cbea0d53b4d81c2be92b35">filename</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00018">18</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{ m_Filename = <a class="code hl_function" href="Filesystem_8h.html#a7bb16ac5e7cbea0d53b4d81c2be92b35">filename</a>; }</div>
 <div class="ttc" id="aFilesystem_8h_html_a7bb16ac5e7cbea0d53b4d81c2be92b35"><div class="ttname"><a href="Filesystem_8h.html#a7bb16ac5e7cbea0d53b4d81c2be92b35">filename</a></div><div class="ttdeci">std::string filename(const std::string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="Filesystem_8cc_source.html#l00019">Filesystem.cc:19</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -551,16 +559,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00021">21</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>  m_LCWriter-&gt;open(m_Filename, EVENT::LCIO::WRITE_NEW);</div>
-<div class="line"><span class="lineno">   24</span>  std::unique_ptr&lt;IMPL::LCRunHeaderImpl&gt; runHdr(<span class="keyword">new</span> IMPL::LCRunHeaderImpl);</div>
-<div class="line"><span class="lineno">   25</span>  runHdr-&gt;setRunNumber(50);  <span class="comment">// FIXME : provide run number</span></div>
-<div class="line"><span class="lineno">   26</span>  runHdr-&gt;setDetectorName(m_DetectorName);</div>
-<div class="line"><span class="lineno">   27</span>  std::string description(<span class="stringliteral">&quot;data collected with SDHCAL prototype&quot;</span>);</div>
-<div class="line"><span class="lineno">   28</span>  runHdr-&gt;setDescription(description);</div>
-<div class="line"><span class="lineno">   29</span>  m_LCWriter-&gt;writeRunHeader(runHdr.get());</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00022">22</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{</div>
+<div class="line"><span class="lineno">   24</span>  m_LCWriter-&gt;open(m_Filename, EVENT::LCIO::WRITE_NEW);</div>
+<div class="line"><span class="lineno">   25</span>  std::unique_ptr&lt;IMPL::LCRunHeaderImpl&gt; runHdr(<span class="keyword">new</span> IMPL::LCRunHeaderImpl);</div>
+<div class="line"><span class="lineno">   26</span>  std::string filename_ = <a class="code hl_function" href="Filesystem_8h.html#a7bb16ac5e7cbea0d53b4d81c2be92b35">filename</a>(m_Filename);</div>
+<div class="line"><span class="lineno">   27</span>  std::size_t beginn = filename_.find_last_of(<span class="charliteral">&#39;_&#39;</span>);</div>
+<div class="line"><span class="lineno">   28</span>  filename_=filename_.substr(beginn+1);</div>
+<div class="line"><span class="lineno">   29</span>  <a class="code hl_function" href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">setRunNumber</a>(stoi(filename_));</div>
+<div class="line"><span class="lineno">   30</span>  runHdr-&gt;setRunNumber(<a class="code hl_function" href="classInterface.html#a66973993ba6478967d0a72d4f3564e3d">getRunNumber</a>());</div>
+<div class="line"><span class="lineno">   31</span>  runHdr-&gt;setDetectorName(m_DetectorName);</div>
+<div class="line"><span class="lineno">   32</span>  std::string description(<span class="stringliteral">&quot;data collected with SDHCAL prototype&quot;</span>);</div>
+<div class="line"><span class="lineno">   33</span>  runHdr-&gt;setDescription(description);</div>
+<div class="line"><span class="lineno">   34</span>  m_LCWriter-&gt;writeRunHeader(runHdr.get());</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="aclassInterface_html_a1e112228cc9ec8c7b3e1edc5b998795a"><div class="ttname"><a href="classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a">Interface::setRunNumber</a></div><div class="ttdeci">void setRunNumber(const std::uint32_t &amp;nbr)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00058">Interface.h:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -589,8 +602,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#adbe441f7d565609813ad7dd2ac5e3747">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00086">86</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00092">92</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -619,19 +632,19 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00066">66</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>{</div>
-<div class="line"><span class="lineno">   68</span>  m_LCEvent = std::make_unique&lt;IMPL::LCEventImpl&gt;();</div>
-<div class="line"><span class="lineno">   69</span>  m_LCEvent-&gt;setEventNumber(<a class="code hl_function" href="classInterface.html#a95977548e234745541a06378a7da95e0">getEventNumber</a>());</div>
-<div class="line"><span class="lineno">   70</span>  m_LCEvent-&gt;setDetectorName(m_DetectorName);</div>
-<div class="line"><span class="lineno">   71</span>  m_LCEvent-&gt;setWeight(1);</div>
-<div class="line"><span class="lineno">   72</span>  m_CollectionVec = <span class="keyword">new</span> IMPL::LCCollectionVec(EVENT::LCIO::RAWCALORIMETERHIT);</div>
-<div class="line"><span class="lineno">   73</span>  IMPL::LCFlagImpl flag(0);</div>
-<div class="line"><span class="lineno">   74</span>  <span class="comment">// flag.setBit(EVENT::LCIO::RCHBIT_ID1);</span></div>
-<div class="line"><span class="lineno">   75</span>  flag.setBit(EVENT::LCIO::RCHBIT_TIME);</div>
-<div class="line"><span class="lineno">   76</span>  m_CollectionVec-&gt;setFlag(flag.getFlag());</div>
-<div class="line"><span class="lineno">   77</span>  m_CollectionVec-&gt;parameters().setValue(EVENT::LCIO::CellIDEncoding, <span class="stringliteral">&quot;dif:8,asic:8,channel:6&quot;</span>);</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00072">72</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>{</div>
+<div class="line"><span class="lineno">   74</span>  m_LCEvent = std::make_unique&lt;IMPL::LCEventImpl&gt;();</div>
+<div class="line"><span class="lineno">   75</span>  m_LCEvent-&gt;setEventNumber(<a class="code hl_function" href="classInterface.html#a95977548e234745541a06378a7da95e0">getEventNumber</a>());</div>
+<div class="line"><span class="lineno">   76</span>  m_LCEvent-&gt;setDetectorName(m_DetectorName);</div>
+<div class="line"><span class="lineno">   77</span>  m_LCEvent-&gt;setWeight(1);</div>
+<div class="line"><span class="lineno">   78</span>  m_CollectionVec = <span class="keyword">new</span> IMPL::LCCollectionVec(EVENT::LCIO::RAWCALORIMETERHIT);</div>
+<div class="line"><span class="lineno">   79</span>  IMPL::LCFlagImpl flag(0);</div>
+<div class="line"><span class="lineno">   80</span>  <span class="comment">// flag.setBit(EVENT::LCIO::RCHBIT_ID1);</span></div>
+<div class="line"><span class="lineno">   81</span>  flag.setBit(EVENT::LCIO::RCHBIT_TIME);</div>
+<div class="line"><span class="lineno">   82</span>  m_CollectionVec-&gt;setFlag(flag.getFlag());</div>
+<div class="line"><span class="lineno">   83</span>  m_CollectionVec-&gt;parameters().setValue(EVENT::LCIO::CellIDEncoding, <span class="stringliteral">&quot;dif:8,asic:8,channel:6&quot;</span>);</div>
+<div class="line"><span class="lineno">   84</span>}</div>
 <div class="ttc" id="aclassInterface_html_a95977548e234745541a06378a7da95e0"><div class="ttname"><a href="classInterface.html#a95977548e234745541a06378a7da95e0">Interface::getEventNumber</a></div><div class="ttdeci">std::uint32_t getEventNumber()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00055">Interface.h:55</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -661,8 +674,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#a24df90c8965c80bf28bcd4f6afe1854a">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00090">90</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00096">96</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -691,8 +704,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classInterface.html#a44f13ca2db76a5bb792ee880026d1de0">Interface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00094">94</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="LCIOWriter_8cc_source.html#l00100">100</a> of file <a class="el" href="LCIOWriter_8cc_source.html">LCIOWriter.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  100</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
