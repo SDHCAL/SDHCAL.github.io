@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('classInterface.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classInterface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Interface Class Reference</div></div>
 </div><!--header-->
@@ -143,6 +144,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73eee93e24c223cd265b5fb0ca1640b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f63fe4105c23a77c729cda45aaa2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVersion.html">Version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a17f63fe4105c23a77c729cda45aaa2f2">getVersion</a> ()</td></tr>
 <tr class="separator:a17f63fe4105c23a77c729cda45aaa2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95977548e234745541a06378a7da95e0"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a95977548e234745541a06378a7da95e0">getEventNumber</a> ()</td></tr>
+<tr class="separator:a95977548e234745541a06378a7da95e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2c7490da6cb4cd6e312035b51d4a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90">setEventNumber</a> (const std::uint32_t &amp;nbr)</td></tr>
+<tr class="separator:a5b2c7490da6cb4cd6e312035b51d4a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1f729567389a5c7e1c4dfb0299cda4b1"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> {0}</td></tr>
+<tr class="separator:a1f729567389a5c7e1c4dfb0299cda4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -339,6 +349,35 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a95977548e234745541a06378a7da95e0" name="a95977548e234745541a06378a7da95e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95977548e234745541a06378a7da95e0">&#9670;&#160;</a></span>getEventNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Interface::getEventNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00055">55</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{<span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a>;}</div>
+<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00058">Interface.h:58</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a73eee93e24c223cd265b5fb0ca1640b8" name="a73eee93e24c223cd265b5fb0ca1640b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a73eee93e24c223cd265b5fb0ca1640b8">&#9670;&#160;</a></span>getName()</h2>
 
@@ -420,6 +459,35 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00051">51</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5b2c7490da6cb4cd6e312035b51d4a90" name="a5b2c7490da6cb4cd6e312035b51d4a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2c7490da6cb4cd6e312035b51d4a90">&#9670;&#160;</a></span>setEventNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Interface::setEventNumber </td>
+          <td>(</td>
+          <td class="paramtype">const std::uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>nbr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00056">56</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{<a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a>=nbr;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -570,6 +638,31 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00049">49</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   49</span>{}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1f729567389a5c7e1c4dfb0299cda4b1" name="a1f729567389a5c7e1c4dfb0299cda4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f729567389a5c7e1c4dfb0299cda4b1">&#9670;&#160;</a></span>m_EventNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Interface::m_EventNumber {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00058">58</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
