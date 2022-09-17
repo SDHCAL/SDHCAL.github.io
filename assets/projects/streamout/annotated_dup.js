@@ -12,6 +12,7 @@ var annotated_dup =
     [ "Interface", "classInterface.html", "classInterface" ],
     [ "InterfaceReader", "classInterfaceReader.html", "classInterfaceReader" ],
     [ "InterfaceWriter", "classInterfaceWriter.html", "classInterfaceWriter" ],
+    [ "LCIOWriter", "classLCIOWriter.html", "classLCIOWriter" ],
     [ "Payload", "classPayload.html", "classPayload" ],
     [ "Payload100", "classPayload100.html", "classPayload100" ],
     [ "Payload150", "classPayload150.html", "classPayload150" ],

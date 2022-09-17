@@ -367,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Payload150_8cc_source.html#l00120">120</a> of file <a class="el" href="Payload150_8cc_source.html">Payload150.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  121</span>{</div>
-<div class="line"><span class="lineno">  122</span>  std::uint32_t shift{0};</div>
+<div class="line"><span class="lineno">  122</span>  std::uint32_t shift{Size::GLOBAL_HEADER + Size::PMR_ID_SHIFT + Size::PMR_NBASIC_SHIFT + Size::PMR_FORMAT_SHIFT + Size::PMR_GTC_SHIFT+Size::PMR_ABCID_SHIFT};</div>
 <div class="line"><span class="lineno">  123</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[shift] &lt;&lt; 16) + (<a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[shift + 1] &lt;&lt; 8) + <a class="code hl_function" href="classBuffer.html#a0b1063a3e4bf43663b3fc15ccde9525a">begin</a>()[shift + 2];</div>
 <div class="line"><span class="lineno">  124</span>}</div>
 </div><!-- fragment -->
@@ -608,7 +608,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classPayload.html#a455769a2572301b6109c21b40b216d1b">Payload</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="Payload150_8cc_source.html#l00086">86</a> of file <a class="el" href="Payload150_8cc_source.html">Payload150.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> (((std::uint32_t)getFrameLevel(i, ipad, 1)) &lt;&lt; 1) | ((std::uint32_t)getFrameLevel(i, ipad, 0)); }</div>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> (((std::uint32_t)getFrameLevel(i, ipad, 1))) | ((std::uint32_t)getFrameLevel(i, ipad, 0) &lt;&lt; 1); }</div>
 </div><!-- fragment -->
 </div>
 </div>

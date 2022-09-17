@@ -16,6 +16,7 @@ var hierarchy =
         [ "RawdataReader", "classRawdataReader.html", null ]
       ] ],
       [ "InterfaceWriter", "classInterfaceWriter.html", [
+        [ "LCIOWriter", "classLCIOWriter.html", null ],
         [ "ROOTWriter", "classROOTWriter.html", null ],
         [ "textDump", "classtextDump.html", null ]
       ] ]
