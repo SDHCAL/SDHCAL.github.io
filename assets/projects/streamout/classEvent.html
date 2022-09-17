@@ -107,6 +107,10 @@ Inheritance diagram for Event:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a62e24438fe681e3121813c3ed3ecda0e"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#a62e24438fe681e3121813c3ed3ecda0e">getEventNumber</a> ()</td></tr>
+<tr class="separator:a62e24438fe681e3121813c3ed3ecda0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717a872bd335f9a10cad366d518db2fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#a717a872bd335f9a10cad366d518db2fe">setEventNumber</a> (const std::uint32_t &amp;evtNbr)</td></tr>
+<tr class="separator:a717a872bd335f9a10cad366d518db2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0862af1471604bf30a4f50a5e028637a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#a0862af1471604bf30a4f50a5e028637a">clear</a> ()</td></tr>
 <tr class="separator:a0862af1471604bf30a4f50a5e028637a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab78f234db6e3c88c189c2d7594ca17d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEvent.html#aab78f234db6e3c88c189c2d7594ca17d">addDIF</a> (const <a class="el" href="classDIF.html">DIF</a> &amp;dif)</td></tr>
@@ -136,8 +140,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00010">10</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>{ DIFs[dif.<a class="code hl_function" href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">getID</a>()] = dif; }</div>
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00020">20</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>{ DIFs[dif.<a class="code hl_function" href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">getID</a>()] = dif; }</div>
 <div class="ttc" id="aclassDIF_html_a2db76a3d710f119b75abe9f980fec5f4"><div class="ttname"><a href="classDIF.html#a2db76a3d710f119b75abe9f980fec5f4">DIF::getID</a></div><div class="ttdeci">std::uint8_t getID() const</div><div class="ttdef"><b>Definition:</b> <a href="DIF_8cc_source.html#l00014">DIF.cc:14</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -157,8 +161,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00012">12</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keywordflow">return</span> DIFs.cbegin(); }</div>
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00022">22</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{ <span class="keywordflow">return</span> DIFs.cbegin(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -177,8 +181,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00014">14</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{ <span class="keywordflow">return</span> DIFs.cend(); }</div>
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00024">24</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <span class="keywordflow">return</span> DIFs.cend(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,8 +201,53 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00018">18</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>{ DIFs.clear(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a62e24438fe681e3121813c3ed3ecda0e" name="a62e24438fe681e3121813c3ed3ecda0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e24438fe681e3121813c3ed3ecda0e">&#9670;&#160;</a></span>getEventNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Event::getEventNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00008">8</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>{ DIFs.clear(); }</div>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>{</div>
+<div class="line"><span class="lineno">   10</span>  <span class="keywordflow">return</span> m_EventNumber;</div>
+<div class="line"><span class="lineno">   11</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a717a872bd335f9a10cad366d518db2fe" name="a717a872bd335f9a10cad366d518db2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717a872bd335f9a10cad366d518db2fe">&#9670;&#160;</a></span>setEventNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Event::setEventNumber </td>
+          <td>(</td>
+          <td class="paramtype">const std::uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>evtNbr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Event_8cc_source.html#l00013">13</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>{</div>
+<div class="line"><span class="lineno">   15</span>  m_EventNumber=evtNbr;</div>
+<div class="line"><span class="lineno">   16</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

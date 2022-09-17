@@ -10,7 +10,7 @@ var searchData=
   ['setdif_7',['setDIF',['../classHit.html#a0fd442cb6407ac6b9763c13ef08645f7',1,'Hit']]],
   ['setdifbcid_8',['setDIFBCID',['../classDIF.html#a8bed0d1287a2e99263986834d07ccdb0',1,'DIF::setDIFBCID()'],['../classHit.html#ad3f8c99550a70de01731572428cee5c1',1,'Hit::setDIFBCID()']]],
   ['setdtc_9',['setDTC',['../classDIF.html#a2b30530fa97b21fb9e5d9658a6397e17',1,'DIF::setDTC()'],['../classHit.html#ab4c3cc85448599dbd36ab828b3003e8d',1,'Hit::setDTC()']]],
-  ['seteventnumber_10',['setEventNumber',['../classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90',1,'Interface']]],
+  ['seteventnumber_10',['setEventNumber',['../classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90',1,'Interface::setEventNumber()'],['../classEvent.html#a717a872bd335f9a10cad366d518db2fe',1,'Event::setEventNumber()']]],
   ['setfilename_11',['setFilename',['../classLCIOWriter.html#a1028bfe54de2cd514768a3c2969dea80',1,'LCIOWriter::setFilename()'],['../classROOTWriter.html#a6b74b8fe769444c9f5783c8f349183ea',1,'ROOTWriter::setFilename()']]],
   ['setframebcid_12',['setFrameBCID',['../classHit.html#a71f4c9bd38e77b8694738528ae9b3f7e',1,'Hit']]],
   ['setgtc_13',['setGTC',['../classDIF.html#a98e6b421ea1cf531c7614914b3414607',1,'DIF::setGTC()'],['../classHit.html#ad9cf797d5a1b54c30fc36825c54cf3fb',1,'Hit::setGTC()']]],
