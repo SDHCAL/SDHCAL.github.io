@@ -119,6 +119,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2b30530fa97b21fb9e5d9658a6397e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2f6a2ae1673b78ae37b02c6985d392"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a0e2f6a2ae1673b78ae37b02c6985d392">getDTC</a> () const</td></tr>
 <tr class="separator:a0e2f6a2ae1673b78ae37b02c6985d392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7871b6c4e7b303adf4d9e957d28240d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a7871b6c4e7b303adf4d9e957d28240d6">setDetectorID</a> (const std::uint32_t &amp;)</td></tr>
+<tr class="separator:a7871b6c4e7b303adf4d9e957d28240d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd02ca9db9d14aa206feb2b095714d7"><td class="memItemLeft" align="right" valign="top">std::uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#abcd02ca9db9d14aa206feb2b095714d7">getDetectorID</a> () const</td></tr>
+<tr class="separator:abcd02ca9db9d14aa206feb2b095714d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e6b421ea1cf531c7614914b3414607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a98e6b421ea1cf531c7614914b3414607">setGTC</a> (const std::uint32_t &amp;)</td></tr>
 <tr class="separator:a98e6b421ea1cf531c7614914b3414607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171e184f0963ec33845d0d88351b25ed"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDIF.html#a171e184f0963ec33845d0d88351b25ed">getGTC</a> () const</td></tr>
@@ -241,6 +245,26 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="abcd02ca9db9d14aa206feb2b095714d7" name="abcd02ca9db9d14aa206feb2b095714d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd02ca9db9d14aa206feb2b095714d7">&#9670;&#160;</a></span>getDetectorID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint8_t DIF::getDetectorID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00040">40</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> m_DetectorID; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a769b7a21dc5b38577ed2434054827ad6" name="a769b7a21dc5b38577ed2434054827ad6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a769b7a21dc5b38577ed2434054827ad6">&#9670;&#160;</a></span>getDIFBCID()</h2>
 
@@ -339,6 +363,27 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00028">28</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   28</span>{ m_AbsoluteBCID = absolutebcid; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7871b6c4e7b303adf4d9e957d28240d6" name="a7871b6c4e7b303adf4d9e957d28240d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7871b6c4e7b303adf4d9e957d28240d6">&#9670;&#160;</a></span>setDetectorID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DIF::setDetectorID </td>
+          <td>(</td>
+          <td class="paramtype">const std::uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>detector_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DIF_8cc_source.html#l00038">38</a> of file <a class="el" href="DIF_8cc_source.html">DIF.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>{ m_DetectorID = detector_id; }</div>
 </div><!-- fragment -->
 </div>
 </div>

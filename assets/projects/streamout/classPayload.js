@@ -5,6 +5,7 @@ var classPayload =
     [ "getAbsoluteBCID", "classPayload.html#a05b1843202385d9391e22cbe89d53e1c", null ],
     [ "getASICid", "classPayload.html#ae01859398b5310c8637b371b7ac0622f", null ],
     [ "getBCID", "classPayload.html#a02060faa8469a0f6c5bb61edd205146a", null ],
+    [ "getDetectorID", "classPayload.html#a11bddbf06104f82ffab7561e01864773", null ],
     [ "getDIFid", "classPayload.html#a0cd2b5cb17d89ea0407f954248a59113", null ],
     [ "getDTC", "classPayload.html#a50e89667a95003d0c6f4577c1a71b1ae", null ],
     [ "getEndOfDIFData", "classPayload.html#a16d75b1b0ff9c29e90881c2ee81fee4a", null ],

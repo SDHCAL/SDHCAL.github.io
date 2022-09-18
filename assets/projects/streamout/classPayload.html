@@ -142,6 +142,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a514d51f1ab19ba36bbf2125fca34401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0490bf60b4aa729c933d615a717ad8f"><td class="memItemLeft" align="right" valign="top">virtual std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayload.html#af0490bf60b4aa729c933d615a717ad8f">getFrameTimeToTrigger</a> (const std::uint32_t &amp;) const =0</td></tr>
 <tr class="separator:af0490bf60b4aa729c933d615a717ad8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11bddbf06104f82ffab7561e01864773"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayload.html#a11bddbf06104f82ffab7561e01864773">getDetectorID</a> () const</td></tr>
+<tr class="separator:a11bddbf06104f82ffab7561e01864773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a045efdf5699754b13a4d291d900795b3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPayload.html#a045efdf5699754b13a4d291d900795b3">~Payload</a> ()</td></tr>
 <tr class="separator:a045efdf5699754b13a4d291d900795b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBuffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBuffer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBuffer.html">Buffer</a></td></tr>
@@ -221,7 +223,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00014">14</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>{}</div>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>: <a class="code hl_variable" href="classPayload.html#a6ac6c1c193f12aaddb547cedfd3e1009">m_DetectorID</a>(detector_id) {}</div>
+<div class="ttc" id="aclassPayload_html_a6ac6c1c193f12aaddb547cedfd3e1009"><div class="ttname"><a href="classPayload.html#a6ac6c1c193f12aaddb547cedfd3e1009">Payload::m_DetectorID</a></div><div class="ttdeci">std::int32_t m_DetectorID</div><div class="ttdef"><b>Definition:</b> <a href="Payload_8h_source.html#l00035">Payload.h:35</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,8 +251,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00029">29</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00031">31</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,6 +339,34 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a11bddbf06104f82ffab7561e01864773" name="a11bddbf06104f82ffab7561e01864773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11bddbf06104f82ffab7561e01864773">&#9670;&#160;</a></span>getDetectorID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t Payload::getDetectorID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00029">29</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classPayload.html#a6ac6c1c193f12aaddb547cedfd3e1009">m_DetectorID</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a0cd2b5cb17d89ea0407f954248a59113" name="a0cd2b5cb17d89ea0407f954248a59113"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cd2b5cb17d89ea0407f954248a59113">&#9670;&#160;</a></span>getDIFid()</h2>
 
@@ -413,9 +444,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00043">43</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">theGetFramePtrReturn_</a>; }</div>
-<div class="ttc" id="aclassPayload_html_a03dea9eeb2cf937f7cdb5aad32844dab"><div class="ttname"><a href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">Payload::theGetFramePtrReturn_</a></div><div class="ttdeci">std::uint32_t theGetFramePtrReturn_</div><div class="ttdef"><b>Definition:</b> <a href="Payload_8h_source.html#l00034">Payload.h:34</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00045">45</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">theGetFramePtrReturn_</a>; }</div>
+<div class="ttc" id="aclassPayload_html_a03dea9eeb2cf937f7cdb5aad32844dab"><div class="ttname"><a href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">Payload::theGetFramePtrReturn_</a></div><div class="ttdeci">std::uint32_t theGetFramePtrReturn_</div><div class="ttdef"><b>Definition:</b> <a href="Payload_8h_source.html#l00036">Payload.h:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -552,8 +583,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00045">45</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>() - <a class="code hl_variable" href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">theGetFramePtrReturn_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00047">47</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classBuffer.html#ad72b167940d615e471cc1370b21be117">size</a>() - <a class="code hl_variable" href="classPayload.html#a03dea9eeb2cf937f7cdb5aad32844dab">theGetFramePtrReturn_</a>; }</div>
 <div class="ttc" id="aclassBuffer_html_ad72b167940d615e471cc1370b21be117"><div class="ttname"><a href="classBuffer.html#ad72b167940d615e471cc1370b21be117">Buffer::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00024">Buffer.h:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -645,11 +676,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00037">37</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>{</div>
-<div class="line"><span class="lineno">   39</span>  <a class="code hl_function" href="classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05">set</a>(buffer);</div>
-<div class="line"><span class="lineno">   40</span>  <a class="code hl_function" href="classPayload.html#aa17eec04d55a11a08c32e4aa11ae8f13">parsePayload</a>();</div>
-<div class="line"><span class="lineno">   41</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00039">39</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{</div>
+<div class="line"><span class="lineno">   41</span>  <a class="code hl_function" href="classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05">set</a>(buffer);</div>
+<div class="line"><span class="lineno">   42</span>  <a class="code hl_function" href="classPayload.html#aa17eec04d55a11a08c32e4aa11ae8f13">parsePayload</a>();</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 <div class="ttc" id="aclassBuffer_html_aef9a3ada3a2a603df9882f12e136ed05"><div class="ttname"><a href="classBuffer.html#aef9a3ada3a2a603df9882f12e136ed05">Buffer::set</a></div><div class="ttdeci">void set(unsigned char *b)</div><div class="ttdef"><b>Definition:</b> <a href="Buffer_8h_source.html#l00028">Buffer.h:28</a></div></div>
 <div class="ttc" id="aclassPayload_html_aa17eec04d55a11a08c32e4aa11ae8f13"><div class="ttname"><a href="classPayload.html#aa17eec04d55a11a08c32e4aa11ae8f13">Payload::parsePayload</a></div><div class="ttdeci">virtual void parsePayload()=0</div></div>
 </div><!-- fragment -->
@@ -676,7 +707,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00033">33</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00035">35</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +731,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00034">34</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Payload_8h_source.html#l00036">36</a> of file <a class="el" href="Payload_8h_source.html">Payload.h</a>.</p>
 
 </div>
 </div>

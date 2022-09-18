@@ -171,7 +171,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00079">79</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00081">81</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6c4708e57a0ed6edf5bb5bfe8ae960a1" name="a6c4708e57a0ed6edf5bb5bfe8ae960a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c4708e57a0ed6edf5bb5bfe8ae960a1">&#9670;&#160;</a></span>InterfaceWriter()</h2>
@@ -207,8 +207,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00082">82</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>: <a class="code hl_class" href="classInterface.html">Interface</a>(name, version, InterfaceType::Writer) {}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00084">84</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>: <a class="code hl_class" href="classInterface.html">Interface</a>(name, version, InterfaceType::Writer) {}</div>
 <div class="ttc" id="aclassInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00038">Interface.h:39</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -273,8 +273,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00084">84</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>{ m_Compatible[name] = version; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00086">86</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ m_Compatible[name] = version; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,19 +312,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00088">88</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>  {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">if</span>(m_Compatible.find(name) != m_Compatible.end())</div>
-<div class="line"><span class="lineno">   91</span>    {</div>
-<div class="line"><span class="lineno">   92</span>      <span class="keyword">auto</span>            ran = semver::range::detail::range(m_Compatible[name]);</div>
-<div class="line"><span class="lineno">   93</span>      semver::version ver = semver::version(version);</div>
-<div class="line"><span class="lineno">   94</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   95</span>      <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   97</span>    }</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   99</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  100</span>  }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00090">90</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>  {</div>
+<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">if</span>(m_Compatible.find(name) != m_Compatible.end())</div>
+<div class="line"><span class="lineno">   93</span>    {</div>
+<div class="line"><span class="lineno">   94</span>      <span class="keyword">auto</span>            ran = semver::range::detail::range(m_Compatible[name]);</div>
+<div class="line"><span class="lineno">   95</span>      semver::version ver = semver::version(version);</div>
+<div class="line"><span class="lineno">   96</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   97</span>      <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  101</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  102</span>  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,8 +351,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00086">86</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> m_Compatible; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00088">88</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{ <span class="keywordflow">return</span> m_Compatible; }</div>
 </div><!-- fragment -->
 </div>
 </div>
