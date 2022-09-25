@@ -22,37 +22,4 @@
 
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
-var NAVTREE =
-[
-  [ "streamout", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ]
-      ] ]
-    ] ]
-  ] ]
-];
-
-var NAVTREEINDEX =
-[
-"Bits_8cc.html",
-"Payload150_8cc.html#a151ff600064aa318f3a3366cb8c85bb5a9ff39782ed32336a1c5b450661505fa8",
-"classPayload150.html"
-];
-
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var NAVTREE=[["streamout","index.html",[["Classes","annotated.html",[["Class List","annotated.html","annotated_dup"],["Class Index","classes.html",null],["Class Hierarchy","hierarchy.html","hierarchy"],["Class Members","functions.html",[["All","functions.html","functions_dup"],["Functions","functions_func.html","functions_func"],["Variables","functions_vars.html",null]]]]],["Files","files.html",[["File List","files.html","files_dup"],["File Members","globals.html",[["All","globals.html",null],["Functions","globals_func.html",null],["Typedefs","globals_type.html",null],["Enumerations","globals_enum.html",null]]]]]]]],NAVTREEINDEX=["Bits_8cc.html","Payload150_8cc.html#a151ff600064aa318f3a3366cb8c85bb5a9ff39782ed32336a1c5b450661505fa8","classPayload150.html"],SYNCONMSG="click to disable panel synchronisation",SYNCOFFMSG="click to enable panel synchronisation";

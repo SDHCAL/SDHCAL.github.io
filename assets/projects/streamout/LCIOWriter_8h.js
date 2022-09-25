@@ -1,4 +1,1 @@
-var LCIOWriter_8h =
-[
-    [ "LCIOWriter", "classLCIOWriter.html", "classLCIOWriter" ]
-];
+var LCIOWriter_8h=[["LCIOWriter","classLCIOWriter.html","classLCIOWriter"]];

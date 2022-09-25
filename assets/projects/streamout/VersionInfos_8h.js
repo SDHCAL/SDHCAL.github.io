@@ -1,4 +1,1 @@
-var VersionInfos_8h =
-[
-    [ "VersionInfos", "classVersionInfos.html", "classVersionInfos" ]
-];
+var VersionInfos_8h=[["VersionInfos","classVersionInfos.html","classVersionInfos"]];

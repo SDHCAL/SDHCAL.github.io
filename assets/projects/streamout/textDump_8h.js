@@ -1,4 +1,1 @@
-var textDump_8h =
-[
-    [ "textDump", "classtextDump.html", "classtextDump" ]
-];
+var textDump_8h=[["textDump","classtextDump.html","classtextDump"]];

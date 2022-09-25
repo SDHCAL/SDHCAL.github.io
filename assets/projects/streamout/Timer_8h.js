@@ -1,4 +1,1 @@
-var Timer_8h =
-[
-    [ "Timer", "classTimer.html", "classTimer" ]
-];
+var Timer_8h=[["Timer","classTimer.html","classTimer"]];

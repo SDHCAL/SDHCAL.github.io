@@ -1,4 +1,1 @@
-var RawBufferNavigator_8h =
-[
-    [ "RawBufferNavigator", "classRawBufferNavigator.html", "classRawBufferNavigator" ]
-];
+var RawBufferNavigator_8h=[["RawBufferNavigator","classRawBufferNavigator.html","classRawBufferNavigator"]];

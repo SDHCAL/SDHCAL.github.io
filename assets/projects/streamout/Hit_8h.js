@@ -1,4 +1,1 @@
-var Hit_8h =
-[
-    [ "Hit", "classHit.html", "classHit" ]
-];
+var Hit_8h=[["Hit","classHit.html","classHit"]];

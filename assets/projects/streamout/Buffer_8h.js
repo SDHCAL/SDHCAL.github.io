@@ -1,4 +1,1 @@
-var Buffer_8h =
-[
-    [ "Buffer", "classBuffer.html", "classBuffer" ]
-];
+var Buffer_8h=[["Buffer","classBuffer.html","classBuffer"]];
