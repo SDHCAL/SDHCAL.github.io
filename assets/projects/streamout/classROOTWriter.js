@@ -11,7 +11,7 @@ var classROOTWriter =
     [ "processPadInFrame", "classROOTWriter.html#a9b1b4422186af5e5783655409678eccc", null ],
     [ "processSlowControl", "classROOTWriter.html#a20d62f9dd0143b4257f6b19b50cad416", null ],
     [ "setFilename", "classROOTWriter.html#a6b74b8fe769444c9f5783c8f349183ea", null ],
-    [ "start", "classROOTWriter.html#a2354b34e636f179a1726182aed020dc0", null ],
+    [ "start", "classROOTWriter.html#a750d24426f74abfdf9c5e0a0fcd603c4", null ],
     [ "startDIF", "classROOTWriter.html#ab352229c0f45ce722b526b2da9fb74dc", null ],
     [ "startEvent", "classROOTWriter.html#a15048c1249d8a1979ccfec50724fb4b2", null ],
     [ "startFrame", "classROOTWriter.html#afcadb4debfc377d9bc184f2024722edf", null ],

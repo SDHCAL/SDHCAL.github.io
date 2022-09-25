@@ -18,5 +18,6 @@ var dir_25de89a49d1da2858ac6330785c12b40 =
     [ "Timer.h", "Timer_8h.html", "Timer_8h" ],
     [ "Utilities.h", "Utilities_8h.html", "Utilities_8h" ],
     [ "Version.h", "Version_8h.html", "Version_8h" ],
+    [ "VersionInfos.h", "VersionInfos_8h.html", "VersionInfos_8h" ],
     [ "Words.h", "Words_8h.html", "Words_8h" ]
 ];

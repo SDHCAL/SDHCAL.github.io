@@ -22,5 +22,6 @@ var annotated_dup =
     [ "ROOTWriter", "classROOTWriter.html", "classROOTWriter" ],
     [ "textDump", "classtextDump.html", "classtextDump" ],
     [ "Timer", "classTimer.html", "classTimer" ],
-    [ "Version", "classVersion.html", "classVersion" ]
+    [ "Version", "classVersion.html", "classVersion" ],
+    [ "VersionInfos", "classVersionInfos.html", "classVersionInfos" ]
 ];

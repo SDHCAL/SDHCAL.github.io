@@ -31,5 +31,6 @@ var hierarchy =
     ] ],
     [ "semver::version", null, [
       [ "Version", "classVersion.html", null ]
-    ] ]
+    ] ],
+    [ "VersionInfos", "classVersionInfos.html", null ]
 ];

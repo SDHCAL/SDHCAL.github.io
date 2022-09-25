@@ -2,6 +2,7 @@ var classInterface =
 [
     [ "Interface", "classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e", null ],
     [ "~Interface", "classInterface.html#a7c171febd7287540790a9b7d0382cd61", null ],
+    [ "end", "classInterface.html#ae8ad6958a25226d229d011f897310c3a", null ],
     [ "endDIF", "classInterface.html#a76a196fc5675d77f766ecc539cd960c2", null ],
     [ "endEvent", "classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308", null ],
     [ "endFrame", "classInterface.html#ad80183bde6463d010e74a410c2c685b5", null ],
@@ -14,6 +15,7 @@ var classInterface =
     [ "setEventNumber", "classInterface.html#a5b2c7490da6cb4cd6e312035b51d4a90", null ],
     [ "setLogger", "classInterface.html#a2771031eb4fcbe1b448e0346f7977d86", null ],
     [ "setRunNumber", "classInterface.html#a1e112228cc9ec8c7b3e1edc5b998795a", null ],
+    [ "start", "classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb", null ],
     [ "startDIF", "classInterface.html#adbe441f7d565609813ad7dd2ac5e3747", null ],
     [ "startEvent", "classInterface.html#a12a189457330f41325b37a6ec84b7006", null ],
     [ "startFrame", "classInterface.html#a24df90c8965c80bf28bcd4f6afe1854a", null ],

@@ -114,8 +114,8 @@ Inheritance diagram for RawdataReader:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a463dd80c97f2f3f1df14a24898cacd51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawdataReader.html#a463dd80c97f2f3f1df14a24898cacd51">RawdataReader</a> (const char *fileName)</td></tr>
 <tr class="separator:a463dd80c97f2f3f1df14a24898cacd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2233170b528df8a97e31bebeedc8ac38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawdataReader.html#a2233170b528df8a97e31bebeedc8ac38">start</a> ()</td></tr>
-<tr class="separator:a2233170b528df8a97e31bebeedc8ac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e642ed85ffa6c176074260e90d88f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawdataReader.html#a83e642ed85ffa6c176074260e90d88f5">start</a> (const <a class="el" href="classVersionInfos.html">VersionInfos</a> &amp;ver) final</td></tr>
+<tr class="separator:a83e642ed85ffa6c176074260e90d88f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36589adc8ea9a565375910b519b5c4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawdataReader.html#ad36589adc8ea9a565375910b519b5c4c">end</a> ()</td></tr>
 <tr class="separator:ad36589adc8ea9a565375910b519b5c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0139d8edaca477adcb036dc5507a428"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRawdataReader.html#aa0139d8edaca477adcb036dc5507a428">getFileSize</a> ()</td></tr>
@@ -142,6 +142,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc192005d5dbf4f061b7eb1b5d18144e inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c171febd7287540790a9b7d0382cd61 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a7c171febd7287540790a9b7d0382cd61">~Interface</a> ()=default</td></tr>
 <tr class="separator:a7c171febd7287540790a9b7d0382cd61 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb01c0e4082628317a5fb6e6b9788dfb inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">start</a> (const <a class="el" href="classVersionInfos.html">VersionInfos</a> &amp;ver)</td></tr>
+<tr class="separator:adb01c0e4082628317a5fb6e6b9788dfb inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ad6958a25226d229d011f897310c3a inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">end</a> ()</td></tr>
+<tr class="separator:ae8ad6958a25226d229d011f897310c3a inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a189457330f41325b37a6ec84b7006 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">startEvent</a> ()</td></tr>
 <tr class="separator:a12a189457330f41325b37a6ec84b7006 inherit pub_methods_classInterface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07bb8d81d042c7f30e48e8d5d522a308 inherit pub_methods_classInterface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">endEvent</a> ()</td></tr>
@@ -225,7 +229,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   19</span>  m_buf.reserve(m_BufferSize);</div>
 <div class="line"><span class="lineno">   20</span>  m_Filename = fileName;</div>
 <div class="line"><span class="lineno">   21</span>}</div>
-<div class="ttc" id="aclassInterfaceReader_html"><div class="ttname"><a href="classInterfaceReader.html">InterfaceReader</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00071">Interface.h:72</a></div></div>
+<div class="ttc" id="aclassInterfaceReader_html"><div class="ttname"><a href="classInterfaceReader.html">InterfaceReader</a></div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00074">Interface.h:75</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,7 +290,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   55</span>    <span class="keywordflow">throw</span>;</div>
 <div class="line"><span class="lineno">   56</span>  }</div>
 <div class="line"><span class="lineno">   57</span>}</div>
-<div class="ttc" id="aclassInterface_html_a8470299defcb984382533823b5b45fcd"><div class="ttname"><a href="classInterface.html#a8470299defcb984382533823b5b45fcd">Interface::log</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; &amp; log()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00051">Interface.h:51</a></div></div>
+<div class="ttc" id="aclassInterface_html_a8470299defcb984382533823b5b45fcd"><div class="ttname"><a href="classInterface.html#a8470299defcb984382533823b5b45fcd">Interface::log</a></div><div class="ttdeci">std::shared_ptr&lt; spdlog::logger &gt; &amp; log()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00054">Interface.h:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -295,6 +299,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void RawdataReader::end </td>
@@ -303,7 +310,14 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">Interface</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00025">25</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   25</span>{ <a class="code hl_function" href="classRawdataReader.html#a343c72de59de023eb893272663ea3cff">closeFile</a>(); }</div>
@@ -330,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">  123</span>  uncompress();</div>
 <div class="line"><span class="lineno">  124</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">m_Buffer</a>;</div>
 <div class="line"><span class="lineno">  125</span>}</div>
-<div class="ttc" id="aclassInterfaceReader_html_a162c9aaa4706267c348d14c2441c7bf6"><div class="ttname"><a href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader::m_Buffer</a></div><div class="ttdeci">Buffer m_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00078">Interface.h:78</a></div></div>
+<div class="ttc" id="aclassInterfaceReader_html_a162c9aaa4706267c348d14c2441c7bf6"><div class="ttname"><a href="classInterfaceReader.html#a162c9aaa4706267c348d14c2441c7bf6">InterfaceReader::m_Buffer</a></div><div class="ttdeci">Buffer m_Buffer</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00081">Interface.h:81</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -427,7 +441,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   90</span>  }</div>
 <div class="line"><span class="lineno">   91</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><span class="lineno">   92</span>}</div>
-<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00061">Interface.h:61</a></div></div>
+<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00064">Interface.h:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -499,20 +513,31 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2233170b528df8a97e31bebeedc8ac38" name="a2233170b528df8a97e31bebeedc8ac38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2233170b528df8a97e31bebeedc8ac38">&#9670;&#160;</a></span>start()</h2>
+<a id="a83e642ed85ffa6c176074260e90d88f5" name="a83e642ed85ffa6c176074260e90d88f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83e642ed85ffa6c176074260e90d88f5">&#9670;&#160;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void RawdataReader::start </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classVersionInfos.html">VersionInfos</a> &amp;&#160;</td>
+          <td class="paramname"><em>ver</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">Interface</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="RawdataReader_8cc_source.html#l00023">23</a> of file <a class="el" href="RawdataReader_8cc_source.html">RawdataReader.cc</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>{ <a class="code hl_function" href="classRawdataReader.html#aebfcbb4e0805b60502384c20c0dd26d2">openFile</a>(m_Filename); }</div>

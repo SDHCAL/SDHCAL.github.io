@@ -120,6 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc192005d5dbf4f061b7eb1b5d18144e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c171febd7287540790a9b7d0382cd61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a7c171febd7287540790a9b7d0382cd61">~Interface</a> ()=default</td></tr>
 <tr class="separator:a7c171febd7287540790a9b7d0382cd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb01c0e4082628317a5fb6e6b9788dfb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">start</a> (const <a class="el" href="classVersionInfos.html">VersionInfos</a> &amp;ver)</td></tr>
+<tr class="separator:adb01c0e4082628317a5fb6e6b9788dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ad6958a25226d229d011f897310c3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">end</a> ()</td></tr>
+<tr class="separator:ae8ad6958a25226d229d011f897310c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a189457330f41325b37a6ec84b7006"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">startEvent</a> ()</td></tr>
 <tr class="separator:a12a189457330f41325b37a6ec84b7006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07bb8d81d042c7f30e48e8d5d522a308"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">endEvent</a> ()</td></tr>
@@ -162,7 +166,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00038">38</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00039">39</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adc192005d5dbf4f061b7eb1b5d18144e" name="adc192005d5dbf4f061b7eb1b5d18144e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc192005d5dbf4f061b7eb1b5d18144e">&#9670;&#160;</a></span>Interface()</h2>
@@ -204,8 +208,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00041">41</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>: m_Name(name), m_Version(version) {}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00042">42</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>: m_Name(name), m_Version(version) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -235,6 +239,36 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae8ad6958a25226d229d011f897310c3a" name="ae8ad6958a25226d229d011f897310c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ad6958a25226d229d011f897310c3a">&#9670;&#160;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classtextDump.html#ad786c3026dac9dc823e4dc10dd17b024">textDump</a>, <a class="el" href="classLCIOWriter.html#a7cee669b06849c37c7508545703131f6">LCIOWriter</a>, <a class="el" href="classRawdataReader.html#ad36589adc8ea9a565375910b519b5c4c">RawdataReader</a>, and <a class="el" href="classROOTWriter.html#a9088cffb4944360f931fc51d75738e40">ROOTWriter</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00045">45</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{};</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a76a196fc5675d77f766ecc539cd960c2" name="a76a196fc5675d77f766ecc539cd960c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76a196fc5675d77f766ecc539cd960c2">&#9670;&#160;</a></span>endDIF()</h2>
 
@@ -260,8 +294,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a0f4ffecedceaad720eb139031c4bb860">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a81d98c92eb672ce283c2000de435dd8a">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00046">46</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00049">49</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,8 +324,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a575ea4d76d6bd26b58e2978d02294c13">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a036c4c7c0c6eae5fbac69cc5ee33ae30">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00044">44</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00047">47</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -320,8 +354,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a56e2a4faec3af095931a60d660ae0fd3">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a50445829ebcc4817d8f500bfa679ba33">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00048">48</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00051">51</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -350,8 +384,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a3cf85e62c0889bda47a155e34ac2225c">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a6f62885ded06a8166b7589de69582671">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00050">50</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   50</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00053">53</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,9 +412,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00055">55</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a>; }</div>
-<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00061">Interface.h:61</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00058">58</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a>; }</div>
+<div class="ttc" id="aclassInterface_html_a1f729567389a5c7e1c4dfb0299cda4b1"><div class="ttname"><a href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">Interface::m_EventNumber</a></div><div class="ttdeci">std::uint32_t m_EventNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00064">Interface.h:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -407,8 +441,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00053">53</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>{ <span class="keywordflow">return</span> m_Name; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00056">56</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> m_Name; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -435,9 +469,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00057">57</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a>; }</div>
-<div class="ttc" id="aclassInterface_html_a541bd47c05443535805690651a9f413b"><div class="ttname"><a href="classInterface.html#a541bd47c05443535805690651a9f413b">Interface::m_RunNumber</a></div><div class="ttdeci">std::uint32_t m_RunNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00062">Interface.h:62</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00060">60</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a>; }</div>
+<div class="ttc" id="aclassInterface_html_a541bd47c05443535805690651a9f413b"><div class="ttname"><a href="classInterface.html#a541bd47c05443535805690651a9f413b">Interface::m_RunNumber</a></div><div class="ttdeci">std::uint32_t m_RunNumber</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00065">Interface.h:65</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,8 +498,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00054">54</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> m_Version; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00057">57</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <span class="keywordflow">return</span> m_Version; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -492,8 +526,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00051">51</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00054">54</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> m_Logger; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -521,8 +555,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00056">56</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> = nbr; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00059">59</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <a class="code hl_variable" href="classInterface.html#a1f729567389a5c7e1c4dfb0299cda4b1">m_EventNumber</a> = nbr; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -550,8 +584,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00052">52</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>{ m_Logger = logger; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00055">55</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{ m_Logger = logger; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -579,8 +613,39 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00058">58</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> = nbr; }</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00061">61</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{ <a class="code hl_variable" href="classInterface.html#a541bd47c05443535805690651a9f413b">m_RunNumber</a> = nbr; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adb01c0e4082628317a5fb6e6b9788dfb" name="adb01c0e4082628317a5fb6e6b9788dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb01c0e4082628317a5fb6e6b9788dfb">&#9670;&#160;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Interface::start </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVersionInfos.html">VersionInfos</a> &amp;&#160;</td>
+          <td class="paramname"><em>ver</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classROOTWriter.html#a750d24426f74abfdf9c5e0a0fcd603c4">ROOTWriter</a>, <a class="el" href="classtextDump.html#abf50cd8086238e0fbee4470b2328550e">textDump</a>, <a class="el" href="classLCIOWriter.html#aa436a1e8ef82f1d4981ed7807f5e4c4d">LCIOWriter</a>, and <a class="el" href="classRawdataReader.html#a83e642ed85ffa6c176074260e90d88f5">RawdataReader</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00044">44</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -609,8 +674,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a8bb625981daad29059fe2169bad26403">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#ab352229c0f45ce722b526b2da9fb74dc">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00045">45</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00048">48</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -639,8 +704,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#abe1f4f8001223ffa0e9d2b40bfe6d545">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a15048c1249d8a1979ccfec50724fb4b2">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00043">43</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00046">46</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -669,8 +734,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#ae1e87fdaa5fc3b37e365fb22175dd60e">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#afcadb4debfc377d9bc184f2024722edf">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00047">47</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   47</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00050">50</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,8 +764,8 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classLCIOWriter.html#a21a2733e07ddec411db5701d415e3bac">LCIOWriter</a>, and <a class="el" href="classROOTWriter.html#a114f624ae28780cd2b6d2a0c160d4745">ROOTWriter</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00049">49</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   49</span>{}</div>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00052">52</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -725,7 +790,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00061">61</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00064">64</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 
 </div>
 </div>
@@ -749,7 +814,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00062">62</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Interface_8h_source.html#l00065">65</a> of file <a class="el" href="Interface_8h_source.html">Interface.h</a>.</p>
 
 </div>
 </div>
