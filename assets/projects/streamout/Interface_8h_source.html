@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">streamout<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">streamout<span id="projectnumber">&#160;0.9.0</span>
    </div>
    <div id="projectbrief">Standalone SDHCAL raw data processor</div>
   </td>
@@ -119,8 +119,8 @@ $(document).ready(function(){initNavTree('Interface_8h_source.html',''); initRes
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">   42</a></span>  <a class="code hl_function" href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; version, <span class="keyword">const</span> <a class="code hl_enumeration" href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9d">InterfaceType</a>&amp; type) : m_Name(name), m_Version(version) {}</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classInterface.html#a7c171febd7287540790a9b7d0382cd61">   43</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classInterface.html#a7c171febd7287540790a9b7d0382cd61">~Interface</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">   44</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">start</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVersionInfos.html">VersionInfos</a>&amp; ver){};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">   45</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">end</a>(){};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">   44</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#adb01c0e4082628317a5fb6e6b9788dfb">start</a>(<span class="keyword">const</span> <a class="code hl_class" href="classVersionInfos.html">VersionInfos</a>&amp; ver) {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">   45</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">end</a>() {}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">   46</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#a12a189457330f41325b37a6ec84b7006">startEvent</a>() {}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">   47</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#a07bb8d81d042c7f30e48e8d5d522a308">endEvent</a>() {}</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classInterface.html#adbe441f7d565609813ad7dd2ac5e3747">   48</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                     <a class="code hl_function" href="classInterface.html#adbe441f7d565609813ad7dd2ac5e3747">startDIF</a>() {}</div>
@@ -174,20 +174,18 @@ $(document).ready(function(){initNavTree('Interface_8h_source.html',''); initRes
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keyword">auto</span>            ran = semver::range::detail::range(m_Compatible[name]);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      semver::version ver = semver::version(version);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>))</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3">  109</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3">~InterfaceWriter</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  std::map&lt;std::string, std::string&gt; m_Compatible;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">if</span>(ran.satisfies(ver, <span class="keyword">false</span>)) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3">  106</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classInterfaceWriter.html#aa9ed51312c012f3ff6bd034e8df8c9e3">~InterfaceWriter</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  std::map&lt;std::string, std::string&gt; m_Compatible;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
 <div class="ttc" id="aBuffer_8h_html"><div class="ttname"><a href="Buffer_8h.html">Buffer.h</a></div></div>
 <div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9d"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9d">InterfaceType</a></div><div class="ttdeci">InterfaceType</div><div class="ttdoc">template class should implement void SOURCE::start(); bool SOURCE::next(); void SOURCE::end(); const ...</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00032">Interface.h:33</a></div></div>
 <div class="ttc" id="aInterface_8h_html_af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e"><div class="ttname"><a href="Interface_8h.html#af1ef2c97e255bd7f21d3b7614b283d9da88183b946cc5f0e8c96b2e66e1c74a7e">InterfaceType::Unknown</a></div><div class="ttdeci">@ Unknown</div></div>
@@ -229,7 +227,7 @@ $(document).ready(function(){initNavTree('Interface_8h_source.html',''); initRes
 <div class="ttc" id="aclassInterface_html_adc192005d5dbf4f061b7eb1b5d18144e"><div class="ttname"><a href="classInterface.html#adc192005d5dbf4f061b7eb1b5d18144e">Interface::Interface</a></div><div class="ttdeci">Interface(const std::string &amp;name, const std::string &amp;version, const InterfaceType &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00042">Interface.h:42</a></div></div>
 <div class="ttc" id="aclassInterface_html_ae40b971ad7ed5abad297b2851bc37b65"><div class="ttname"><a href="classInterface.html#ae40b971ad7ed5abad297b2851bc37b65">Interface::endPad</a></div><div class="ttdeci">virtual void endPad()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00053">Interface.h:53</a></div></div>
 <div class="ttc" id="aclassInterface_html_ae8ad6958a25226d229d011f897310c3a"><div class="ttname"><a href="classInterface.html#ae8ad6958a25226d229d011f897310c3a">Interface::end</a></div><div class="ttdeci">virtual void end()</div><div class="ttdef"><b>Definition:</b> <a href="Interface_8h_source.html#l00045">Interface.h:45</a></div></div>
-<div class="ttc" id="aclassVersionInfos_html"><div class="ttname"><a href="classVersionInfos.html">VersionInfos</a></div><div class="ttdef"><b>Definition:</b> <a href="VersionInfos_8h_source.html#l00011">VersionInfos.h:12</a></div></div>
+<div class="ttc" id="aclassVersionInfos_html"><div class="ttname"><a href="classVersionInfos.html">VersionInfos</a></div><div class="ttdef"><b>Definition:</b> <a href="VersionInfos_8h_source.html#l00012">VersionInfos.h:13</a></div></div>
 <div class="ttc" id="aclassVersion_html"><div class="ttname"><a href="classVersion.html">Version</a></div><div class="ttdef"><b>Definition:</b> <a href="Version_8h_source.html#l00011">Version.h:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
